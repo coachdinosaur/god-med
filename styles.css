@@ -1,0 +1,104 @@
+:root {
+  --bg: #0b1410;
+  --panel: #13221a;
+  --panel-2: #183024;
+  --line: #234233;
+  --text: #e8f3ec;
+  --muted: #8fb0a0;
+  --green: #2ecc71;
+  --green-d: #1e9e55;
+  --gold: #e9c46a;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: radial-gradient(1200px 500px at 50% -10%, #153322 0%, var(--bg) 60%) fixed;
+  color: var(--text);
+  font: 16px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  padding: env(safe-area-inset-top) env(safe-area-inset-right) 40px env(safe-area-inset-left);
+}
+main, .top { max-width: 720px; margin: 0 auto; padding: 0 16px; }
+h1, h2, p { margin: 0; }
+
+.top { display: flex; align-items: center; gap: 12px; padding-top: 20px; padding-bottom: 12px; }
+.cross { width: 46px; height: 46px; color: var(--green); filter: drop-shadow(0 0 8px rgba(46, 204, 113, .45)); flex: none; }
+h1 { font-size: 1.4rem; letter-spacing: .02em; }
+.sub { color: var(--muted); font-size: .85rem; }
+.streak { margin-left: auto; text-align: center; background: var(--panel); border: 1px solid var(--line); border-radius: 14px; padding: 6px 12px; }
+.streak-num { display: block; font-size: 1.5rem; font-weight: 700; color: var(--gold); line-height: 1.1; }
+.streak-lbl { font-size: .7rem; color: var(--muted); text-transform: uppercase; letter-spacing: .06em; }
+
+section { margin-top: 18px; }
+.section-title { font-size: 1rem; color: var(--muted); font-weight: 600; text-transform: uppercase; letter-spacing: .08em; margin-bottom: 10px; }
+
+.today { background: var(--panel); border: 1px solid var(--line); border-radius: 18px; padding: 18px; transition: border-color .3s, box-shadow .3s; }
+.today.complete { border-color: var(--green); box-shadow: 0 0 0 1px var(--green), 0 8px 30px rgba(46, 204, 113, .18); }
+.today-head { display: flex; justify-content: space-between; align-items: center; }
+.today h2 { font-size: 1.3rem; }
+.date { color: var(--muted); font-size: .9rem; }
+.daycheck {
+  width: 52px; height: 52px; border-radius: 50%;
+  border: 2px dashed var(--line); color: transparent;
+  display: grid; place-items: center; transition: all .3s;
+}
+.daycheck svg { width: 30px; height: 30px; }
+.today.complete .daycheck { background: var(--green); border: 2px solid var(--green); color: #05140b; transform: scale(1.05); }
+
+.progress { height: 10px; background: #0d1a13; border-radius: 99px; overflow: hidden; margin-top: 16px; }
+.bar { height: 100%; width: 0; background: linear-gradient(90deg, var(--green-d), var(--green)); border-radius: 99px; transition: width .4s; }
+.count { margin-top: 8px; color: var(--muted); font-size: .9rem; }
+.done-msg { margin-top: 8px; color: var(--green); font-weight: 600; }
+.controls { display: flex; gap: 12px; align-items: center; margin-top: 14px; }
+.speed { color: var(--muted); font-size: .85rem; display: flex; align-items: center; gap: 6px; margin-left: auto; }
+select { background: var(--panel-2); color: var(--text); border: 1px solid var(--line); border-radius: 8px; padding: 6px 8px; font: inherit; }
+
+.btn { font: inherit; cursor: pointer; border-radius: 12px; border: 1px solid var(--line); background: var(--panel-2); color: var(--text); padding: 10px 16px; }
+.btn:hover { border-color: var(--green-d); }
+.btn:focus-visible, select:focus-visible, .verse:focus-visible { outline: 2px solid var(--green); outline-offset: 2px; }
+.btn.primary { background: var(--green-d); border-color: var(--green-d); color: #fff; font-weight: 600; }
+.btn.primary:hover { background: var(--green); color: #05140b; }
+.btn.icon { padding: 4px 14px; font-size: 1.3rem; line-height: 1; }
+
+.verses { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+.verse {
+  display: grid; grid-template-columns: 44px 1fr 30px; gap: 12px; align-items: start;
+  background: var(--panel); border: 1px solid var(--line); border-radius: 14px; padding: 14px;
+  transition: border-color .2s, background .2s;
+}
+.verse.playing { border-color: var(--green); background: var(--panel-2); }
+.verse.done .tick { background: var(--green); border-color: var(--green); color: #05140b; }
+.play {
+  width: 44px; height: 44px; border-radius: 50%; border: 0; cursor: pointer;
+  background: var(--green-d); color: #fff; font-size: 1.1rem; display: grid; place-items: center;
+}
+.play:hover { background: var(--green); }
+.ref { font-weight: 700; color: var(--green); font-size: 1rem; }
+.vtext { font-family: Georgia, "Times New Roman", serif; font-size: 1.05rem; margin-top: 4px; }
+.vprog { height: 3px; background: #0d1a13; border-radius: 99px; margin-top: 10px; overflow: hidden; }
+.vprog > i { display: block; height: 100%; width: 0; background: var(--green); }
+.tick {
+  width: 28px; height: 28px; border-radius: 50%; border: 2px solid var(--line);
+  color: transparent; display: grid; place-items: center; margin-top: 8px; transition: all .3s;
+}
+.tick svg { width: 16px; height: 16px; }
+
+.cal { background: var(--panel); border: 1px solid var(--line); border-radius: 18px; padding: 16px; }
+.cal-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px; }
+.cal-head .section-title { margin: 0; }
+.cal-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 6px; }
+.cal-grid.dow { color: var(--muted); font-size: .75rem; text-align: center; margin-bottom: 6px; }
+.day {
+  aspect-ratio: 1; border-radius: 10px; display: grid; place-items: center; position: relative;
+  font-size: .85rem; color: var(--muted); background: #0f1d16; border: 1px solid transparent;
+}
+.day.today-cell { border-color: var(--gold); color: var(--text); }
+.day.partial { background: conic-gradient(var(--green-d) var(--pct), #0f1d16 0); color: var(--text); }
+.day.partial::before { content: ""; position: absolute; inset: 3px; background: #0f1d16; border-radius: 8px; }
+.day.partial span { position: relative; }
+.day.full { background: var(--green); color: #05140b; font-weight: 700; }
+.day.full::after { content: "✓"; position: absolute; right: 3px; top: 0; font-size: .7rem; }
+.best { margin-top: 12px; color: var(--muted); font-size: .85rem; text-align: center; }
+
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
