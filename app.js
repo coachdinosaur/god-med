@@ -219,6 +219,62 @@ function setMediaSession(v) {
   });
 }
 
+/* ---------- faith aid (read-only) ---------- */
+
+let faithLoaded = false;
+
+async function loadFaith() {
+  if (faithLoaded) return;
+  const box = $("faith");
+  try {
+    const res = await fetch("faithaid.json");
+    if (!res.ok) throw new Error(String(res.status));
+    const sections = await res.json();
+    box.textContent = "";
+    for (const s of sections) {
+      const det = document.createElement("details");
+      const sum = document.createElement("summary");
+      const name = document.createElement("span");
+      name.textContent = s.title;
+      const cnt = document.createElement("span");
+      cnt.className = "cnt";
+      cnt.textContent = String(s.items.length);
+      sum.append(name, cnt);
+      const ul = document.createElement("ul");
+      for (const it of s.items) {
+        const li = document.createElement("li");
+        const ref = document.createElement("div");
+        ref.className = "ref";
+        ref.textContent = it.ref;
+        const text = document.createElement("p");
+        text.className = "vtext";
+        text.textContent = it.text;
+        li.append(ref, text);
+        ul.appendChild(li);
+      }
+      det.append(sum, ul);
+      box.appendChild(det);
+    }
+    faithLoaded = true;
+  } catch {
+    box.textContent = "Could not load the Faith Aid. Check your connection and try again.";
+  }
+}
+
+function showTab(name) {
+  const faith = name === "faith";
+  $("viewDaily").hidden = faith;
+  $("viewFaith").hidden = !faith;
+  $("tabDaily").classList.toggle("active", !faith);
+  $("tabFaith").classList.toggle("active", faith);
+  $("tabDaily").setAttribute("aria-selected", String(!faith));
+  $("tabFaith").setAttribute("aria-selected", String(faith));
+  if (faith) loadFaith();
+  window.scrollTo(0, 0);
+}
+$("tabDaily").addEventListener("click", () => showTab("daily"));
+$("tabFaith").addEventListener("click", () => showTab("faith"));
+
 /* ---------- wiring ---------- */
 
 $("playAll").addEventListener("click", startPlayAll);

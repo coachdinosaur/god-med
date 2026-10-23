@@ -26,7 +26,12 @@
     </div>
   </header>
 
-  <main>
+  <nav class="tabs" role="tablist" aria-label="Sections">
+    <button class="tab active" id="tabDaily" type="button" role="tab" aria-selected="true" aria-controls="viewDaily">Daily</button>
+    <button class="tab" id="tabFaith" type="button" role="tab" aria-selected="false" aria-controls="viewFaith">Faith Aid</button>
+  </nav>
+
+  <main id="viewDaily" role="tabpanel" aria-labelledby="tabDaily">
     <section class="today" id="today" aria-labelledby="todayTitle">
       <div class="today-head">
         <div>
@@ -70,6 +75,14 @@
       </div>
       <div class="cal-grid" id="calGrid"></div>
       <p class="best" id="best"></p>
+    </section>
+  </main>
+
+  <main id="viewFaith" role="tabpanel" aria-labelledby="tabFaith" hidden>
+    <section aria-labelledby="faithTitle">
+      <h2 id="faithTitle" class="section-title">Faith Aid</h2>
+      <p class="faith-note">Scriptures to confess, grouped under the headings of the Faith Aid by Jim Kaseman (AFCM). KJV text. Longer passages show their key verses. Full brochure and more at <a href="https://www.afcminternational.org" target="_blank" rel="noopener">afcminternational.org</a>.</p>
+      <div class="faith" id="faith"></div>
     </section>
   </main>
 

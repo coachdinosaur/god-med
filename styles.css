@@ -101,4 +101,36 @@ select { background: var(--panel-2); color: var(--text); border: 1px solid var(-
 .day.full::after { content: "✓"; position: absolute; right: 3px; top: 0; font-size: .7rem; }
 .best { margin-top: 12px; color: var(--muted); font-size: .85rem; text-align: center; }
 
+[hidden] { display: none !important; }
+
+.tabs { max-width: 720px; margin: 0 auto; padding: 4px 16px 0; display: flex; gap: 8px; }
+.tab {
+  flex: 1; font: inherit; font-weight: 600; cursor: pointer; padding: 10px 12px; border-radius: 12px;
+  border: 1px solid var(--line); background: var(--panel); color: var(--muted);
+}
+.tab.active { background: var(--green-d); border-color: var(--green-d); color: #fff; }
+.tab:focus-visible { outline: 2px solid var(--green); outline-offset: 2px; }
+
+.faith-note { color: var(--muted); font-size: .85rem; margin-bottom: 12px; }
+.faith-note a { color: var(--green); }
+.faith { display: grid; gap: 10px; }
+.faith details { background: var(--panel); border: 1px solid var(--line); border-radius: 14px; overflow: hidden; }
+.faith details[open] { border-color: var(--green-d); }
+.faith summary {
+  cursor: pointer; padding: 14px; font-weight: 700; list-style: none;
+  display: flex; justify-content: space-between; align-items: center; gap: 12px;
+}
+.faith summary::-webkit-details-marker { display: none; }
+.faith summary::after {
+  content: ""; width: 8px; height: 8px; flex: none; margin-right: 4px;
+  border-right: 2px solid var(--muted); border-bottom: 2px solid var(--muted);
+  transform: rotate(45deg); transition: transform .2s;
+}
+.faith details[open] summary::after { transform: rotate(225deg); }
+.faith summary:focus-visible { outline: 2px solid var(--green); outline-offset: -2px; }
+.faith .cnt { color: var(--muted); font-size: .8rem; font-weight: 400; margin-left: auto; }
+.faith ul { list-style: none; margin: 0; padding: 0 14px 6px; }
+.faith li { padding: 12px 0; border-top: 1px solid var(--line); }
+.faith .ref { font-size: .95rem; }
+
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
