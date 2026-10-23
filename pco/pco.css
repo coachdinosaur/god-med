@@ -12,6 +12,7 @@
   --bad: #f87171;
   --ok: #4ade80;
 }
+html { background: var(--bg); }
 body { background: radial-gradient(1200px 500px at 50% -10%, #0f2a3d 0%, var(--bg) 60%) fixed; }
 .top { align-items: flex-start; }
 .back { color: var(--muted); font-size: .8rem; text-decoration: none; }
@@ -54,6 +55,31 @@ body { background: radial-gradient(1200px 500px at 50% -10%, #0f2a3d 0%, var(--b
 .missed .mq { font-weight: 600; }
 .missed .ma { color: var(--ok); font-size: .9rem; }
 .missed .mw { color: var(--muted); font-size: .85rem; }
+
+.search {
+  width: 100%; font: inherit; color: var(--text); background: var(--panel);
+  border: 1px solid var(--line); border-radius: 12px; padding: 10px 12px;
+}
+.search:focus-visible { outline: 2px solid var(--green); outline-offset: 1px; }
+.tools { margin-bottom: 4px; }
+.tools .count { margin: 0 0 0 auto; }
+mark { background: rgba(244, 201, 93, .35); color: inherit; border-radius: 3px; padding: 0 1px; }
+.empty { color: var(--muted); text-align: center; padding: 18px 0; }
+
+.hint { color: var(--muted); font-size: .8rem; margin-top: 4px; }
+.keys { text-align: center; margin-top: 14px; }
+.stats-title { margin-top: 18px; }
+.stats { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.stats li { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 10px 12px; }
+.stats .top-line { display: flex; justify-content: space-between; gap: 10px; font-size: .9rem; }
+.stats .pct { font-weight: 700; }
+.stats .pct.low { color: var(--bad); }
+.stats .pct.mid { color: var(--gold); }
+.stats .pct.high { color: var(--ok); }
+.stats .pct.none { color: var(--muted); font-weight: 400; }
+.stats .meter { height: 6px; background: #0b1822; border-radius: 99px; overflow: hidden; margin-top: 6px; }
+.stats .meter i { display: block; height: 100%; background: var(--green); }
+.choice.picked { border-color: var(--green); background: var(--panel-2); }
 
 .src { max-width: 720px; margin: 28px auto 0; padding: 0 16px; color: var(--muted); font-size: .8rem; }
 .src p { font-weight: 600; text-transform: uppercase; letter-spacing: .08em; margin: 0 0 6px; }

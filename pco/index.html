@@ -32,6 +32,14 @@
   <main id="viewNotes" role="tabpanel" aria-labelledby="tabNotes">
     <section>
       <p class="faith-note">Study notes for PCO accreditation, grouped by law. Study aid only: rules are amended often, so confirm against the current DENR/EMB issuances (sources at the bottom).</p>
+      <div class="row">
+        <input class="search" id="noteSearch" type="search" placeholder="Search notes (e.g. 24 hours, ECC, ₱500)" aria-label="Search notes" autocomplete="off">
+      </div>
+      <div class="row tools">
+        <button class="linkbtn" id="expandAll" type="button">Expand all</button>
+        <button class="linkbtn" id="collapseAll" type="button">Collapse all</button>
+        <span class="count" id="noteCount"></span>
+      </div>
       <div class="faith notes" id="notes"></div>
     </section>
   </main>
@@ -67,12 +75,23 @@
             <option value="all">All</option>
           </select>
         </label>
+        <label class="speed">Mode
+          <select id="quizMode">
+            <option value="practice" selected>Practice</option>
+            <option value="exam">Exam</option>
+          </select>
+        </label>
       </div>
+      <p class="hint" id="modeHint"></p>
       <div class="controls">
         <button class="btn primary" id="quizStart" type="button">Start quiz</button>
         <button class="btn" id="quizMissed" type="button">Retry missed</button>
       </div>
       <p class="count" id="quizInfo"></p>
+      <h2 class="section-title stats-title">Your scores by topic</h2>
+      <ul class="stats" id="stats"></ul>
+      <p class="reset-line"><button class="linkbtn" id="statsReset" type="button">Reset quiz history</button></p>
+      <p class="hint keys">Keys: 1–4 or A–D to answer, Enter for next. Cards: Space to flip, → got it, ← again.</p>
     </section>
 
     <section id="quizRun" hidden>

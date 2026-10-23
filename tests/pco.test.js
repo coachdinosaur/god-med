@@ -54,3 +54,33 @@ test("scorePct rounds and handles zero", () => {
   assert.equal(scorePct(1, 3), 33);
   assert.equal(scorePct(0, 0), 0);
 });
+
+import { recordAnswer, matchSegments, keyToChoice } from "../pco/quiz.js";
+
+test("recordAnswer accumulates per topic without mutating", () => {
+  const s0 = {};
+  const s1 = recordAnswer(s0, "air", true);
+  const s2 = recordAnswer(s1, "air", false);
+  const s3 = recordAnswer(s2, "pco", true);
+  assert.deepEqual(s0, {});
+  assert.deepEqual(s3, { air: { right: 1, total: 2 }, pco: { right: 1, total: 1 } });
+});
+
+test("matchSegments highlights every case-insensitive hit", () => {
+  assert.deepEqual(matchSegments("ECC and ecc", "ecc"), [
+    { text: "ECC", hit: true }, { text: " and ", hit: false }, { text: "ecc", hit: true },
+  ]);
+  assert.equal(matchSegments("nothing here", "ecc"), null);
+  assert.deepEqual(matchSegments("text", "  "), [{ text: "text", hit: false }]);
+  const segs = matchSegments("Within 24 hours.", "24 hours");
+  assert.equal(segs.map((s) => s.text).join(""), "Within 24 hours.");
+});
+
+test("keyToChoice maps 1-4 and a-d", () => {
+  assert.equal(keyToChoice("1"), 0);
+  assert.equal(keyToChoice("4"), 3);
+  assert.equal(keyToChoice("B"), 1);
+  assert.equal(keyToChoice("d"), 3);
+  assert.equal(keyToChoice("5"), -1);
+  assert.equal(keyToChoice("Enter"), -1);
+});
