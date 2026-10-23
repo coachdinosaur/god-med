@@ -1,0 +1,61 @@
+/* PCO reviewer: reuses ../styles.css with a cooler accent so it reads as a separate sub page. */
+:root {
+  --bg: #08121a;
+  --panel: #101f2b;
+  --panel-2: #152a3a;
+  --line: #20394d;
+  --text: #e6f0f7;
+  --muted: #8aa7ba;
+  --green: #38bdf8;
+  --green-d: #0f7fb0;
+  --gold: #f4c95d;
+  --bad: #f87171;
+  --ok: #4ade80;
+}
+body { background: radial-gradient(1200px 500px at 50% -10%, #0f2a3d 0%, var(--bg) 60%) fixed; }
+.top { align-items: flex-start; }
+.back { color: var(--muted); font-size: .8rem; text-decoration: none; }
+.back:hover { color: var(--green); }
+.tabs .tab { padding: 10px 6px; }
+
+.row { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; margin-bottom: 8px; }
+.row .speed { margin-left: 0; }
+.check { color: var(--muted); font-size: .85rem; display: flex; align-items: center; gap: 6px; margin-left: auto; }
+.linkbtn { background: none; border: 0; color: var(--muted); font: inherit; font-size: .85rem; text-decoration: underline; cursor: pointer; padding: 6px 0; }
+.reset-line { text-align: center; margin-top: 8px; }
+
+.card {
+  display: flex; flex-direction: column; justify-content: center; gap: 10px; width: 100%; min-height: 240px;
+  margin-top: 10px; padding: 22px; text-align: left; font: inherit; color: var(--text); cursor: pointer;
+  background: var(--panel); border: 1px solid var(--line); border-radius: 18px;
+}
+.card.back-side { border-color: var(--green); background: var(--panel-2); }
+.card:focus-visible { outline: 2px solid var(--green); outline-offset: 2px; }
+.card-side { color: var(--green); font-size: .75rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+.card-text { font-family: Georgia, "Times New Roman", serif; font-size: 1.2rem; line-height: 1.45; }
+.card-hint { color: var(--muted); font-size: .8rem; }
+
+.qtext { font-size: 1.1rem; line-height: 1.4; margin: 14px 0; font-weight: 600; }
+.choices { display: grid; gap: 10px; }
+.choice {
+  font: inherit; text-align: left; cursor: pointer; color: var(--text); line-height: 1.4;
+  background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 12px 14px;
+}
+.choice:hover:not(:disabled) { border-color: var(--green); }
+.choice:focus-visible { outline: 2px solid var(--green); outline-offset: 2px; }
+.choice:disabled { cursor: default; }
+.choice.right { border-color: var(--ok); background: rgba(74, 222, 128, .12); }
+.choice.wrong { border-color: var(--bad); background: rgba(248, 113, 113, .12); }
+.why { margin-top: 12px; color: var(--muted); font-size: .9rem; background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 10px 12px; }
+
+.result { text-align: center; background: var(--panel); border: 1px solid var(--line); border-radius: 18px; padding: 18px; margin-bottom: 14px; }
+.result .streak-num { font-size: 2.2rem; }
+.missed { margin: 0 0 14px; padding-left: 20px; display: grid; gap: 12px; }
+.missed .mq { font-weight: 600; }
+.missed .ma { color: var(--ok); font-size: .9rem; }
+.missed .mw { color: var(--muted); font-size: .85rem; }
+
+.src { max-width: 720px; margin: 28px auto 0; padding: 0 16px; color: var(--muted); font-size: .8rem; }
+.src p { font-weight: 600; text-transform: uppercase; letter-spacing: .08em; margin: 0 0 6px; }
+.src ul { margin: 0; padding-left: 18px; }
+.src a { color: var(--green); }

@@ -1,0 +1,1077 @@
+{
+ "topics": [
+  {
+   "id": "pco",
+   "title": "PCO accreditation (DAO 2014-02)",
+   "points": [
+    "DAO 2014-02 (Feb 3, 2014): Revised Guidelines for Pollution Control Officer Accreditation. Section 7 was amended by a 2018 DAO (signed June 14, 2018). It repeals the older DAO 92-26.",
+    "Covered: establishments whose wastes or activities are actual or potential sources of land, water or air pollution, plus LGUs and government institutions (slaughterhouses, public markets, hospitals).",
+    "The Managing Head must appoint or designate a PCO and seek accreditation. A PCO may serve only one establishment (small standalone establishments such as rice millers or dental clinics may apply to cluster; EMB Central Office approves on the Regional Office's recommendation).",
+    "Basic qualifications: Filipino citizen of legal age, good moral character, mentally and physically healthy, full-time employee of the establishment, and a Basic PCO Training Course (40 hours) from an EMB-recognized provider within the last 3 years.",
+    "Category A competency (any one): graduate of a related technical course; at least 3rd year of tertiary education; or at least 3 years in a supervisory or responsible position (or equivalent experience).",
+    "Category B competency (any one): licensed engineer or chemist with at least 2 years of environmental management experience; engineering or physical/natural science professional with at least 3 years; other professional with at least 5 years.",
+    "Category B indicators include: chemicals in Annex 1 (any quantity); large-quantity hazardous waste generators, transporters and TSD facilities; medium or large air sources or those needing stack sampling; centralized MRFs and sanitary landfills; wastewater of 30 m³/day or more.",
+    "Accreditation steps: apply to the EMB Regional Office within 15 calendar days of appointment (appointment letter, CV, notarized joint undertaking of PCO and Managing Head, training certificate, PRC license for Category B, ₱500 fee). The Regional Director acts within 15 calendar days. If disapproved, 30 calendar days to fix deficiencies or appoint another PCO.",
+    "The Managing Head must complete 8 hours of environmental management training.",
+    "Validity: 3 years. Renewal needs at least 40 cumulative hours of relevant PCO training as a participant, or 20 hours as trainer/subject matter expert, within the period, plus a ₱500 fee.",
+    "Resignation or termination: notify the EMB Regional Office in writing within 15 calendar days and seek accreditation of a replacement within 30 calendar days. The Managing Head is interim PCO meanwhile (if a foreign national, the next highest-ranking Filipino officer). The old accreditation is automatically revoked.",
+    "Multiple installations: at least one PCO per region, plus one per Highly Urbanized City; each installation with wastewater above 30 m³/day or emissions needing testing needs its own PCO.",
+    "Duties: ensure compliance with PD 1586, RA 6969, RA 8749, RA 9003, RA 9275 and their IRRs; handle permits before construction or operation; operate and maintain pollution control and monitoring facilities; make sure hazardous waste off-site disposal has a Permit to Transport, a signed manifest and a Certificate of Treatment; monitor ECC conditions; submit CMRs and SMRs.",
+    "Report in writing within 24 hours: equipment breakdowns, releases of chemicals or hazardous waste, and effluent or emission exceedances. SMRs are submitted quarterly (ISO 14001 companies may request semi-annual, subject to EMB Central Office approval).",
+    "The PCO and the Managing Head are held jointly and severally liable for the establishment's violations of the listed laws.",
+    "Revocation grounds (gross violations): false documents or reports, misrepresentation, 3 or more EMB notices of nonperformance, willful discharge of untreated emissions, effluents or hazardous substances. Result: revocation and permanent disqualification; a new PCO must be appointed and accredited within 15 days of the revocation order.",
+    "Training providers: must be EMB-recognized (application ₱1,000, valid 1 year, Annual Accomplishment Report due January 15)."
+   ]
+  },
+  {
+   "id": "eis",
+   "title": "EIS System (PD 1586, DAO 2003-30)",
+   "points": [
+    "PD 1586 establishes the Philippine Environmental Impact Statement System; DAO 2003-30 is its Implementing Rules and Regulations.",
+    "Category A: Environmentally Critical Projects (ECPs). Category B: non-ECPs located in Environmentally Critical Areas. Category C: projects intended to enhance environmental quality or address existing problems. Category D: projects unlikely to cause adverse environmental impacts.",
+    "ECC (Environmental Compliance Certificate): issued after a positive review; certifies the project will not cause significant negative impact and that the proponent will implement its Environmental Management Plan. Categories A and B need an ECC.",
+    "CNC (Certificate of Non-Coverage): certifies a project is not covered by the EIS System. Category D projects may secure one. Category C requires a Project Description.",
+    "Documents: EIS (comprehensive; serves as the ECC application and includes an EMP); IEE (reduced detail and depth); EPRMP (environmental performance of operating projects without an ECC); PEIS/PEPRMP (program-level, e.g. co-located projects); EMP (prevention, mitigation, compensation, contingency and monitoring measures).",
+    "The EIA Review Committee (EIARC) is a body of independent experts organized by EMB that evaluates the EIS and recommends whether an ECC should be issued.",
+    "An ECC expires if the project is not implemented within 5 years of issuance. Deciding authorities: the DENR Secretary, EMB Director or EMB Regional Director.",
+    "Appeals: to the EMB Director (from Regional Director decisions), the DENR Secretary (from EMB Central Office decisions), or the Office of the President (from the Secretary). File within 15 days of receiving the decision.",
+    "Post-ECC: a Multipartite Monitoring Team (MMT) for Category A projects, with semi-annual reports in January and July; an Environmental Monitoring Fund (EMF) for projects with an MMT; an Environmental Guarantee Fund (EGF) for projects posing significant public risk; an abandonment or decommissioning plan submitted at least 6 months in advance.",
+    "A Cease and Desist Order takes effect immediately; an appeal does not stay it."
+   ]
+  },
+  {
+   "id": "air",
+   "title": "Clean Air Act (RA 8749, DAO 2000-81)",
+   "points": [
+    "RA 8749 is the Philippine Clean Air Act of 1999. Policy emphasizes pollution prevention over control and the 'polluters must pay' principle. DAO 2000-81 is its IRR.",
+    "Airsheds are designated by DENR. Each has a Governing Board chaired by the DENR Secretary that prepares a common action plan and publishes an annual Air Quality Status Report.",
+    "Every air pollution source needs a valid Permit to Operate. Validity cannot exceed one year; it is issued or renewed yearly. New or modified sources need an Authority to Construct first.",
+    "A Permit to Operate application includes an air quality impact analysis, a compliance statement and a signed designation of the facility's PCO.",
+    "Equipment breakdowns must be reported to the Bureau within 24 hours; operational and control test records are submitted quarterly.",
+    "Section 20 bans incineration of municipal, biomedical and hazardous waste (exceptions include traditional small-scale methods such as 'siga', agricultural and cultural burning, and crematoria).",
+    "Visible emission (smoke opacity) is measured using the Ringelmann Chart or USEPA Method 9.",
+    "Ambient guideline values (DAO 2000-81, Table 1): TSP 230 µg/Ncm (24-hr) and 90 (annual); PM10 150 (24-hr) and 60 (annual); SO₂ 180 (24-hr) and 80 (annual); NO₂ 150 (24-hr); ozone 140 (1-hr) and 60 (8-hr); CO 35 mg/Ncm (1-hr) and 10 (8-hr); lead 1.5 µg/Ncm (3-month) and 1.0 (annual).",
+    "Penalty for stationary-source violations (Sec. 45): up to ₱100,000 per day of violation until compliance; fines increase by at least 10% every 3 years; a third offense leads to permanent closure. Gross violations carry 6 to 10 years' imprisonment."
+   ]
+  },
+  {
+   "id": "water",
+   "title": "Clean Water Act (RA 9275, DAO 2016-08)",
+   "points": [
+    "RA 9275 is the Philippine Clean Water Act of 2004 (approved March 22, 2004). DENR is the lead agency. It mainly targets land-based pollution and stresses pollution prevention.",
+    "Water Quality Management Areas (WQMAs) are designated by DENR with the National Water Resources Board. The governing board is chaired by the DENR representative; each area has a 10-year action plan reviewed every five years.",
+    "Discharge permit (Sec. 14): required for facilities discharging regulated effluents. It specifies allowable quantity and quality of effluent, a compliance schedule and monitoring requirements.",
+    "Wastewater charge system (Sec. 13): fees are based on net waste load. Industries within effluent standards pay only a minimal reasonable amount.",
+    "Prohibited acts (Sec. 27) include discharging pollutants into water bodies, operating a discharging facility without a valid permit or after revocation, discharging chemicals prohibited under RA 6969, and refusing DENR entry, inspection or records.",
+    "Fines (Sec. 28): ₱10,000 to ₱200,000 per day of violation (rising 10% every two years); failure to clean up: 2 to 4 years and ₱50,000 to ₱100,000 per day; clean-up failure causing serious injury, death or irreversible contamination: 6 years and 1 day to 12 years and ₱500,000 per day; gross violations: ₱500,000 to ₱3,000,000 per day or 6 to 10 years, or both.",
+    "DAO 2016-08 (Water Quality Guidelines and General Effluent Standards of 2016): the first comprehensive revision of effluent standards in about 20 years. Fresh surface water classes: AA, A, B, C, D. Marine classes: SA, SB, SC, SD. Some parameter values were later amended (2021).",
+    "Establishments with influent BOD of 3,000 mg/L or more discharging to Class C, D, SC or SD waters must submit results from a DENR-recognized laboratory to the EMB Central Office showing compliance with Table 10 of DAO 2016-08."
+   ]
+  },
+  {
+   "id": "haz",
+   "title": "Toxic and hazardous waste (RA 6969, DAO 2013-22)",
+   "points": [
+    "RA 6969 is the Toxic Substances and Hazardous and Nuclear Wastes Control Act of 1990 (approved October 26, 1990). DENR is the implementing agency.",
+    "Policy: regulate, restrict or prohibit chemicals that present unreasonable risk, and prohibit hazardous and nuclear wastes from entering Philippine territory, even in transit.",
+    "Inter-Agency Technical Advisory Council: attached to DENR and chaired by the DENR Secretary; assists with rules, the chemical inventory and preliminary toxicity evaluations.",
+    "Pre-manufacture and pre-importation: before a new chemical is first manufactured or imported, its identity, structure, uses, quantities and test data are submitted. The Secretary decides within 90 days whether to regulate or prohibit it.",
+    "Penalties (Sec. 14): violating Sec. 13(a)-(c): 6 months and 1 day to 6 years and 1 day plus ₱600 to ₱4,000, probation not allowed. Violating Sec. 13(d) (bringing in or storing hazardous or nuclear waste): 12 years and 1 day to 20 years. Administrative fines (Sec. 15): ₱10,000 to ₱50,000.",
+    "DAO 2013-22 (Revised Procedures and Standards for Management of Hazardous Wastes, December 2013) revises DAO 2004-36, which revised DAO 92-29 (the IRR of RA 6969).",
+    "DAO 2013-22 has 13 chapters: definitions; classification; generators; transporters; TSD facilities; storage and labeling; waste transfer record; contingency program; personnel training; import/export; prohibited acts and penalties; monitoring; schedule of fees.",
+    "PCO tie-in: off-site disposal of hazardous waste must be covered by a Permit to Transport, a signed manifest and a Certificate of Treatment."
+   ]
+  },
+  {
+   "id": "swm",
+   "title": "Solid waste (RA 9003)",
+   "points": [
+    "RA 9003 is the Ecological Solid Waste Management Act of 2000. DENR chairs the National Solid Waste Management Commission (NSWMC); EMB provides secretariat support.",
+    "NSWMC: 14 government members ex officio plus 3 private sector members (3-year terms); it meets at least once a month.",
+    "Segregation at source: containers labeled compostable, non-recyclable, recyclable or special waste. Premises with 6 or more residential units must provide a designated area and containers for recyclables.",
+    "A Materials Recovery Facility (MRF) is required in every barangay or cluster of barangays.",
+    "LGUs must divert at least 25% of solid waste from disposal within 5 years of effectivity; diversion goals increase every 3 years. LGUs prepare 10-year solid waste management plans.",
+    "Open dumps: no new open dumps; convert existing ones to controlled dumps within 3 years; no controlled dumps 5 years after effectivity (Sec. 37). Sanitary landfills are the standard for final disposal.",
+    "Prohibited acts (Sec. 48) include littering, open burning, mixing segregated recyclables, operating open dumps, and building establishments within 200 meters of open, controlled or sanitary landfill sites.",
+    "Penalties (Sec. 49) range from ₱300 to ₱1,000 or community service for littering, up to ₱100,000 to ₱1,000,000 or 1 to 6 years for the most serious acts (such as facilities without an ECC or landfills on aquifers). Fines rise at least 10% every 3 years; corporate officers are liable for the entity's offenses.",
+    "Sec. 38: an ECC is required before a waste facility is built, expanded or operated."
+   ]
+  },
+  {
+   "id": "laws",
+   "title": "Laws at a glance",
+   "points": [
+    "PD 1586 (1978): Philippine EIS System; IRR: DAO 2003-30.",
+    "RA 6969 (1990): Toxic Substances and Hazardous and Nuclear Wastes Control Act; hazardous waste rules: DAO 2013-22 (revising DAO 2004-36 and DAO 92-29).",
+    "RA 8749 (1999): Clean Air Act; IRR: DAO 2000-81.",
+    "RA 9003 (2000): Ecological Solid Waste Management Act.",
+    "RA 9275 (2004): Clean Water Act; effluent standards: DAO 2016-08.",
+    "PCO accreditation: DAO 2014-02 (Section 7 amended in 2018); the PCO's duties cover all five laws."
+   ]
+  }
+ ],
+ "cards": [
+  {
+   "id": 1,
+   "topic": "pco",
+   "q": "How long is a PCO accreditation valid?",
+   "a": "3 years."
+  },
+  {
+   "id": 2,
+   "topic": "pco",
+   "q": "Where is the PCO accreditation application filed, and by when?",
+   "a": "EMB Regional Office, within 15 calendar days of appointment."
+  },
+  {
+   "id": 3,
+   "topic": "pco",
+   "q": "PCO application and renewal fee?",
+   "a": "₱500 each."
+  },
+  {
+   "id": 4,
+   "topic": "pco",
+   "q": "How many hours of training does the Managing Head need?",
+   "a": "8 hours of environmental management training."
+  },
+  {
+   "id": 5,
+   "topic": "pco",
+   "q": "Basic PCO Training Course: length and recency?",
+   "a": "40 hours, completed within the last 3 years from an EMB-recognized provider."
+  },
+  {
+   "id": 6,
+   "topic": "pco",
+   "q": "Renewal training requirement?",
+   "a": "At least 40 cumulative hours as a participant, or 20 hours as trainer/subject matter expert, within the 3-year period."
+  },
+  {
+   "id": 7,
+   "topic": "pco",
+   "q": "Category A PCO competency (any one)?",
+   "a": "Related technical course graduate; at least 3rd year tertiary; or 3+ years in a supervisory/responsible position."
+  },
+  {
+   "id": 8,
+   "topic": "pco",
+   "q": "Category B PCO competency (any one)?",
+   "a": "Licensed engineer/chemist with 2+ years; engineering/science professional with 3+ years; other professional with 5+ years."
+  },
+  {
+   "id": 9,
+   "topic": "pco",
+   "q": "PCO resigns: what are the two deadlines?",
+   "a": "Notify EMB in writing within 15 calendar days; seek accreditation of a replacement within 30 calendar days."
+  },
+  {
+   "id": 10,
+   "topic": "pco",
+   "q": "Who is interim PCO after a resignation?",
+   "a": "The Managing Head (if a foreign national, the next highest-ranking Filipino officer)."
+  },
+  {
+   "id": 11,
+   "topic": "pco",
+   "q": "How many establishments can one PCO serve?",
+   "a": "One (small standalone establishments may be clustered with EMB Central Office approval)."
+  },
+  {
+   "id": 12,
+   "topic": "pco",
+   "q": "Wastewater volume per installation that needs its own PCO?",
+   "a": "More than 30 m³/day (or emissions that need testing)."
+  },
+  {
+   "id": 13,
+   "topic": "pco",
+   "q": "Deadline for written reports of breakdowns, releases and exceedances?",
+   "a": "Within 24 hours."
+  },
+  {
+   "id": 14,
+   "topic": "pco",
+   "q": "How often are SMRs submitted?",
+   "a": "Quarterly (ISO 14001 companies may request semi-annual with EMB Central Office approval)."
+  },
+  {
+   "id": 15,
+   "topic": "pco",
+   "q": "Who is liable for the establishment's violations?",
+   "a": "The PCO and the Managing Head, jointly and severally."
+  },
+  {
+   "id": 16,
+   "topic": "pco",
+   "q": "Documents covering off-site hazardous waste disposal?",
+   "a": "Permit to Transport, signed manifest, Certificate of Treatment."
+  },
+  {
+   "id": 17,
+   "topic": "eis",
+   "q": "Define Category A, B, C, D under DAO 2003-30.",
+   "a": "A: Environmentally Critical Projects. B: non-ECPs in Environmentally Critical Areas. C: projects that enhance environmental quality. D: unlikely to cause adverse impacts."
+  },
+  {
+   "id": 18,
+   "topic": "eis",
+   "q": "ECC vs CNC?",
+   "a": "ECC: compliance certificate after positive review (Categories A and B). CNC: certifies a project is not covered by the EIS System (Category D may get one)."
+  },
+  {
+   "id": 19,
+   "topic": "eis",
+   "q": "When does an ECC expire?",
+   "a": "If the project is not implemented within 5 years of issuance."
+  },
+  {
+   "id": 20,
+   "topic": "eis",
+   "q": "Which category requires a Multipartite Monitoring Team?",
+   "a": "Category A (semi-annual reports in January and July)."
+  },
+  {
+   "id": 21,
+   "topic": "eis",
+   "q": "Appeal period for an EIS decision?",
+   "a": "15 days from receipt of the decision."
+  },
+  {
+   "id": 22,
+   "topic": "eis",
+   "q": "How early must an abandonment plan be submitted?",
+   "a": "At least 6 months in advance."
+  },
+  {
+   "id": 23,
+   "topic": "air",
+   "q": "Permit to Operate: maximum validity?",
+   "a": "One year (issued or renewed yearly)."
+  },
+  {
+   "id": 24,
+   "topic": "air",
+   "q": "What must new or modified air sources obtain first?",
+   "a": "An Authority to Construct."
+  },
+  {
+   "id": 25,
+   "topic": "air",
+   "q": "Who chairs an airshed Governing Board?",
+   "a": "The DENR Secretary."
+  },
+  {
+   "id": 26,
+   "topic": "air",
+   "q": "What does Sec. 20 of RA 8749 ban?",
+   "a": "Incineration of municipal, biomedical and hazardous waste."
+  },
+  {
+   "id": 27,
+   "topic": "air",
+   "q": "Stationary source fine under Sec. 45?",
+   "a": "Up to ₱100,000 per day until compliance; +10% every 3 years; third offense: permanent closure."
+  },
+  {
+   "id": 28,
+   "topic": "air",
+   "q": "How is smoke opacity measured?",
+   "a": "Ringelmann Chart or USEPA Method 9."
+  },
+  {
+   "id": 29,
+   "topic": "air",
+   "q": "PM10 and TSP 24-hour guideline values?",
+   "a": "PM10: 150 µg/Ncm. TSP: 230 µg/Ncm (annual: 60 and 90)."
+  },
+  {
+   "id": 30,
+   "topic": "water",
+   "q": "Lead agency of the Clean Water Act?",
+   "a": "DENR."
+  },
+  {
+   "id": 31,
+   "topic": "water",
+   "q": "Freshwater and marine water classes under DAO 2016-08?",
+   "a": "Fresh: AA, A, B, C, D. Marine: SA, SB, SC, SD."
+  },
+  {
+   "id": 32,
+   "topic": "water",
+   "q": "What does a discharge permit specify?",
+   "a": "Allowable quantity and quality of effluent, compliance schedule, monitoring requirements."
+  },
+  {
+   "id": 33,
+   "topic": "water",
+   "q": "Basis of the wastewater charge system?",
+   "a": "Net waste load."
+  },
+  {
+   "id": 34,
+   "topic": "water",
+   "q": "Base fine under RA 9275 Sec. 28?",
+   "a": "₱10,000 to ₱200,000 per day (rising 10% every two years)."
+  },
+  {
+   "id": 35,
+   "topic": "water",
+   "q": "Gross violation penalty under RA 9275?",
+   "a": "₱500,000 to ₱3,000,000 per day, or 6 to 10 years, or both."
+  },
+  {
+   "id": 36,
+   "topic": "haz",
+   "q": "When was RA 6969 approved and what is its core policy?",
+   "a": "October 26, 1990. Regulate or prohibit chemicals of unreasonable risk; prohibit entry of hazardous and nuclear wastes, even in transit."
+  },
+  {
+   "id": 37,
+   "topic": "haz",
+   "q": "Time for the Secretary to decide on a new chemical notice?",
+   "a": "90 days."
+  },
+  {
+   "id": 38,
+   "topic": "haz",
+   "q": "Penalty for bringing in or storing hazardous or nuclear waste (Sec. 13(d))?",
+   "a": "12 years and 1 day to 20 years."
+  },
+  {
+   "id": 39,
+   "topic": "haz",
+   "q": "DAO 2013-22 revised which order, which in turn revised what?",
+   "a": "It revised DAO 2004-36, which revised DAO 92-29 (the IRR of RA 6969)."
+  },
+  {
+   "id": 40,
+   "topic": "swm",
+   "q": "Waste diversion target under RA 9003?",
+   "a": "25% within 5 years of effectivity; goals increase every 3 years."
+  },
+  {
+   "id": 41,
+   "topic": "swm",
+   "q": "Open dump deadlines under Sec. 37?",
+   "a": "No new open dumps; convert to controlled dumps within 3 years; no controlled dumps after 5 years."
+  },
+  {
+   "id": 42,
+   "topic": "swm",
+   "q": "Where must an MRF be established?",
+   "a": "In every barangay or cluster of barangays."
+  },
+  {
+   "id": 43,
+   "topic": "swm",
+   "q": "Distance from landfill sites within which establishments are prohibited?",
+   "a": "200 meters."
+  },
+  {
+   "id": 44,
+   "topic": "swm",
+   "q": "Who chairs the NSWMC?",
+   "a": "The DENR Secretary."
+  }
+ ],
+ "questions": [
+  {
+   "id": 1,
+   "topic": "pco",
+   "q": "How long is a PCO accreditation valid?",
+   "choices": [
+    "1 year",
+    "2 years",
+    "3 years",
+    "5 years"
+   ],
+   "answer": 2,
+   "why": "Certificates of Accreditation are valid for 3 years (DAO 2014-02, Sec. 11)."
+  },
+  {
+   "id": 2,
+   "topic": "pco",
+   "q": "Within how many calendar days of appointment must the PCO accreditation application be filed with the EMB Regional Office?",
+   "choices": [
+    "7",
+    "15",
+    "30",
+    "60"
+   ],
+   "answer": 1,
+   "why": "Apply within 15 calendar days of appointment (Sec. 8). The Regional Director then acts within 15 calendar days."
+  },
+  {
+   "id": 3,
+   "topic": "pco",
+   "q": "A PCO resigns. Within how many calendar days must the establishment seek accreditation of a replacement?",
+   "choices": [
+    "15",
+    "30",
+    "60",
+    "90"
+   ],
+   "answer": 1,
+   "why": "EMB must be notified within 15 days; accreditation of the replacement is sought within 30 days (Sec. 9)."
+  },
+  {
+   "id": 4,
+   "topic": "pco",
+   "q": "While there is no accredited PCO after a resignation, who serves as interim PCO?",
+   "choices": [
+    "The EMB Regional Director",
+    "The Managing Head",
+    "The safety officer",
+    "The LGU environment officer"
+   ],
+   "answer": 1,
+   "why": "The Managing Head serves as interim PCO; if a foreign national, the next highest-ranking Filipino officer."
+  },
+  {
+   "id": 5,
+   "topic": "pco",
+   "q": "As a general rule, how many establishments may one PCO serve?",
+   "choices": [
+    "One",
+    "Two in the same region",
+    "Up to three",
+    "Any number with an EMB clearance"
+   ],
+   "answer": 0,
+   "why": "A PCO may serve only one establishment. Small standalone establishments may apply to cluster, with EMB Central Office approval."
+  },
+  {
+   "id": 6,
+   "topic": "pco",
+   "q": "How many cumulative training hours as a participant are needed to renew a PCO accreditation?",
+   "choices": [
+    "20",
+    "24",
+    "40",
+    "80"
+   ],
+   "answer": 2,
+   "why": "40 hours as a participant, or 20 hours as trainer/subject matter expert, within the 3-year period."
+  },
+  {
+   "id": 7,
+   "topic": "pco",
+   "q": "Which competency route applies to a licensed engineer or chemist with at least 2 years of environmental management experience?",
+   "choices": [
+    "Category A",
+    "Category B",
+    "Both categories",
+    "Neither"
+   ],
+   "answer": 1,
+   "why": "That is a Category B route. Category A needs a related technical course, 3rd year tertiary, or 3 years in a responsible position."
+  },
+  {
+   "id": 8,
+   "topic": "pco",
+   "q": "Which of the following is a basic qualification of a PCO?",
+   "choices": [
+    "Part-time consultant status",
+    "Full-time employee of the establishment",
+    "PRC license in all cases",
+    "Age of at least 30"
+   ],
+   "answer": 1,
+   "why": "A PCO must be a Filipino citizen of legal age, of good moral character, mentally and physically healthy, and a full-time employee."
+  },
+  {
+   "id": 9,
+   "topic": "pco",
+   "q": "Beyond what wastewater volume per installation is a separate PCO required?",
+   "choices": [
+    "10 m³/day",
+    "30 m³/day",
+    "50 m³/day",
+    "100 m³/day"
+   ],
+   "answer": 1,
+   "why": "Each installation with wastewater discharge above 30 m³/day, or emissions requiring testing, needs its own PCO (Sec. 7.1)."
+  },
+  {
+   "id": 10,
+   "topic": "pco",
+   "q": "Within what period must a PCO report equipment breakdowns and releases of chemicals or hazardous waste in writing?",
+   "choices": [
+    "12 hours",
+    "24 hours",
+    "48 hours",
+    "72 hours"
+   ],
+   "answer": 1,
+   "why": "Written reports are due within 24 hours, including effluent and emission exceedances."
+  },
+  {
+   "id": 11,
+   "topic": "pco",
+   "q": "How often are SMRs normally submitted?",
+   "choices": [
+    "Monthly",
+    "Quarterly",
+    "Semi-annually",
+    "Annually"
+   ],
+   "answer": 1,
+   "why": "Quarterly. ISO 14001-certified companies may request semi-annual submission, subject to EMB Central Office approval."
+  },
+  {
+   "id": 12,
+   "topic": "pco",
+   "q": "Who is liable for an establishment's violations of the major environmental laws?",
+   "choices": [
+    "Only the Managing Head",
+    "Only the PCO",
+    "The PCO and the Managing Head, jointly and severally",
+    "Neither, only the corporation"
+   ],
+   "answer": 2,
+   "why": "The PCO and Managing Head are held jointly and severally liable (Sec. 10)."
+  },
+  {
+   "id": 13,
+   "topic": "pco",
+   "q": "What is the processing fee for a PCO accreditation application?",
+   "choices": [
+    "₱500",
+    "₱1,000",
+    "₱2,500",
+    "₱5,000"
+   ],
+   "answer": 0,
+   "why": "₱500 for accreditation and ₱500 for renewal."
+  },
+  {
+   "id": 14,
+   "topic": "pco",
+   "q": "How many hours of environmental management training must the Managing Head complete?",
+   "choices": [
+    "4",
+    "8",
+    "16",
+    "40"
+   ],
+   "answer": 1,
+   "why": "8 hours (Sec. 8)."
+  },
+  {
+   "id": 15,
+   "topic": "pco",
+   "q": "Who approves clustering of the PCO designation for small establishments such as rice millers or dental clinics?",
+   "choices": [
+    "The EMB Regional Director alone",
+    "EMB Central Office, on the Regional Office's recommendation",
+    "The LGU",
+    "DENR Secretary only"
+   ],
+   "answer": 1,
+   "why": "The 2018 amendment of Section 7 requires EMB Central Office approval on the Regional Office's recommendation."
+  },
+  {
+   "id": 16,
+   "topic": "pco",
+   "q": "Which is NOT among the grounds for revoking a PCO accreditation?",
+   "choices": [
+    "Submitting false documents or reports",
+    "Three or more EMB notices of nonperformance",
+    "Willful discharge of untreated effluent",
+    "Failing to attend one annual conference"
+   ],
+   "answer": 3,
+   "why": "Revocation grounds are false documents, misrepresentation, 3+ notices of nonperformance and willful discharge of untreated emissions, effluents or hazardous substances."
+  },
+  {
+   "id": 17,
+   "topic": "eis",
+   "q": "Under DAO 2003-30, Category A projects are:",
+   "choices": [
+    "Environmentally Critical Projects",
+    "Non-ECPs located in Environmentally Critical Areas",
+    "Projects that enhance environmental quality",
+    "Projects unlikely to cause adverse impacts"
+   ],
+   "answer": 0,
+   "why": "A: ECPs. B: non-ECPs in ECAs. C: enhancement projects. D: unlikely to cause adverse impacts."
+  },
+  {
+   "id": 18,
+   "topic": "eis",
+   "q": "A project unlikely to cause adverse environmental impacts may secure a:",
+   "choices": [
+    "ECC",
+    "CNC",
+    "EGF",
+    "PEPRMP"
+   ],
+   "answer": 1,
+   "why": "Category D projects may get a Certificate of Non-Coverage."
+  },
+  {
+   "id": 19,
+   "topic": "eis",
+   "q": "An ECC expires if the project is not implemented within:",
+   "choices": [
+    "1 year",
+    "3 years",
+    "5 years",
+    "10 years"
+   ],
+   "answer": 2,
+   "why": "Five years from issuance, counted from groundbreaking based on the work plan."
+  },
+  {
+   "id": 20,
+   "topic": "eis",
+   "q": "Which project category requires a Multipartite Monitoring Team after ECC issuance?",
+   "choices": [
+    "Category A",
+    "Category B",
+    "Category C",
+    "Category D"
+   ],
+   "answer": 0,
+   "why": "MMTs are required for Category A projects and submit semi-annual reports in January and July."
+  },
+  {
+   "id": 21,
+   "topic": "eis",
+   "q": "An EIS appeal must be filed within how many days of receiving the decision?",
+   "choices": [
+    "5",
+    "15",
+    "30",
+    "60"
+   ],
+   "answer": 1,
+   "why": "15 days."
+  },
+  {
+   "id": 22,
+   "topic": "eis",
+   "q": "What does a Category C project need?",
+   "choices": [
+    "An ECC",
+    "A CNC",
+    "A Project Description",
+    "An EIS with MMT"
+   ],
+   "answer": 2,
+   "why": "Category C requires a Project Description."
+  },
+  {
+   "id": 23,
+   "topic": "eis",
+   "q": "How far in advance must an abandonment or decommissioning plan be submitted?",
+   "choices": [
+    "1 month",
+    "3 months",
+    "6 months",
+    "1 year"
+   ],
+   "answer": 2,
+   "why": "At least 6 months in advance."
+  },
+  {
+   "id": 24,
+   "topic": "air",
+   "q": "The maximum validity of an air Permit to Operate is:",
+   "choices": [
+    "6 months",
+    "1 year",
+    "3 years",
+    "5 years"
+   ],
+   "answer": 1,
+   "why": "Permits are issued or renewed yearly and cannot exceed one year."
+  },
+  {
+   "id": 25,
+   "topic": "air",
+   "q": "What must a new or modified air pollution source obtain before construction?",
+   "choices": [
+    "An ECC only",
+    "An Authority to Construct",
+    "A Permit to Transport",
+    "A CNC"
+   ],
+   "answer": 1,
+   "why": "DAO 2000-81 requires an Authority to Construct first."
+  },
+  {
+   "id": 26,
+   "topic": "air",
+   "q": "Who chairs an airshed Governing Board under RA 8749?",
+   "choices": [
+    "The DENR Secretary",
+    "The EMB Regional Director",
+    "The provincial governor",
+    "The DILG Secretary"
+   ],
+   "answer": 0,
+   "why": "The DENR Secretary chairs the Governing Board."
+  },
+  {
+   "id": 27,
+   "topic": "air",
+   "q": "Section 20 of RA 8749 bans incineration of:",
+   "choices": [
+    "Only biomedical waste",
+    "Municipal, biomedical and hazardous waste",
+    "Only hazardous waste",
+    "Agricultural residues"
+   ],
+   "answer": 1,
+   "why": "Exceptions include traditional small-scale methods, agricultural and cultural burning, and crematoria."
+  },
+  {
+   "id": 28,
+   "topic": "air",
+   "q": "The Sec. 45 fine for stationary-source violations is up to:",
+   "choices": [
+    "₱10,000 per day",
+    "₱50,000 per day",
+    "₱100,000 per day",
+    "₱500,000 per day"
+   ],
+   "answer": 2,
+   "why": "Up to ₱100,000 per day until compliance, rising at least 10% every 3 years."
+  },
+  {
+   "id": 29,
+   "topic": "air",
+   "q": "Smoke opacity limits are measured with:",
+   "choices": [
+    "A Secchi disk",
+    "The Ringelmann Chart or USEPA Method 9",
+    "An Orsat analyzer",
+    "A pH meter"
+   ],
+   "answer": 1,
+   "why": "DAO 2000-81 specifies the Ringelmann Chart or USEPA Method 9."
+  },
+  {
+   "id": 30,
+   "topic": "air",
+   "q": "The 24-hour ambient guideline value for PM10 is:",
+   "choices": [
+    "60 µg/Ncm",
+    "150 µg/Ncm",
+    "180 µg/Ncm",
+    "230 µg/Ncm"
+   ],
+   "answer": 1,
+   "why": "PM10: 150 (24-hr) and 60 (annual). TSP: 230 and 90. SO₂: 180 and 80."
+  },
+  {
+   "id": 31,
+   "topic": "water",
+   "q": "Which agency is the lead agency under the Clean Water Act?",
+   "choices": [
+    "DOH",
+    "DPWH",
+    "DENR",
+    "NWRB"
+   ],
+   "answer": 2,
+   "why": "DENR is the primary agency for implementing and enforcing RA 9275."
+  },
+  {
+   "id": 32,
+   "topic": "water",
+   "q": "Which of the following is a marine water class under DAO 2016-08?",
+   "choices": [
+    "Class AA",
+    "Class D",
+    "Class SB",
+    "Class C only"
+   ],
+   "answer": 2,
+   "why": "Marine classes are SA, SB, SC and SD; fresh surface water classes are AA, A, B, C and D."
+  },
+  {
+   "id": 33,
+   "topic": "water",
+   "q": "A discharge permit under RA 9275 Sec. 14 specifies:",
+   "choices": [
+    "Only the facility's location",
+    "Allowable quantity and quality of effluent, compliance schedule and monitoring requirements",
+    "Only the ECC number",
+    "Only the tariff"
+   ],
+   "answer": 1,
+   "why": "The permit sets effluent quantity and quality, a compliance schedule and monitoring requirements."
+  },
+  {
+   "id": 34,
+   "topic": "water",
+   "q": "The wastewater charge system is based on:",
+   "choices": [
+    "Plant size",
+    "Net waste load",
+    "Annual income",
+    "Water consumption only"
+   ],
+   "answer": 1,
+   "why": "Fees are based on net waste load (Sec. 13)."
+  },
+  {
+   "id": 35,
+   "topic": "water",
+   "q": "The base fine under Sec. 28 of RA 9275 is:",
+   "choices": [
+    "₱1,000 to ₱10,000 per day",
+    "₱10,000 to ₱200,000 per day",
+    "₱50,000 to ₱500,000 per day",
+    "₱500,000 to ₱3,000,000 per day"
+   ],
+   "answer": 1,
+   "why": "₱10,000 to ₱200,000 per day, rising 10% every two years. The ₱500,000 to ₱3,000,000 range is for gross violations."
+  },
+  {
+   "id": 36,
+   "topic": "water",
+   "q": "The governing board of a Water Quality Management Area is chaired by:",
+   "choices": [
+    "The DENR representative",
+    "The governor of the host province",
+    "The mayor of the largest city",
+    "The NWRB Chairperson"
+   ],
+   "answer": 0,
+   "why": "The DENR representative chairs the board."
+  },
+  {
+   "id": 37,
+   "topic": "haz",
+   "q": "RA 6969 was approved in:",
+   "choices": [
+    "1978",
+    "1990",
+    "1999",
+    "2004"
+   ],
+   "answer": 1,
+   "why": "October 26, 1990."
+  },
+  {
+   "id": 38,
+   "topic": "haz",
+   "q": "The penalty for violating Sec. 13(d) of RA 6969 (bringing in or storing hazardous or nuclear waste) is:",
+   "choices": [
+    "6 months and 1 day to 6 years and 1 day",
+    "1 to 3 years",
+    "12 years and 1 day to 20 years",
+    "₱10,000 to ₱50,000 fine only"
+   ],
+   "answer": 2,
+   "why": "12 years and 1 day to 20 years. The 6 months and 1 day range applies to Sec. 13(a)-(c)."
+  },
+  {
+   "id": 39,
+   "topic": "haz",
+   "q": "Within how many days does the Secretary decide on a new chemical under pre-manufacture notice?",
+   "choices": [
+    "30",
+    "60",
+    "90",
+    "180"
+   ],
+   "answer": 2,
+   "why": "90 days, extendable for justifiable reasons."
+  },
+  {
+   "id": 40,
+   "topic": "haz",
+   "q": "Off-site hazardous waste disposal must be covered by:",
+   "choices": [
+    "ECC only",
+    "Permit to Transport, signed manifest and Certificate of Treatment",
+    "Authority to Construct",
+    "A discharge permit"
+   ],
+   "answer": 1,
+   "why": "This is a listed PCO duty under DAO 2014-02."
+  },
+  {
+   "id": 41,
+   "topic": "haz",
+   "q": "DAO 2013-22 revised which earlier order?",
+   "choices": [
+    "DAO 92-29",
+    "DAO 2004-36",
+    "DAO 2000-81",
+    "DAO 2003-30"
+   ],
+   "answer": 1,
+   "why": "DAO 2013-22 revised DAO 2004-36, which itself revised DAO 92-29."
+  },
+  {
+   "id": 42,
+   "topic": "haz",
+   "q": "The Inter-Agency Technical Advisory Council under RA 6969 is chaired by:",
+   "choices": [
+    "The DOH Secretary",
+    "The DENR Secretary",
+    "The DTI Secretary",
+    "The EMB Director"
+   ],
+   "answer": 1,
+   "why": "It is attached to DENR and chaired by the DENR Secretary."
+  },
+  {
+   "id": 43,
+   "topic": "swm",
+   "q": "The waste diversion target within 5 years under RA 9003 is at least:",
+   "choices": [
+    "10%",
+    "25%",
+    "40%",
+    "50%"
+   ],
+   "answer": 1,
+   "why": "25%, with goals increasing every 3 years."
+  },
+  {
+   "id": 44,
+   "topic": "swm",
+   "q": "RA 9003 requires an MRF in every:",
+   "choices": [
+    "Province",
+    "Municipality",
+    "Barangay or cluster of barangays",
+    "Region"
+   ],
+   "answer": 2,
+   "why": "Sec. 32."
+  },
+  {
+   "id": 45,
+   "topic": "swm",
+   "q": "Under Sec. 37, open dumps must be converted to controlled dumps within:",
+   "choices": [
+    "1 year",
+    "3 years",
+    "5 years",
+    "10 years"
+   ],
+   "answer": 1,
+   "why": "3 years; no controlled dumps are allowed 5 years after effectivity."
+  },
+  {
+   "id": 46,
+   "topic": "swm",
+   "q": "Establishments are prohibited within how many meters of open, controlled or sanitary landfill sites?",
+   "choices": [
+    "50 m",
+    "100 m",
+    "200 m",
+    "500 m"
+   ],
+   "answer": 2,
+   "why": "Sec. 48 prohibits constructing establishments within 200 meters of such sites."
+  },
+  {
+   "id": 47,
+   "topic": "swm",
+   "q": "The National Solid Waste Management Commission is chaired by:",
+   "choices": [
+    "The DILG Secretary",
+    "The DENR Secretary",
+    "The MMDA Chairman",
+    "The DOH Secretary"
+   ],
+   "answer": 1,
+   "why": "The DENR Secretary chairs; a private sector representative is vice chair."
+  },
+  {
+   "id": 48,
+   "topic": "laws",
+   "q": "Which law is the Philippine Clean Air Act?",
+   "choices": [
+    "RA 6969",
+    "RA 8749",
+    "RA 9003",
+    "RA 9275"
+   ],
+   "answer": 1,
+   "why": "RA 8749 (1999). RA 6969: toxic and hazardous waste. RA 9003: solid waste. RA 9275: clean water."
+  },
+  {
+   "id": 49,
+   "topic": "laws",
+   "q": "Which law established the Philippine Environmental Impact Statement System?",
+   "choices": [
+    "PD 1586",
+    "RA 6969",
+    "RA 9003",
+    "DAO 2016-08"
+   ],
+   "answer": 0,
+   "why": "PD 1586; its IRR is DAO 2003-30."
+  },
+  {
+   "id": 50,
+   "topic": "laws",
+   "q": "Which law is the Ecological Solid Waste Management Act?",
+   "choices": [
+    "RA 8749",
+    "RA 9003",
+    "RA 9275",
+    "PD 1586"
+   ],
+   "answer": 1,
+   "why": "RA 9003 (2000)."
+  }
+ ],
+ "sources": [
+  {
+   "title": "DAO 2014-02 / 2018 amendment of Sec. 7 (FAOLEX)",
+   "url": "https://faolex.fao.org/docs/pdf/phi190727.pdf"
+  },
+  {
+   "title": "DAO 2014-02 overview (FAOLEX)",
+   "url": "https://faolex.fao.org/docs/pdf/phi190726.pdf"
+  },
+  {
+   "title": "EMB Region 11 PCO FAQs",
+   "url": "https://r11.emb.gov.ph/pollution-control-officer-faqs/"
+  },
+  {
+   "title": "DAO 2003-30 (EIS System IRR)",
+   "url": "https://apidb.denr.gov.ph/infores/uploads/policy/2003/dao2003-30.pdf"
+  },
+  {
+   "title": "DAO 2000-81 (Clean Air Act IRR)",
+   "url": "https://apidb.denr.gov.ph/infores/uploads/policy/2000/ENV_DAO_2000-81.pdf"
+  },
+  {
+   "title": "RA 8749 Clean Air Act",
+   "url": "https://lawphil.net/statutes/repacts/ra1999/ra_8749_1999.html"
+  },
+  {
+   "title": "RA 9275 Clean Water Act",
+   "url": "https://lawphil.net/statutes/repacts/ra2004/ra_9275_2004.html"
+  },
+  {
+   "title": "DAO 2016-08 summary (Enviliance)",
+   "url": "https://enviliance.com/regions/southeast-asia/ph/report_3514"
+  },
+  {
+   "title": "RA 6969 Toxic Substances Act",
+   "url": "https://lawphil.net/statutes/repacts/ra1990/ra_6969_1990.html"
+  },
+  {
+   "title": "DAO 2013-22 hazardous waste",
+   "url": "https://apidb.denr.gov.ph/infores/uploads/DAO-2013-22.pdf"
+  },
+  {
+   "title": "RA 9003 Solid Waste Act",
+   "url": "https://lawphil.net/statutes/repacts/ra2001/ra_9003_2001.html"
+  }
+ ]
+}

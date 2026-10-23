@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0a1620">
+  <meta name="description" content="Pollution Control Officer (PCO) reviewer: notes, flashcards and quiz. Works offline.">
+  <title>PCO Reviewer</title>
+  <link rel="icon" href="../icons/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="pco.css">
+</head>
+<body>
+  <header class="top">
+    <div>
+      <a class="back" href="../">← God Med</a>
+      <h1>PCO Reviewer</h1>
+      <p class="sub">Pollution Control Officer · DENR/EMB, Philippines</p>
+    </div>
+    <div class="streak" aria-live="polite">
+      <span class="streak-num" id="bestNum">–</span>
+      <span class="streak-lbl">best quiz</span>
+    </div>
+  </header>
+
+  <nav class="tabs" role="tablist" aria-label="Reviewer sections">
+    <button class="tab active" id="tabNotes" type="button" role="tab" aria-selected="true" aria-controls="viewNotes">Notes</button>
+    <button class="tab" id="tabCards" type="button" role="tab" aria-selected="false" aria-controls="viewCards">Cards</button>
+    <button class="tab" id="tabQuiz" type="button" role="tab" aria-selected="false" aria-controls="viewQuiz">Quiz</button>
+  </nav>
+
+  <main id="viewNotes" role="tabpanel" aria-labelledby="tabNotes">
+    <section>
+      <p class="faith-note">Study notes for PCO accreditation, grouped by law. Study aid only: rules are amended often, so confirm against the current DENR/EMB issuances (sources at the bottom).</p>
+      <div class="faith notes" id="notes"></div>
+    </section>
+  </main>
+
+  <main id="viewCards" role="tabpanel" aria-labelledby="tabCards" hidden>
+    <section>
+      <div class="row">
+        <label class="speed">Topic <select id="cardTopic"></select></label>
+        <label class="check"><input type="checkbox" id="cardOnlyNew"> Hide known</label>
+      </div>
+      <p class="count" id="cardCount"></p>
+      <button class="card" id="card" type="button" aria-live="polite">
+        <span class="card-side" id="cardSide"></span>
+        <span class="card-text" id="cardText"></span>
+        <span class="card-hint" id="cardHint">Tap to flip</span>
+      </button>
+      <div class="controls">
+        <button class="btn" id="cardAgain" type="button">Again</button>
+        <button class="btn primary" id="cardGot" type="button">Got it</button>
+      </div>
+      <p class="reset-line"><button class="linkbtn" id="cardReset" type="button">Reset known cards</button></p>
+    </section>
+  </main>
+
+  <main id="viewQuiz" role="tabpanel" aria-labelledby="tabQuiz" hidden>
+    <section id="quizSetup">
+      <div class="row">
+        <label class="speed">Topic <select id="quizTopic"></select></label>
+        <label class="speed">Questions
+          <select id="quizCount">
+            <option value="10" selected>10</option>
+            <option value="20">20</option>
+            <option value="all">All</option>
+          </select>
+        </label>
+      </div>
+      <div class="controls">
+        <button class="btn primary" id="quizStart" type="button">Start quiz</button>
+        <button class="btn" id="quizMissed" type="button">Retry missed</button>
+      </div>
+      <p class="count" id="quizInfo"></p>
+    </section>
+
+    <section id="quizRun" hidden>
+      <p class="count" id="quizProgress"></p>
+      <div class="progress"><div class="bar" id="quizBar"></div></div>
+      <h2 class="qtext" id="qText"></h2>
+      <div class="choices" id="choices"></div>
+      <p class="why" id="why" hidden></p>
+      <div class="controls">
+        <button class="btn primary" id="quizNext" type="button" hidden>Next</button>
+      </div>
+    </section>
+
+    <section id="quizEnd" hidden>
+      <div class="result">
+        <span class="streak-num" id="score"></span>
+        <span class="streak-lbl" id="scorePct"></span>
+      </div>
+      <h2 class="section-title">Review</h2>
+      <ol class="missed" id="missedList"></ol>
+      <div class="controls">
+        <button class="btn primary" id="quizAgain" type="button">New quiz</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="more src">
+    <p>Sources</p>
+    <ul id="sources"></ul>
+  </footer>
+
+  <script type="module" src="pco.js"></script>
+</body>
+</html>

@@ -103,6 +103,10 @@ select { background: var(--panel-2); color: var(--text); border: 1px solid var(-
 
 [hidden] { display: none !important; }
 
+.sublink { max-width: 720px; margin: 28px auto 0; padding: 0 16px; text-align: center; }
+.sublink a { color: var(--muted); font-size: .85rem; text-decoration: none; border: 1px solid var(--line); border-radius: 99px; padding: 8px 16px; display: inline-block; }
+.sublink a:hover { color: var(--text); border-color: var(--green-d); }
+
 .tabs { max-width: 720px; margin: 0 auto; padding: 4px 16px 0; display: flex; gap: 8px; }
 .tab {
   flex: 1; font: inherit; font-weight: 600; cursor: pointer; padding: 10px 12px; border-radius: 12px;
