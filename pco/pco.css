@@ -81,6 +81,25 @@ mark { background: rgba(244, 201, 93, .35); color: inherit; border-radius: 3px; 
 .stats .meter i { display: block; height: 100%; background: var(--green); }
 .choice.picked { border-color: var(--green); background: var(--panel-2); }
 
+.tabs { gap: 6px; }
+.tabs .tab { font-size: .9rem; padding: 10px 4px; }
+.check.left { margin-left: 0; }
+.row .count { margin: 0 0 0 auto; }
+
+.iv { background: var(--panel); border: 1px solid var(--line); border-radius: 18px; padding: 18px; margin-top: 6px; }
+.iv.rated-nailed { border-color: var(--ok); }
+.iv.rated-partly { border-color: var(--gold); }
+.iv.rated-missed { border-color: var(--bad); }
+.iv-title { font-size: 1.15rem; margin: 6px 0 8px; }
+.iv-prompt { font-family: Georgia, "Times New Roman", serif; font-size: 1.08rem; line-height: 1.5; margin-bottom: 14px; }
+.iv-points { margin: 4px 0 10px; padding-left: 20px; display: grid; gap: 8px; line-height: 1.45; }
+.iv-refs { color: var(--green); font-size: .8rem; margin-bottom: 12px; }
+.iv-rate-lbl { color: var(--muted); font-size: .85rem; margin-bottom: 6px; }
+.iv-rate { display: flex; gap: 8px; flex-wrap: wrap; }
+.iv-rate .btn { flex: 1; padding: 10px 8px; }
+.iv-rate .btn.sel { outline: 2px solid var(--green); outline-offset: 1px; }
+.iv-nav { justify-content: space-between; }
+
 .src { max-width: 720px; margin: 28px auto 0; padding: 0 16px; color: var(--muted); font-size: .8rem; }
 .src p { font-weight: 600; text-transform: uppercase; letter-spacing: .08em; margin: 0 0 6px; }
 .src ul { margin: 0; padding-left: 18px; }

@@ -27,6 +27,7 @@
     <button class="tab active" id="tabNotes" type="button" role="tab" aria-selected="true" aria-controls="viewNotes">Notes</button>
     <button class="tab" id="tabCards" type="button" role="tab" aria-selected="false" aria-controls="viewCards">Cards</button>
     <button class="tab" id="tabQuiz" type="button" role="tab" aria-selected="false" aria-controls="viewQuiz">Quiz</button>
+    <button class="tab" id="tabInterview" type="button" role="tab" aria-selected="false" aria-controls="viewInterview">Interview</button>
   </nav>
 
   <main id="viewNotes" role="tabpanel" aria-labelledby="tabNotes">
@@ -47,6 +48,13 @@
   <main id="viewCards" role="tabpanel" aria-labelledby="tabCards" hidden>
     <section>
       <div class="row">
+        <label class="speed">Level
+          <select id="cardLevel">
+            <option value="all" selected>All</option>
+            <option value="basic">Basic</option>
+            <option value="advanced">Advanced</option>
+          </select>
+        </label>
         <label class="speed">Topic <select id="cardTopic"></select></label>
         <label class="check"><input type="checkbox" id="cardOnlyNew"> Hide known</label>
       </div>
@@ -67,6 +75,13 @@
   <main id="viewQuiz" role="tabpanel" aria-labelledby="tabQuiz" hidden>
     <section id="quizSetup">
       <div class="row">
+        <label class="speed">Level
+          <select id="quizLevel">
+            <option value="all" selected>All</option>
+            <option value="basic">Basic</option>
+            <option value="advanced">Advanced</option>
+          </select>
+        </label>
         <label class="speed">Topic <select id="quizTopic"></select></label>
         <label class="speed">Questions
           <select id="quizCount">
@@ -91,7 +106,7 @@
       <h2 class="section-title stats-title">Your scores by topic</h2>
       <ul class="stats" id="stats"></ul>
       <p class="reset-line"><button class="linkbtn" id="statsReset" type="button">Reset quiz history</button></p>
-      <p class="hint keys">Keys: 1–4 or A–D to answer, Enter for next. Cards: Space to flip, → got it, ← again.</p>
+      <p class="hint keys">Keys: 1–4 or A–D to answer, Enter for next. Cards: Space to flip, → got it, ← again. Interview: Space to reveal, ← → to move.</p>
     </section>
 
     <section id="quizRun" hidden>
@@ -114,6 +129,36 @@
       <ol class="missed" id="missedList"></ol>
       <div class="controls">
         <button class="btn primary" id="quizAgain" type="button">New quiz</button>
+      </div>
+    </section>
+  </main>
+
+  <main id="viewInterview" role="tabpanel" aria-labelledby="tabInterview" hidden>
+    <section>
+      <p class="faith-note">Real situations a PCO faces, and questions interviewers ask. Answer out loud first (rule, section, what you'd do), then reveal the model answer and rate yourself.</p>
+      <div class="row">
+        <label class="check left"><input type="checkbox" id="ivHideNailed"> Hide nailed</label>
+        <span class="count" id="ivCount"></span>
+      </div>
+      <article class="iv" id="iv">
+        <p class="card-side" id="ivNum"></p>
+        <h2 class="iv-title" id="ivTitle"></h2>
+        <p class="iv-prompt" id="ivPrompt"></p>
+        <button class="btn primary" id="ivReveal" type="button">Show model answer</button>
+        <div id="ivAnswer" hidden>
+          <ul class="iv-points" id="ivPoints"></ul>
+          <p class="iv-refs" id="ivRefs"></p>
+          <p class="iv-rate-lbl">How did you do?</p>
+          <div class="iv-rate">
+            <button class="btn" type="button" data-rate="missed">Missed</button>
+            <button class="btn" type="button" data-rate="partly">Partly</button>
+            <button class="btn primary" type="button" data-rate="nailed">Nailed it</button>
+          </div>
+        </div>
+      </article>
+      <div class="controls iv-nav">
+        <button class="btn" id="ivPrev" type="button">← Prev</button>
+        <button class="btn" id="ivNext" type="button">Next →</button>
       </div>
     </section>
   </main>

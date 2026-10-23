@@ -84,3 +84,21 @@ test("keyToChoice maps 1-4 and a-d", () => {
   assert.equal(keyToChoice("5"), -1);
   assert.equal(keyToChoice("Enter"), -1);
 });
+
+test("levels and interview data are well formed", () => {
+  const levels = new Set(["basic", "advanced"]);
+  for (const t of data.topics) assert.ok(levels.has(t.level), `topic ${t.id} level`);
+  const topicLevel = Object.fromEntries(data.topics.map((t) => [t.id, t.level]));
+  for (const x of [...data.cards, ...data.questions]) assert.equal(x.level, topicLevel[x.topic], `level mismatch on ${x.topic}`);
+  assert.ok(data.questions.some((q) => q.level === "advanced"));
+  assert.ok(data.interview.length >= 10);
+  for (const s of data.interview) {
+    assert.ok(s.title && s.prompt && s.refs, `interview ${s.id} text`);
+    assert.ok(s.points.length >= 3, `interview ${s.id} needs points`);
+  }
+});
+
+test("question ids 1-50 keep their original questions (saved progress stays valid)", () => {
+  assert.match(data.questions[0].q, /PCO accreditation valid/);
+  assert.equal(data.questions[49].topic, "laws");
+});

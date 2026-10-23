@@ -3,6 +3,7 @@
   {
    "id": "pco",
    "title": "PCO accreditation (DAO 2014-02)",
+   "level": "basic",
    "points": [
     "DAO 2014-02 (Feb 3, 2014): Revised Guidelines for Pollution Control Officer Accreditation. Section 7 was amended by a 2018 DAO (signed June 14, 2018). It repeals the older DAO 92-26.",
     "Covered: establishments whose wastes or activities are actual or potential sources of land, water or air pollution, plus LGUs and government institutions (slaughterhouses, public markets, hospitals).",
@@ -26,6 +27,7 @@
   {
    "id": "eis",
    "title": "EIS System (PD 1586, DAO 2003-30)",
+   "level": "basic",
    "points": [
     "PD 1586 establishes the Philippine Environmental Impact Statement System; DAO 2003-30 is its Implementing Rules and Regulations.",
     "Category A: Environmentally Critical Projects (ECPs). Category B: non-ECPs located in Environmentally Critical Areas. Category C: projects intended to enhance environmental quality or address existing problems. Category D: projects unlikely to cause adverse environmental impacts.",
@@ -42,6 +44,7 @@
   {
    "id": "air",
    "title": "Clean Air Act (RA 8749, DAO 2000-81)",
+   "level": "basic",
    "points": [
     "RA 8749 is the Philippine Clean Air Act of 1999. Policy emphasizes pollution prevention over control and the 'polluters must pay' principle. DAO 2000-81 is its IRR.",
     "Airsheds are designated by DENR. Each has a Governing Board chaired by the DENR Secretary that prepares a common action plan and publishes an annual Air Quality Status Report.",
@@ -57,6 +60,7 @@
   {
    "id": "water",
    "title": "Clean Water Act (RA 9275, DAO 2016-08)",
+   "level": "basic",
    "points": [
     "RA 9275 is the Philippine Clean Water Act of 2004 (approved March 22, 2004). DENR is the lead agency. It mainly targets land-based pollution and stresses pollution prevention.",
     "Water Quality Management Areas (WQMAs) are designated by DENR with the National Water Resources Board. The governing board is chaired by the DENR representative; each area has a 10-year action plan reviewed every five years.",
@@ -71,6 +75,7 @@
   {
    "id": "haz",
    "title": "Toxic and hazardous waste (RA 6969, DAO 2013-22)",
+   "level": "basic",
    "points": [
     "RA 6969 is the Toxic Substances and Hazardous and Nuclear Wastes Control Act of 1990 (approved October 26, 1990). DENR is the implementing agency.",
     "Policy: regulate, restrict or prohibit chemicals that present unreasonable risk, and prohibit hazardous and nuclear wastes from entering Philippine territory, even in transit.",
@@ -85,6 +90,7 @@
   {
    "id": "swm",
    "title": "Solid waste (RA 9003)",
+   "level": "basic",
    "points": [
     "RA 9003 is the Ecological Solid Waste Management Act of 2000. DENR chairs the National Solid Waste Management Commission (NSWMC); EMB provides secretariat support.",
     "NSWMC: 14 government members ex officio plus 3 private sector members (3-year terms); it meets at least once a month.",
@@ -100,6 +106,7 @@
   {
    "id": "laws",
    "title": "Laws at a glance",
+   "level": "basic",
    "points": [
     "PD 1586 (1978): Philippine EIS System; IRR: DAO 2003-30.",
     "RA 6969 (1990): Toxic Substances and Hazardous and Nuclear Wastes Control Act; hazardous waste rules: DAO 2013-22 (revising DAO 2004-36 and DAO 92-29).",
@@ -108,278 +115,493 @@
     "RA 9275 (2004): Clean Water Act; effluent standards: DAO 2016-08.",
     "PCO accreditation: DAO 2014-02 (Section 7 amended in 2018); the PCO's duties cover all five laws."
    ]
+  },
+  {
+   "id": "hwx",
+   "title": "Advanced: hazardous waste in detail (DAO 2013-22)",
+   "level": "advanced",
+   "points": [
+    "Hazardous waste classes (Table 2.1): A cyanide wastes; B acid wastes; C alkali wastes; D wastes with inorganic chemicals; E reactive chemical wastes; F inks, paints, resins and related sludges; G waste organic solvents; H organic wastes (e.g. grease, H802); I waste or used oil; J containers (e.g. drums that held toxic chemicals); K immobilized (stabilized/solidified) wastes; L organic chemicals (including PCBs and ozone-depleting substances); M miscellaneous (e.g. M501 infectious waste, M502 asbestos).",
+    "Exempted (Table 2.2) include household garbage regulated under RA 9003 (except special wastes).",
+    "Generators register online and pay the fee to the EMB Regional Office with jurisdiction; on registration the Regional Office issues a DENR ID number (Sec. 3.3). Generators must designate a full-time PCO.",
+    "Generator size is set per waste type (Table 3.1), e.g. acid and alkali wastes: large above 36,000 kg/year, medium 18,000 to 36,000, small below 18,000. An establishment producing two or more hazardous waste types is classified as a large generator.",
+    "Storage area (Sec. 6.1.1): accessible for emergencies and inspection; enclosed and ventilated; impermeable, chemical-resistant, non-slip floor able to contain spills; secured; incompatible wastes segregated; emergency response equipment on hand. Drums are kept upright on pallets and stacked no more than two high.",
+    "Labels: at least 20 cm × 30 cm (or readable from 5 m), yellow background with black letters, weather- and tamper-resistant. Fields include 'HAZARDOUS WASTE', class and number, characteristic (toxic, corrosive, flammable, explosive, reactive, infectious), volume, packaging and shipping dates, manifest number, generator name/address/ID and the PCO's name.",
+    "Placards are diamond-shaped: at least 10 cm × 10 cm on containers (or readable from 5 m); on vehicles at least 30 cm × 30 cm and readable from 10 m.",
+    "Transporters register with EMB (Sec. 4.1): business permits, vehicle specifications and photos, LTO registration, driver licenses, training certificates of at least 8 hours within the last 3 years, a contingency plan, an environmental guarantee fund, and a valid contract with a registered TSD facility. EMB issues a DENR Transporter Registration ID.",
+    "No hazardous waste may be transported or treated outside the Online Hazardous Waste Manifest System (Sec. 7). The transporter keeps the original manifest acknowledgment in the vehicle (Sec. 4.2(b)).",
+    "The TSD facility must issue a Certificate of Treatment within 45 days after receiving the waste. The generator keeps the original and includes a copy in its report (Sec. 3.5(5)).",
+    "TSD registration certificates are valid for at most one year; temporary certificates (3 months) cover trial burns or test runs. A closing TSD facility must complete closure within one year of ceasing operations.",
+    "Rule of thumb for the job: classify the waste, register it, store and label it properly, move it only through registered transporters on the online manifest, and close the loop with the Certificate of Treatment."
+   ]
+  },
+  {
+   "id": "wqx",
+   "title": "Advanced: effluent standards in detail (DAO 2016-08)",
+   "level": "advanced",
+   "points": [
+    "Fresh surface water (Table 1): AA public water supply needing only disinfection; A public water supply needing conventional treatment; B primary contact recreation (bathing, swimming); C fishery, secondary recreation (boating, fishing), agriculture, irrigation and livestock watering; D navigable waters.",
+    "Marine (Table 2): SA protected waters and shellfish for direct human consumption; SB commercial shellfish and milkfish spawning, tourist zones and primary contact recreation; SC fish propagation, commercial and sustenance fishing, secondary recreation, mangrove sanctuaries; SD navigable waters.",
+    "Class AA and SA: no discharge allowed (NDA) for effluent.",
+    "General Effluent Standards (Table 9), Class C: BOD 50 mg/L, COD 100 mg/L, TSS 100 mg/L, pH 6.0–9.5, color 150 TCU, surfactants (MBAS) 15 mg/L, temperature change 3 °C.",
+    "Table 9, Class A: BOD 20, COD 60, TSS 70 mg/L, pH 6.0–9.0. Class B: BOD 30, COD 60, TSS 85 mg/L. Class D: BOD 120, COD 200, TSS 150 mg/L, pH 5.5–9.5.",
+    "Table 9, marine: SB BOD 30, COD 60, TSS 70 mg/L; SC BOD 100, COD 200, TSS 100 mg/L; SD BOD 150, COD 300, TSS 150 mg/L. Temperature change is 3 °C for every class that allows discharge.",
+    "Significant effluent quality parameters are parameters specific to the processes of an establishment; Table 8 lists which apply to each industry sector.",
+    "Strong wastewater (Sec. 7.3, Table 10): establishments with influent BOD of 3,000 mg/L or more discharging to Class C, D, SC or SD waters follow Table 10 BOD limits (e.g. influent 3,000 to under 6,500 mg/L: 100 mg/L for Class C, 150 mg/L for Class D).",
+    "Grace period (Sec. 10): up to 5 years, with a Compliance Action Plan and periodic status reports, only where the new values are stricter than DAO 1990-35 or new significant parameters were identified. DAO 1990-35 applies during the grace period.",
+    "Monitoring follows EMB Memorandum Circular 2008-008 (ambient water and effluent monitoring manuals).",
+    "Some values (ammonia, boron, copper, fecal coliform, phosphorus, sulfate) were amended in 2021, so check the current table for those."
+   ]
   }
  ],
  "cards": [
   {
    "id": 1,
    "topic": "pco",
+   "level": "basic",
    "q": "How long is a PCO accreditation valid?",
    "a": "3 years."
   },
   {
    "id": 2,
    "topic": "pco",
+   "level": "basic",
    "q": "Where is the PCO accreditation application filed, and by when?",
    "a": "EMB Regional Office, within 15 calendar days of appointment."
   },
   {
    "id": 3,
    "topic": "pco",
+   "level": "basic",
    "q": "PCO application and renewal fee?",
    "a": "₱500 each."
   },
   {
    "id": 4,
    "topic": "pco",
+   "level": "basic",
    "q": "How many hours of training does the Managing Head need?",
    "a": "8 hours of environmental management training."
   },
   {
    "id": 5,
    "topic": "pco",
+   "level": "basic",
    "q": "Basic PCO Training Course: length and recency?",
    "a": "40 hours, completed within the last 3 years from an EMB-recognized provider."
   },
   {
    "id": 6,
    "topic": "pco",
+   "level": "basic",
    "q": "Renewal training requirement?",
    "a": "At least 40 cumulative hours as a participant, or 20 hours as trainer/subject matter expert, within the 3-year period."
   },
   {
    "id": 7,
    "topic": "pco",
+   "level": "basic",
    "q": "Category A PCO competency (any one)?",
    "a": "Related technical course graduate; at least 3rd year tertiary; or 3+ years in a supervisory/responsible position."
   },
   {
    "id": 8,
    "topic": "pco",
+   "level": "basic",
    "q": "Category B PCO competency (any one)?",
    "a": "Licensed engineer/chemist with 2+ years; engineering/science professional with 3+ years; other professional with 5+ years."
   },
   {
    "id": 9,
    "topic": "pco",
+   "level": "basic",
    "q": "PCO resigns: what are the two deadlines?",
    "a": "Notify EMB in writing within 15 calendar days; seek accreditation of a replacement within 30 calendar days."
   },
   {
    "id": 10,
    "topic": "pco",
+   "level": "basic",
    "q": "Who is interim PCO after a resignation?",
    "a": "The Managing Head (if a foreign national, the next highest-ranking Filipino officer)."
   },
   {
    "id": 11,
    "topic": "pco",
+   "level": "basic",
    "q": "How many establishments can one PCO serve?",
    "a": "One (small standalone establishments may be clustered with EMB Central Office approval)."
   },
   {
    "id": 12,
    "topic": "pco",
+   "level": "basic",
    "q": "Wastewater volume per installation that needs its own PCO?",
    "a": "More than 30 m³/day (or emissions that need testing)."
   },
   {
    "id": 13,
    "topic": "pco",
+   "level": "basic",
    "q": "Deadline for written reports of breakdowns, releases and exceedances?",
    "a": "Within 24 hours."
   },
   {
    "id": 14,
    "topic": "pco",
+   "level": "basic",
    "q": "How often are SMRs submitted?",
    "a": "Quarterly (ISO 14001 companies may request semi-annual with EMB Central Office approval)."
   },
   {
    "id": 15,
    "topic": "pco",
+   "level": "basic",
    "q": "Who is liable for the establishment's violations?",
    "a": "The PCO and the Managing Head, jointly and severally."
   },
   {
    "id": 16,
    "topic": "pco",
+   "level": "basic",
    "q": "Documents covering off-site hazardous waste disposal?",
    "a": "Permit to Transport, signed manifest, Certificate of Treatment."
   },
   {
    "id": 17,
    "topic": "eis",
+   "level": "basic",
    "q": "Define Category A, B, C, D under DAO 2003-30.",
    "a": "A: Environmentally Critical Projects. B: non-ECPs in Environmentally Critical Areas. C: projects that enhance environmental quality. D: unlikely to cause adverse impacts."
   },
   {
    "id": 18,
    "topic": "eis",
+   "level": "basic",
    "q": "ECC vs CNC?",
    "a": "ECC: compliance certificate after positive review (Categories A and B). CNC: certifies a project is not covered by the EIS System (Category D may get one)."
   },
   {
    "id": 19,
    "topic": "eis",
+   "level": "basic",
    "q": "When does an ECC expire?",
    "a": "If the project is not implemented within 5 years of issuance."
   },
   {
    "id": 20,
    "topic": "eis",
+   "level": "basic",
    "q": "Which category requires a Multipartite Monitoring Team?",
    "a": "Category A (semi-annual reports in January and July)."
   },
   {
    "id": 21,
    "topic": "eis",
+   "level": "basic",
    "q": "Appeal period for an EIS decision?",
    "a": "15 days from receipt of the decision."
   },
   {
    "id": 22,
    "topic": "eis",
+   "level": "basic",
    "q": "How early must an abandonment plan be submitted?",
    "a": "At least 6 months in advance."
   },
   {
    "id": 23,
    "topic": "air",
+   "level": "basic",
    "q": "Permit to Operate: maximum validity?",
    "a": "One year (issued or renewed yearly)."
   },
   {
    "id": 24,
    "topic": "air",
+   "level": "basic",
    "q": "What must new or modified air sources obtain first?",
    "a": "An Authority to Construct."
   },
   {
    "id": 25,
    "topic": "air",
+   "level": "basic",
    "q": "Who chairs an airshed Governing Board?",
    "a": "The DENR Secretary."
   },
   {
    "id": 26,
    "topic": "air",
+   "level": "basic",
    "q": "What does Sec. 20 of RA 8749 ban?",
    "a": "Incineration of municipal, biomedical and hazardous waste."
   },
   {
    "id": 27,
    "topic": "air",
+   "level": "basic",
    "q": "Stationary source fine under Sec. 45?",
    "a": "Up to ₱100,000 per day until compliance; +10% every 3 years; third offense: permanent closure."
   },
   {
    "id": 28,
    "topic": "air",
+   "level": "basic",
    "q": "How is smoke opacity measured?",
    "a": "Ringelmann Chart or USEPA Method 9."
   },
   {
    "id": 29,
    "topic": "air",
+   "level": "basic",
    "q": "PM10 and TSP 24-hour guideline values?",
    "a": "PM10: 150 µg/Ncm. TSP: 230 µg/Ncm (annual: 60 and 90)."
   },
   {
    "id": 30,
    "topic": "water",
+   "level": "basic",
    "q": "Lead agency of the Clean Water Act?",
    "a": "DENR."
   },
   {
    "id": 31,
    "topic": "water",
+   "level": "basic",
    "q": "Freshwater and marine water classes under DAO 2016-08?",
    "a": "Fresh: AA, A, B, C, D. Marine: SA, SB, SC, SD."
   },
   {
    "id": 32,
    "topic": "water",
+   "level": "basic",
    "q": "What does a discharge permit specify?",
    "a": "Allowable quantity and quality of effluent, compliance schedule, monitoring requirements."
   },
   {
    "id": 33,
    "topic": "water",
+   "level": "basic",
    "q": "Basis of the wastewater charge system?",
    "a": "Net waste load."
   },
   {
    "id": 34,
    "topic": "water",
+   "level": "basic",
    "q": "Base fine under RA 9275 Sec. 28?",
    "a": "₱10,000 to ₱200,000 per day (rising 10% every two years)."
   },
   {
    "id": 35,
    "topic": "water",
+   "level": "basic",
    "q": "Gross violation penalty under RA 9275?",
    "a": "₱500,000 to ₱3,000,000 per day, or 6 to 10 years, or both."
   },
   {
    "id": 36,
    "topic": "haz",
+   "level": "basic",
    "q": "When was RA 6969 approved and what is its core policy?",
    "a": "October 26, 1990. Regulate or prohibit chemicals of unreasonable risk; prohibit entry of hazardous and nuclear wastes, even in transit."
   },
   {
    "id": 37,
    "topic": "haz",
+   "level": "basic",
    "q": "Time for the Secretary to decide on a new chemical notice?",
    "a": "90 days."
   },
   {
    "id": 38,
    "topic": "haz",
+   "level": "basic",
    "q": "Penalty for bringing in or storing hazardous or nuclear waste (Sec. 13(d))?",
    "a": "12 years and 1 day to 20 years."
   },
   {
    "id": 39,
    "topic": "haz",
+   "level": "basic",
    "q": "DAO 2013-22 revised which order, which in turn revised what?",
    "a": "It revised DAO 2004-36, which revised DAO 92-29 (the IRR of RA 6969)."
   },
   {
    "id": 40,
    "topic": "swm",
+   "level": "basic",
    "q": "Waste diversion target under RA 9003?",
    "a": "25% within 5 years of effectivity; goals increase every 3 years."
   },
   {
    "id": 41,
    "topic": "swm",
+   "level": "basic",
    "q": "Open dump deadlines under Sec. 37?",
    "a": "No new open dumps; convert to controlled dumps within 3 years; no controlled dumps after 5 years."
   },
   {
    "id": 42,
    "topic": "swm",
+   "level": "basic",
    "q": "Where must an MRF be established?",
    "a": "In every barangay or cluster of barangays."
   },
   {
    "id": 43,
    "topic": "swm",
+   "level": "basic",
    "q": "Distance from landfill sites within which establishments are prohibited?",
    "a": "200 meters."
   },
   {
    "id": 44,
    "topic": "swm",
+   "level": "basic",
    "q": "Who chairs the NSWMC?",
    "a": "The DENR Secretary."
+  },
+  {
+   "id": 45,
+   "topic": "hwx",
+   "level": "advanced",
+   "q": "Hazardous waste Class B vs Class C?",
+   "a": "B: acid wastes. C: alkali wastes. Store them apart."
+  },
+  {
+   "id": 46,
+   "topic": "hwx",
+   "level": "advanced",
+   "q": "Hazardous waste Class I?",
+   "a": "Waste or used oil."
+  },
+  {
+   "id": 47,
+   "topic": "hwx",
+   "level": "advanced",
+   "q": "Hazardous waste Class J?",
+   "a": "Containers (e.g. drums that held toxic chemicals)."
+  },
+  {
+   "id": 48,
+   "topic": "hwx",
+   "level": "advanced",
+   "q": "Code M501? M502?",
+   "a": "M501: infectious waste. M502: asbestos."
+  },
+  {
+   "id": 49,
+   "topic": "hwx",
+   "level": "advanced",
+   "q": "Generator with two or more hazardous waste types is classified as…",
+   "a": "A large generator."
+  },
+  {
+   "id": 50,
+   "topic": "hwx",
+   "level": "advanced",
+   "q": "Minimum hazardous waste label size and colours?",
+   "a": "20 cm × 30 cm (or readable from 5 m); yellow background, black letters."
+  },
+  {
+   "id": 51,
+   "topic": "hwx",
+   "level": "advanced",
+   "q": "Vehicle placard requirement?",
+   "a": "Diamond-shaped, at least 30 cm × 30 cm, readable from 10 m."
+  },
+  {
+   "id": 52,
+   "topic": "hwx",
+   "level": "advanced",
+   "q": "Training required for HW transporter drivers and helpers?",
+   "a": "Certificates of at least 8 hours, issued within the last 3 years."
+  },
+  {
+   "id": 53,
+   "topic": "hwx",
+   "level": "advanced",
+   "q": "Deadline for the TSD's Certificate of Treatment?",
+   "a": "Within 45 days after receiving the waste."
+  },
+  {
+   "id": 54,
+   "topic": "hwx",
+   "level": "advanced",
+   "q": "Maximum drum stacking in HW storage?",
+   "a": "Two high, upright on pallets."
+  },
+  {
+   "id": 55,
+   "topic": "hwx",
+   "level": "advanced",
+   "q": "Max validity of a TSD registration certificate?",
+   "a": "One year (temporary: 3 months for trial burns or test runs)."
+  },
+  {
+   "id": 56,
+   "topic": "wqx",
+   "level": "advanced",
+   "q": "Class C freshwater uses?",
+   "a": "Fishery, secondary recreation (boating, fishing), agriculture, irrigation, livestock watering."
+  },
+  {
+   "id": 57,
+   "topic": "wqx",
+   "level": "advanced",
+   "q": "Class SB marine uses?",
+   "a": "Commercial shellfish and milkfish spawning, tourist zones, primary contact recreation."
+  },
+  {
+   "id": 58,
+   "topic": "wqx",
+   "level": "advanced",
+   "q": "GES Class C: BOD, COD, TSS?",
+   "a": "BOD 50, COD 100, TSS 100 mg/L."
+  },
+  {
+   "id": 59,
+   "topic": "wqx",
+   "level": "advanced",
+   "q": "GES Class C pH range?",
+   "a": "6.0–9.5."
+  },
+  {
+   "id": 60,
+   "topic": "wqx",
+   "level": "advanced",
+   "q": "GES Class D: BOD, COD, TSS?",
+   "a": "BOD 120, COD 200, TSS 150 mg/L."
+  },
+  {
+   "id": 61,
+   "topic": "wqx",
+   "level": "advanced",
+   "q": "Which classes allow no effluent discharge?",
+   "a": "AA and SA."
+  },
+  {
+   "id": 62,
+   "topic": "wqx",
+   "level": "advanced",
+   "q": "Strong wastewater threshold?",
+   "a": "Influent BOD of 3,000 mg/L or more (Table 10 limits apply for C, D, SC, SD)."
+  },
+  {
+   "id": 63,
+   "topic": "wqx",
+   "level": "advanced",
+   "q": "Maximum grace period under DAO 2016-08?",
+   "a": "Up to 5 years, with a Compliance Action Plan."
   }
  ],
  "questions": [
   {
    "id": 1,
    "topic": "pco",
+   "level": "basic",
    "q": "How long is a PCO accreditation valid?",
    "choices": [
     "1 year",
@@ -393,6 +615,7 @@
   {
    "id": 2,
    "topic": "pco",
+   "level": "basic",
    "q": "Within how many calendar days of appointment must the PCO accreditation application be filed with the EMB Regional Office?",
    "choices": [
     "7",
@@ -406,6 +629,7 @@
   {
    "id": 3,
    "topic": "pco",
+   "level": "basic",
    "q": "A PCO resigns. Within how many calendar days must the establishment seek accreditation of a replacement?",
    "choices": [
     "15",
@@ -419,6 +643,7 @@
   {
    "id": 4,
    "topic": "pco",
+   "level": "basic",
    "q": "While there is no accredited PCO after a resignation, who serves as interim PCO?",
    "choices": [
     "The EMB Regional Director",
@@ -432,6 +657,7 @@
   {
    "id": 5,
    "topic": "pco",
+   "level": "basic",
    "q": "As a general rule, how many establishments may one PCO serve?",
    "choices": [
     "One",
@@ -445,6 +671,7 @@
   {
    "id": 6,
    "topic": "pco",
+   "level": "basic",
    "q": "How many cumulative training hours as a participant are needed to renew a PCO accreditation?",
    "choices": [
     "20",
@@ -458,6 +685,7 @@
   {
    "id": 7,
    "topic": "pco",
+   "level": "basic",
    "q": "Which competency route applies to a licensed engineer or chemist with at least 2 years of environmental management experience?",
    "choices": [
     "Category A",
@@ -471,6 +699,7 @@
   {
    "id": 8,
    "topic": "pco",
+   "level": "basic",
    "q": "Which of the following is a basic qualification of a PCO?",
    "choices": [
     "Part-time consultant status",
@@ -484,6 +713,7 @@
   {
    "id": 9,
    "topic": "pco",
+   "level": "basic",
    "q": "Beyond what wastewater volume per installation is a separate PCO required?",
    "choices": [
     "10 m³/day",
@@ -497,6 +727,7 @@
   {
    "id": 10,
    "topic": "pco",
+   "level": "basic",
    "q": "Within what period must a PCO report equipment breakdowns and releases of chemicals or hazardous waste in writing?",
    "choices": [
     "12 hours",
@@ -510,6 +741,7 @@
   {
    "id": 11,
    "topic": "pco",
+   "level": "basic",
    "q": "How often are SMRs normally submitted?",
    "choices": [
     "Monthly",
@@ -523,6 +755,7 @@
   {
    "id": 12,
    "topic": "pco",
+   "level": "basic",
    "q": "Who is liable for an establishment's violations of the major environmental laws?",
    "choices": [
     "Only the Managing Head",
@@ -536,6 +769,7 @@
   {
    "id": 13,
    "topic": "pco",
+   "level": "basic",
    "q": "What is the processing fee for a PCO accreditation application?",
    "choices": [
     "₱500",
@@ -549,6 +783,7 @@
   {
    "id": 14,
    "topic": "pco",
+   "level": "basic",
    "q": "How many hours of environmental management training must the Managing Head complete?",
    "choices": [
     "4",
@@ -562,6 +797,7 @@
   {
    "id": 15,
    "topic": "pco",
+   "level": "basic",
    "q": "Who approves clustering of the PCO designation for small establishments such as rice millers or dental clinics?",
    "choices": [
     "The EMB Regional Director alone",
@@ -575,6 +811,7 @@
   {
    "id": 16,
    "topic": "pco",
+   "level": "basic",
    "q": "Which is NOT among the grounds for revoking a PCO accreditation?",
    "choices": [
     "Submitting false documents or reports",
@@ -588,6 +825,7 @@
   {
    "id": 17,
    "topic": "eis",
+   "level": "basic",
    "q": "Under DAO 2003-30, Category A projects are:",
    "choices": [
     "Environmentally Critical Projects",
@@ -601,6 +839,7 @@
   {
    "id": 18,
    "topic": "eis",
+   "level": "basic",
    "q": "A project unlikely to cause adverse environmental impacts may secure a:",
    "choices": [
     "ECC",
@@ -614,6 +853,7 @@
   {
    "id": 19,
    "topic": "eis",
+   "level": "basic",
    "q": "An ECC expires if the project is not implemented within:",
    "choices": [
     "1 year",
@@ -627,6 +867,7 @@
   {
    "id": 20,
    "topic": "eis",
+   "level": "basic",
    "q": "Which project category requires a Multipartite Monitoring Team after ECC issuance?",
    "choices": [
     "Category A",
@@ -640,6 +881,7 @@
   {
    "id": 21,
    "topic": "eis",
+   "level": "basic",
    "q": "An EIS appeal must be filed within how many days of receiving the decision?",
    "choices": [
     "5",
@@ -653,6 +895,7 @@
   {
    "id": 22,
    "topic": "eis",
+   "level": "basic",
    "q": "What does a Category C project need?",
    "choices": [
     "An ECC",
@@ -666,6 +909,7 @@
   {
    "id": 23,
    "topic": "eis",
+   "level": "basic",
    "q": "How far in advance must an abandonment or decommissioning plan be submitted?",
    "choices": [
     "1 month",
@@ -679,6 +923,7 @@
   {
    "id": 24,
    "topic": "air",
+   "level": "basic",
    "q": "The maximum validity of an air Permit to Operate is:",
    "choices": [
     "6 months",
@@ -692,6 +937,7 @@
   {
    "id": 25,
    "topic": "air",
+   "level": "basic",
    "q": "What must a new or modified air pollution source obtain before construction?",
    "choices": [
     "An ECC only",
@@ -705,6 +951,7 @@
   {
    "id": 26,
    "topic": "air",
+   "level": "basic",
    "q": "Who chairs an airshed Governing Board under RA 8749?",
    "choices": [
     "The DENR Secretary",
@@ -718,6 +965,7 @@
   {
    "id": 27,
    "topic": "air",
+   "level": "basic",
    "q": "Section 20 of RA 8749 bans incineration of:",
    "choices": [
     "Only biomedical waste",
@@ -731,6 +979,7 @@
   {
    "id": 28,
    "topic": "air",
+   "level": "basic",
    "q": "The Sec. 45 fine for stationary-source violations is up to:",
    "choices": [
     "₱10,000 per day",
@@ -744,6 +993,7 @@
   {
    "id": 29,
    "topic": "air",
+   "level": "basic",
    "q": "Smoke opacity limits are measured with:",
    "choices": [
     "A Secchi disk",
@@ -757,6 +1007,7 @@
   {
    "id": 30,
    "topic": "air",
+   "level": "basic",
    "q": "The 24-hour ambient guideline value for PM10 is:",
    "choices": [
     "60 µg/Ncm",
@@ -770,6 +1021,7 @@
   {
    "id": 31,
    "topic": "water",
+   "level": "basic",
    "q": "Which agency is the lead agency under the Clean Water Act?",
    "choices": [
     "DOH",
@@ -783,6 +1035,7 @@
   {
    "id": 32,
    "topic": "water",
+   "level": "basic",
    "q": "Which of the following is a marine water class under DAO 2016-08?",
    "choices": [
     "Class AA",
@@ -796,6 +1049,7 @@
   {
    "id": 33,
    "topic": "water",
+   "level": "basic",
    "q": "A discharge permit under RA 9275 Sec. 14 specifies:",
    "choices": [
     "Only the facility's location",
@@ -809,6 +1063,7 @@
   {
    "id": 34,
    "topic": "water",
+   "level": "basic",
    "q": "The wastewater charge system is based on:",
    "choices": [
     "Plant size",
@@ -822,6 +1077,7 @@
   {
    "id": 35,
    "topic": "water",
+   "level": "basic",
    "q": "The base fine under Sec. 28 of RA 9275 is:",
    "choices": [
     "₱1,000 to ₱10,000 per day",
@@ -835,6 +1091,7 @@
   {
    "id": 36,
    "topic": "water",
+   "level": "basic",
    "q": "The governing board of a Water Quality Management Area is chaired by:",
    "choices": [
     "The DENR representative",
@@ -848,6 +1105,7 @@
   {
    "id": 37,
    "topic": "haz",
+   "level": "basic",
    "q": "RA 6969 was approved in:",
    "choices": [
     "1978",
@@ -861,6 +1119,7 @@
   {
    "id": 38,
    "topic": "haz",
+   "level": "basic",
    "q": "The penalty for violating Sec. 13(d) of RA 6969 (bringing in or storing hazardous or nuclear waste) is:",
    "choices": [
     "6 months and 1 day to 6 years and 1 day",
@@ -874,6 +1133,7 @@
   {
    "id": 39,
    "topic": "haz",
+   "level": "basic",
    "q": "Within how many days does the Secretary decide on a new chemical under pre-manufacture notice?",
    "choices": [
     "30",
@@ -887,6 +1147,7 @@
   {
    "id": 40,
    "topic": "haz",
+   "level": "basic",
    "q": "Off-site hazardous waste disposal must be covered by:",
    "choices": [
     "ECC only",
@@ -900,6 +1161,7 @@
   {
    "id": 41,
    "topic": "haz",
+   "level": "basic",
    "q": "DAO 2013-22 revised which earlier order?",
    "choices": [
     "DAO 92-29",
@@ -913,6 +1175,7 @@
   {
    "id": 42,
    "topic": "haz",
+   "level": "basic",
    "q": "The Inter-Agency Technical Advisory Council under RA 6969 is chaired by:",
    "choices": [
     "The DOH Secretary",
@@ -926,6 +1189,7 @@
   {
    "id": 43,
    "topic": "swm",
+   "level": "basic",
    "q": "The waste diversion target within 5 years under RA 9003 is at least:",
    "choices": [
     "10%",
@@ -939,6 +1203,7 @@
   {
    "id": 44,
    "topic": "swm",
+   "level": "basic",
    "q": "RA 9003 requires an MRF in every:",
    "choices": [
     "Province",
@@ -952,6 +1217,7 @@
   {
    "id": 45,
    "topic": "swm",
+   "level": "basic",
    "q": "Under Sec. 37, open dumps must be converted to controlled dumps within:",
    "choices": [
     "1 year",
@@ -965,6 +1231,7 @@
   {
    "id": 46,
    "topic": "swm",
+   "level": "basic",
    "q": "Establishments are prohibited within how many meters of open, controlled or sanitary landfill sites?",
    "choices": [
     "50 m",
@@ -978,6 +1245,7 @@
   {
    "id": 47,
    "topic": "swm",
+   "level": "basic",
    "q": "The National Solid Waste Management Commission is chaired by:",
    "choices": [
     "The DILG Secretary",
@@ -991,6 +1259,7 @@
   {
    "id": 48,
    "topic": "laws",
+   "level": "basic",
    "q": "Which law is the Philippine Clean Air Act?",
    "choices": [
     "RA 6969",
@@ -1004,6 +1273,7 @@
   {
    "id": 49,
    "topic": "laws",
+   "level": "basic",
    "q": "Which law established the Philippine Environmental Impact Statement System?",
    "choices": [
     "PD 1586",
@@ -1017,6 +1287,7 @@
   {
    "id": 50,
    "topic": "laws",
+   "level": "basic",
    "q": "Which law is the Ecological Solid Waste Management Act?",
    "choices": [
     "RA 8749",
@@ -1026,6 +1297,525 @@
    ],
    "answer": 1,
    "why": "RA 9003 (2000)."
+  },
+  {
+   "id": 51,
+   "topic": "hwx",
+   "level": "advanced",
+   "q": "Spent sulfuric acid from metal cleaning belongs to which hazardous waste class?",
+   "choices": [
+    "Class A",
+    "Class B",
+    "Class C",
+    "Class I"
+   ],
+   "answer": 1,
+   "why": "Acid wastes are Class B (DAO 2013-22, Table 2.1). Class C is alkali, A is cyanide, I is used oil."
+  },
+  {
+   "id": 52,
+   "topic": "hwx",
+   "level": "advanced",
+   "q": "Used engine oil from the motor pool is classified as:",
+   "choices": [
+    "Class G",
+    "Class H",
+    "Class I",
+    "Class L"
+   ],
+   "answer": 2,
+   "why": "Class I covers waste and used oil. G is organic solvents, H organic wastes, L organic chemicals."
+  },
+  {
+   "id": 53,
+   "topic": "hwx",
+   "level": "advanced",
+   "q": "Empty drums that held toxic chemicals fall under:",
+   "choices": [
+    "Class J",
+    "Class K",
+    "Class F",
+    "Not hazardous once empty"
+   ],
+   "answer": 0,
+   "why": "Class J covers hazardous waste containers (DAO 2013-22, Table 2.1)."
+  },
+  {
+   "id": 54,
+   "topic": "hwx",
+   "level": "advanced",
+   "q": "Waste code M502 refers to:",
+   "choices": [
+    "Infectious waste",
+    "Asbestos",
+    "Pesticides",
+    "PCBs"
+   ],
+   "answer": 1,
+   "why": "M501 is infectious waste; M502 is asbestos (Table 2.1)."
+  },
+  {
+   "id": 55,
+   "topic": "hwx",
+   "level": "advanced",
+   "q": "A plant generating both acid wastes and used oil is classified as a:",
+   "choices": [
+    "Small generator",
+    "Medium generator",
+    "Large generator",
+    "Depends only on the larger stream"
+   ],
+   "answer": 2,
+   "why": "An establishment producing two or more hazardous waste types is classified as a large generator."
+  },
+  {
+   "id": 56,
+   "topic": "hwx",
+   "level": "advanced",
+   "q": "Who issues the hazardous waste generator's DENR ID number?",
+   "choices": [
+    "DENR Secretary",
+    "EMB Central Office",
+    "EMB Regional Office with jurisdiction",
+    "The LGU"
+   ],
+   "answer": 2,
+   "why": "Generators register online with the EMB Regional Office, which issues the DENR ID (Sec. 3.3)."
+  },
+  {
+   "id": 57,
+   "topic": "hwx",
+   "level": "advanced",
+   "q": "The minimum size of a hazardous waste label is:",
+   "choices": [
+    "10 cm × 10 cm",
+    "20 cm × 30 cm",
+    "30 cm × 30 cm",
+    "A4 sheet"
+   ],
+   "answer": 1,
+   "why": "20 cm × 30 cm, or readable from 5 m; yellow background, black letters."
+  },
+  {
+   "id": 58,
+   "topic": "hwx",
+   "level": "advanced",
+   "q": "Hazardous waste labels use:",
+   "choices": [
+    "Red background, white letters",
+    "Yellow background, black letters",
+    "White background, red letters",
+    "Orange background, black letters"
+   ],
+   "answer": 1,
+   "why": "DAO 2013-22 specifies yellow background with black letters."
+  },
+  {
+   "id": 59,
+   "topic": "hwx",
+   "level": "advanced",
+   "q": "A vehicle placard must be readable from at least:",
+   "choices": [
+    "5 m",
+    "10 m",
+    "15 m",
+    "20 m"
+   ],
+   "answer": 1,
+   "why": "Vehicle placards: at least 30 cm × 30 cm and readable from 10 m. Container placards: readable from 5 m."
+  },
+  {
+   "id": 60,
+   "topic": "hwx",
+   "level": "advanced",
+   "q": "Drivers and helpers of a hazardous waste transporter need training certificates of at least:",
+   "choices": [
+    "4 hours within 1 year",
+    "8 hours within the last 3 years",
+    "24 hours within 2 years",
+    "40 hours within 3 years"
+   ],
+   "answer": 1,
+   "why": "Sec. 4.1 requires at least 8 hours of training issued within the last 3 years."
+  },
+  {
+   "id": 61,
+   "topic": "hwx",
+   "level": "advanced",
+   "q": "Within how many days after receiving the waste must the TSD issue the Certificate of Treatment?",
+   "choices": [
+    "15",
+    "30",
+    "45",
+    "60"
+   ],
+   "answer": 2,
+   "why": "45 days (Sec. 3.5(5)). The generator keeps the original."
+  },
+  {
+   "id": 62,
+   "topic": "hwx",
+   "level": "advanced",
+   "q": "Hazardous waste drums in storage may be stacked at most:",
+   "choices": [
+    "One high",
+    "Two high",
+    "Three high",
+    "As high as the rack allows"
+   ],
+   "answer": 1,
+   "why": "Drums are stored upright on pallets, no more than two high."
+  },
+  {
+   "id": 63,
+   "topic": "hwx",
+   "level": "advanced",
+   "q": "Which is NOT a required feature of a hazardous waste storage area?",
+   "choices": [
+    "Impermeable, chemical-resistant floor",
+    "Segregation of incompatible wastes",
+    "Emergency response equipment",
+    "Open-air storage for ventilation"
+   ],
+   "answer": 3,
+   "why": "The area must be enclosed and ventilated, not open-air (Sec. 6.1.1)."
+  },
+  {
+   "id": 64,
+   "topic": "hwx",
+   "level": "advanced",
+   "q": "Hazardous waste may be transported only through:",
+   "choices": [
+    "Any licensed trucking firm",
+    "The Online Hazardous Waste Manifest System, with a registered transporter",
+    "An LGU garbage truck",
+    "A buyer of scrap materials"
+   ],
+   "answer": 1,
+   "why": "Sec. 7: no transport or treatment outside the online manifest system; transporters must be registered."
+  },
+  {
+   "id": 65,
+   "topic": "wqx",
+   "level": "advanced",
+   "q": "A river used for fishing, boating and irrigation is most likely:",
+   "choices": [
+    "Class A",
+    "Class B",
+    "Class C",
+    "Class D"
+   ],
+   "answer": 2,
+   "why": "Class C: fishery, secondary recreation, agriculture, irrigation and livestock watering."
+  },
+  {
+   "id": 66,
+   "topic": "wqx",
+   "level": "advanced",
+   "q": "Under DAO 2016-08, the BOD limit for effluent discharged to Class C water is:",
+   "choices": [
+    "20 mg/L",
+    "30 mg/L",
+    "50 mg/L",
+    "100 mg/L"
+   ],
+   "answer": 2,
+   "why": "Table 9: Class C BOD 50 mg/L (A 20, B 30, D 120)."
+  },
+  {
+   "id": 67,
+   "topic": "wqx",
+   "level": "advanced",
+   "q": "The COD limit for Class C under the General Effluent Standards is:",
+   "choices": [
+    "60 mg/L",
+    "100 mg/L",
+    "150 mg/L",
+    "200 mg/L"
+   ],
+   "answer": 1,
+   "why": "Table 9: Class C COD 100 mg/L (A and B 60, D 200)."
+  },
+  {
+   "id": 68,
+   "topic": "wqx",
+   "level": "advanced",
+   "q": "The TSS limit for Class D is:",
+   "choices": [
+    "70 mg/L",
+    "85 mg/L",
+    "100 mg/L",
+    "150 mg/L"
+   ],
+   "answer": 3,
+   "why": "Table 9: Class D TSS 150 mg/L (C 100, B 85, A 70)."
+  },
+  {
+   "id": 69,
+   "topic": "wqx",
+   "level": "advanced",
+   "q": "The pH range for effluent to Class C water is:",
+   "choices": [
+    "6.0–9.0",
+    "6.5–8.5",
+    "6.0–9.5",
+    "5.5–9.5"
+   ],
+   "answer": 2,
+   "why": "Table 9: Class C 6.0–9.5. Class D is 5.5–9.5; A and B are 6.0–9.0."
+  },
+  {
+   "id": 70,
+   "topic": "wqx",
+   "level": "advanced",
+   "q": "Effluent discharge into Class AA or SA water is:",
+   "choices": [
+    "Allowed with a permit",
+    "Allowed after tertiary treatment",
+    "Not allowed (NDA)",
+    "Allowed up to 30 m³/day"
+   ],
+   "answer": 2,
+   "why": "Table 9 marks AA and SA as NDA: no discharge allowed."
+  },
+  {
+   "id": 71,
+   "topic": "wqx",
+   "level": "advanced",
+   "q": "The allowed temperature change in receiving water is:",
+   "choices": [
+    "1 °C",
+    "3 °C",
+    "5 °C",
+    "10 °C"
+   ],
+   "answer": 1,
+   "why": "Table 9: 3 °C for every class that allows discharge."
+  },
+  {
+   "id": 72,
+   "topic": "wqx",
+   "level": "advanced",
+   "q": "'Strong wastewater' rules in Table 10 apply when influent BOD is at least:",
+   "choices": [
+    "1,000 mg/L",
+    "3,000 mg/L",
+    "5,000 mg/L",
+    "10,000 mg/L"
+   ],
+   "answer": 1,
+   "why": "Sec. 7.3: influent BOD of 3,000 mg/L or more, discharging to Class C, D, SC or SD."
+  },
+  {
+   "id": 73,
+   "topic": "wqx",
+   "level": "advanced",
+   "q": "The maximum grace period under DAO 2016-08 is:",
+   "choices": [
+    "1 year",
+    "3 years",
+    "5 years",
+    "10 years"
+   ],
+   "answer": 2,
+   "why": "Up to 5 years with a Compliance Action Plan (Sec. 10)."
+  },
+  {
+   "id": 74,
+   "topic": "wqx",
+   "level": "advanced",
+   "q": "During the grace period, which effluent standards apply?",
+   "choices": [
+    "None",
+    "DAO 1990-35",
+    "DAO 2016-08 only",
+    "LGU ordinances"
+   ],
+   "answer": 1,
+   "why": "DAO 1990-35 applies during the grace period."
+  },
+  {
+   "id": 75,
+   "topic": "wqx",
+   "level": "advanced",
+   "q": "'Significant effluent quality parameters' are:",
+   "choices": [
+    "The same for all establishments",
+    "Parameters specific to an establishment's processes",
+    "Only BOD and TSS",
+    "Chosen by the PCO"
+   ],
+   "answer": 1,
+   "why": "Sec. 4.0: parameters specific to the processes of an establishment; Table 8 lists them by sector."
+  },
+  {
+   "id": 76,
+   "topic": "wqx",
+   "level": "advanced",
+   "q": "A coastal area used for milkfish spawning and swimming is most likely:",
+   "choices": [
+    "SA",
+    "SB",
+    "SC",
+    "SD"
+   ],
+   "answer": 1,
+   "why": "SB: commercial shellfish and milkfish spawning, tourist zones, primary contact recreation."
+  }
+ ],
+ "interview": [
+  {
+   "id": 1,
+   "title": "Lab results: BOD over the limit",
+   "prompt": "Your quarterly lab result shows effluent BOD of 78 mg/L. You discharge to a Class C river. What do you do?",
+   "points": [
+    "Recognize the exceedance: the Class C limit is 50 mg/L (DAO 2016-08, Table 9).",
+    "Report in writing to EMB within 24 hours of getting the result, signed with the Managing Head (DAO 2014-02, Sec. 10).",
+    "Find the cause: overloading, aeration or blower failure, sludge problems, a spill or process change upstream.",
+    "Fix it, then resample through an accredited lab to confirm compliance.",
+    "Record everything and reflect it in the SMR.",
+    "Why it matters: RA 9275 fines run ₱10,000 to ₱200,000 per day of violation."
+   ],
+   "refs": "DAO 2016-08 Table 9; DAO 2014-02 Sec. 10; RA 9275 Sec. 28"
+  },
+  {
+   "id": 2,
+   "title": "Air control equipment breaks down",
+   "prompt": "The scrubber on your boiler stack fails during the night shift. What do you do?",
+   "points": [
+    "Make it safe: reduce or stop the process if emissions cannot be controlled.",
+    "Report the breakdown to EMB in writing within 24 hours (DAO 2014-02 Sec. 10; DAO 2000-81).",
+    "Repair, log the downtime and repairs, and keep operational records for the quarterly submission.",
+    "Check whether the Permit to Operate conditions were breached and plan to prevent a repeat.",
+    "Why it matters: RA 8749 Sec. 45 fines go up to ₱100,000 per day."
+   ],
+   "refs": "DAO 2014-02 Sec. 10; DAO 2000-81; RA 8749 Sec. 45"
+  },
+  {
+   "id": 3,
+   "title": "Selling used oil to a scrap buyer",
+   "prompt": "Purchasing wants to sell drums of used oil to a junk shop for cash. What do you advise?",
+   "points": [
+    "Say no: used oil is hazardous waste (Class I under DAO 2013-22).",
+    "It must go through a registered transporter to a registered TSD facility using the Online Hazardous Waste Manifest System.",
+    "Before pickup: proper storage, yellow-and-black labels, and the generator registration (DENR ID) in order.",
+    "Follow up the Certificate of Treatment, due within 45 days of the TSD receiving it; keep the original.",
+    "Point out the risk: the PCO and Managing Head share liability for violations."
+   ],
+   "refs": "DAO 2013-22 Table 2.1, Sec. 3.5, Sec. 7; DAO 2014-02 Sec. 10"
+  },
+  {
+   "id": 4,
+   "title": "New boiler for an expansion",
+   "prompt": "Management is adding a new boiler next quarter. What permits do you check?",
+   "points": [
+    "Check whether the expansion is within the ECC; if not, request an ECC amendment first (PD 1586, DAO 2003-30).",
+    "Get an Authority to Construct before installing the new source (DAO 2000-81).",
+    "Then a Permit to Operate, renewed yearly, with your signed PCO designation attached.",
+    "Plan for emission testing and include the new source in monitoring and the SMR.",
+    "Check if the change moves the plant to Category B for PCO purposes (e.g. a source needing stack sampling)."
+   ],
+   "refs": "PD 1586; DAO 2003-30; DAO 2000-81; DAO 2014-02 Sec. 5"
+  },
+  {
+   "id": 5,
+   "title": "Surprise EMB inspection",
+   "prompt": "An EMB inspector arrives unannounced. The Managing Head is away. How do you handle it?",
+   "points": [
+    "Let them in and cooperate: refusing entry, inspection or access to records is a prohibited act (RA 9275 Sec. 27).",
+    "Accompany the inspection and have permits, ECC, SMRs, CMRs, manifests and Certificates of Treatment ready.",
+    "Take notes and ask for a copy of the findings.",
+    "Brief the Managing Head right away; respond to any Notice of Violation on time.",
+    "Attend the technical conference as the company's authorized representative (DAO 2014-02 Sec. 10)."
+   ],
+   "refs": "RA 9275 Sec. 27; DAO 2014-02 Sec. 10"
+  },
+  {
+   "id": 6,
+   "title": "You are resigning as PCO",
+   "prompt": "You accepted a better offer and are leaving in two weeks. What has to happen?",
+   "points": [
+    "The establishment notifies the EMB Regional Office in writing within 15 calendar days.",
+    "It seeks accreditation of a replacement within 30 calendar days.",
+    "The Managing Head serves as interim PCO (the next highest-ranking Filipino officer if the head is a foreign national).",
+    "Your accreditation for this company is automatically revoked; you need new accreditation at your next employer.",
+    "Hand over cleanly: permit calendar, pending reports, manifests, contacts."
+   ],
+   "refs": "DAO 2014-02 Sec. 9"
+  },
+  {
+   "id": 7,
+   "title": "Pressure to fake the SMR",
+   "prompt": "Your boss asks you to 'adjust' the numbers in the SMR so the company looks compliant. What do you say?",
+   "points": [
+    "Refuse, calmly and in writing if needed.",
+    "False reports are a ground for revocation and permanent disqualification as a PCO (DAO 2014-02 Sec. 14).",
+    "The PCO and Managing Head are jointly and severally liable for violations (Sec. 10), so it puts the boss at risk too.",
+    "Offer the better route: fix the root cause, and if needed, use a Compliance Action Plan or talk to EMB early.",
+    "Showing you protect the company from bigger penalties is what makes a PCO valuable."
+   ],
+   "refs": "DAO 2014-02 Secs. 10 and 14"
+  },
+  {
+   "id": 8,
+   "title": "Chemical spill into a canal",
+   "prompt": "A tank leaks and chemicals reach the drainage canal outside the plant. What are your steps?",
+   "points": [
+    "People first: secure the area, protect workers and neighbors, use the contingency plan.",
+    "Stop and contain the source; block the canal if you safely can.",
+    "Report in writing within 24 hours to EMB (DAO 2014-02 Sec. 10).",
+    "Organize clean-up right away.",
+    "Why it matters: under RA 9275 Sec. 28, willful or grossly negligent failure to clean up carries 2 to 4 years and ₱50,000 to ₱100,000 per day."
+   ],
+   "refs": "DAO 2014-02 Sec. 10; RA 9275 Sec. 28"
+  },
+  {
+   "id": 9,
+   "title": "Classify a new waste stream",
+   "prompt": "Production starts using an alkaline cleaner. The spent solution needs disposal. What do you do?",
+   "points": [
+    "Classify it: alkali wastes are Class C (DAO 2013-22 Table 2.1).",
+    "Update the generator registration; with two or more waste types the plant counts as a large generator.",
+    "Store it labeled (yellow background, black letters) and segregated from acids (Class B) and cyanide (Class A).",
+    "Arrange disposal through a registered transporter and TSD on the online manifest."
+   ],
+   "refs": "DAO 2013-22 Table 2.1, Table 3.1, Ch. 6–7"
+  },
+  {
+   "id": 10,
+   "title": "Does the new warehouse need an ECC?",
+   "prompt": "The company plans a small warehouse with no process wastewater. Management asks if an ECC is needed.",
+   "points": [
+    "Explain the EIS categories: A (environmentally critical projects), B (non-ECPs in environmentally critical areas), C (environmental enhancement), D (unlikely to cause adverse impact).",
+    "If it is not covered, secure a Certificate of Non-Coverage (CNC) rather than skipping the step.",
+    "Check the location: being in an Environmentally Critical Area can make it Category B.",
+    "Confirm with EMB's screening before construction."
+   ],
+   "refs": "PD 1586; DAO 2003-30 Sec. 4"
+  },
+  {
+   "id": 11,
+   "title": "Training staff on solid waste",
+   "prompt": "You must brief new staff on solid waste rules. What are the key points?",
+   "points": [
+    "Segregate at source into containers labeled compostable, non-recyclable, recyclable and special waste (RA 9003 Sec. 22).",
+    "No open burning and no littering (Sec. 48).",
+    "Recyclables go to the MRF; don't mix them back with other waste.",
+    "Hazardous items (busted lamps, batteries, chemical containers) are handled as special or hazardous waste, not regular trash."
+   ],
+   "refs": "RA 9003 Secs. 21, 22, 48"
+  },
+  {
+   "id": 12,
+   "title": "How do you keep up with new rules?",
+   "prompt": "Interviewer: 'Environmental regulations change often. How do you keep current?'",
+   "points": [
+    "Track new DENR administrative orders and EMB memorandum circulars, and check effectivity dates.",
+    "Keep up with renewal training: 40 hours as a participant (or 20 as a trainer) every 3 years (DAO 2014-02 Sec. 11).",
+    "Know where to look things up: the DAOs, procedural manuals and the IRRs, not just summaries.",
+    "Example to mention: some DAO 2016-08 effluent values were amended in 2021."
+   ],
+   "refs": "DAO 2014-02 Sec. 11"
   }
  ],
  "sources": [
@@ -1072,6 +1862,14 @@
   {
    "title": "RA 9003 Solid Waste Act",
    "url": "https://lawphil.net/statutes/repacts/ra2001/ra_9003_2001.html"
+  },
+  {
+   "title": "DAO 2016-08 full text (FAOLEX)",
+   "url": "https://faolex.fao.org/docs/pdf/phi201041.pdf"
+  },
+  {
+   "title": "DAO 2013-22 Revised Procedural Manual (MOE Japan copy)",
+   "url": "https://www.env.go.jp/en/recycle/asian_net/Country_Information/Law_N_Regulation/Philippines/dao-2013-22.pdf"
   }
  ]
 }

@@ -3,7 +3,7 @@ import { shuffle, pickQuestions, scorePct, recordAnswer, matchSegments, keyToCho
 const KEY = "pco.v1";
 const $ = (id) => document.getElementById(id);
 
-const blank = () => ({ known: [], missed: [], best: null, runs: 0, stats: {}, tab: "Notes", mode: "practice" });
+const blank = () => ({ known: [], missed: [], best: null, runs: 0, stats: {}, tab: "Notes", mode: "practice", ivRate: {}, ivIndex: 0 });
 function load() {
   try {
     const s = JSON.parse(localStorage.getItem(KEY));
@@ -17,7 +17,7 @@ const save = () => { try { localStorage.setItem(KEY, JSON.stringify(state)); } c
 let data = null;
 
 /* ---------- tabs ---------- */
-const TABS = ["Notes", "Cards", "Quiz"];
+const TABS = ["Notes", "Cards", "Quiz", "Interview"];
 function showTab(name) {
   for (const t of TABS) {
     const on = t === name;
@@ -98,19 +98,25 @@ $("noteSearch").addEventListener("input", filterNotes);
 $("expandAll").addEventListener("click", () => { for (const d of $("notes").querySelectorAll("details")) d.open = true; });
 $("collapseAll").addEventListener("click", () => { for (const d of $("notes").querySelectorAll("details")) d.open = false; });
 
-function fillTopicSelect(sel) {
+/** Fill a topic dropdown with the topics of a level, keeping the current pick if still valid. */
+function fillTopicSelect(sel, level = "all") {
+  const keep = sel.value;
   sel.textContent = "";
   const all = document.createElement("option");
   all.value = "all";
   all.textContent = "All topics";
   sel.appendChild(all);
   for (const t of data.topics) {
+    if (level !== "all" && t.level !== level) continue;
     const o = document.createElement("option");
     o.value = t.id;
-    o.textContent = t.title.replace(/\s*\(.*\)$/, "");
+    o.textContent = t.title.replace(/\s*\(.*\)$/, "").replace(/^Advanced: /, "★ ");
     sel.appendChild(o);
   }
+  sel.value = [...sel.options].some((o) => o.value === keep) ? keep : "all";
 }
+const inSet = (item, level, topic) =>
+  (level === "all" || item.level === level) && (topic === "all" || item.topic === topic);
 
 /* ---------- flashcards ---------- */
 let deck = [];
@@ -119,16 +125,18 @@ let flipped = false;
 
 function buildDeck() {
   const t = $("cardTopic").value;
+  const lv = $("cardLevel").value;
   const hide = $("cardOnlyNew").checked;
-  deck = shuffle(data.cards.filter((c) => (t === "all" || c.topic === t) && (!hide || !state.known.includes(c.id))));
+  deck = shuffle(data.cards.filter((c) => inSet(c, lv, t) && (!hide || !state.known.includes(c.id))));
   di = 0;
   flipped = false;
   renderCard();
 }
 
 function renderCard() {
-  const total = data.cards.filter((c) => $("cardTopic").value === "all" || c.topic === $("cardTopic").value).length;
-  const known = data.cards.filter((c) => ($("cardTopic").value === "all" || c.topic === $("cardTopic").value) && state.known.includes(c.id)).length;
+  const set = data.cards.filter((c) => inSet(c, $("cardLevel").value, $("cardTopic").value));
+  const total = set.length;
+  const known = set.filter((c) => state.known.includes(c.id)).length;
   $("cardCount").textContent = `${known} of ${total} known`;
   const card = $("card");
   if (!deck.length) {
@@ -169,6 +177,7 @@ $("card").addEventListener("click", () => { if (deck.length) { flipped = !flippe
 $("cardGot").addEventListener("click", () => nextCard(true));
 $("cardAgain").addEventListener("click", () => nextCard(false));
 $("cardTopic").addEventListener("change", buildDeck);
+$("cardLevel").addEventListener("change", () => { fillTopicSelect($("cardTopic"), $("cardLevel").value); buildDeck(); });
 $("cardOnlyNew").addEventListener("change", buildDeck);
 $("cardReset").addEventListener("click", () => { state.known = []; save(); buildDeck(); });
 
@@ -231,7 +240,10 @@ function renderBest() {
 function startQuiz(onlyMissed) {
   const t = $("quizTopic").value;
   const cnt = $("quizCount").value;
-  const pool = onlyMissed ? data.questions.filter((q) => state.missed.includes(q.id)) : data.questions;
+  const lv = $("quizLevel").value;
+  const pool = onlyMissed
+    ? data.questions.filter((q) => state.missed.includes(q.id))
+    : data.questions.filter((q) => lv === "all" || q.level === lv);
   const picked = pickQuestions(pool, onlyMissed ? "all" : t, onlyMissed ? "all" : cnt);
   if (!picked.length) return;
   run = {
@@ -358,6 +370,83 @@ $("statsReset").addEventListener("click", () => {
   renderBest();
 });
 
+/* ---------- interview practice ---------- */
+const RATE_LABEL = { nailed: "Nailed it", partly: "Partly", missed: "Missed" };
+
+function ivList() {
+  const hide = $("ivHideNailed").checked;
+  return data.interview.filter((s) => !hide || state.ivRate[s.id] !== "nailed");
+}
+
+function renderIv() {
+  const list = ivList();
+  const nailed = data.interview.filter((s) => state.ivRate[s.id] === "nailed").length;
+  $("ivCount").textContent = `${nailed} of ${data.interview.length} nailed`;
+  const box = $("iv");
+  box.className = "iv";
+  if (!list.length) {
+    $("ivNum").textContent = "All done";
+    $("ivTitle").textContent = "You've nailed every scenario.";
+    $("ivPrompt").textContent = "Untick “Hide nailed” to practise them again.";
+    $("ivReveal").hidden = true;
+    $("ivAnswer").hidden = true;
+    $("ivPrev").disabled = true;
+    $("ivNext").disabled = true;
+    return;
+  }
+  if (state.ivIndex >= list.length || state.ivIndex < 0) state.ivIndex = 0;
+  const s = list[state.ivIndex];
+  const rate = state.ivRate[s.id];
+  if (rate) box.classList.add(`rated-${rate}`);
+  $("ivNum").textContent = `Scenario ${state.ivIndex + 1} of ${list.length}${rate ? ` · last: ${RATE_LABEL[rate]}` : ""}`;
+  $("ivTitle").textContent = s.title;
+  $("ivPrompt").textContent = s.prompt;
+  $("ivReveal").hidden = false;
+  $("ivAnswer").hidden = true;
+  const ul = $("ivPoints");
+  ul.textContent = "";
+  for (const p of s.points) {
+    const li = document.createElement("li");
+    li.textContent = p;
+    ul.appendChild(li);
+  }
+  $("ivRefs").textContent = `Rules to cite: ${s.refs}`;
+  for (const b of document.querySelectorAll(".iv-rate .btn")) b.classList.toggle("sel", b.dataset.rate === rate);
+  $("ivPrev").disabled = list.length < 2;
+  $("ivNext").disabled = list.length < 2;
+}
+
+function ivReveal() {
+  $("ivReveal").hidden = true;
+  $("ivAnswer").hidden = false;
+}
+
+function ivMove(step) {
+  const n = ivList().length;
+  if (!n) return;
+  state.ivIndex = (state.ivIndex + step + n) % n;
+  save();
+  renderIv();
+  window.scrollTo(0, 0);
+}
+
+$("ivReveal").addEventListener("click", ivReveal);
+$("ivPrev").addEventListener("click", () => ivMove(-1));
+$("ivNext").addEventListener("click", () => ivMove(1));
+$("ivHideNailed").addEventListener("change", () => { state.ivIndex = 0; renderIv(); });
+for (const b of document.querySelectorAll(".iv-rate .btn")) {
+  b.addEventListener("click", () => {
+    const list = ivList();
+    const s = list[state.ivIndex];
+    if (!s) return;
+    state.ivRate[s.id] = b.dataset.rate;
+    save();
+    // A nailed scenario drops out of a "hide nailed" list, so the next one slides into this index.
+    if ($("ivHideNailed").checked && b.dataset.rate === "nailed") renderIv();
+    else ivMove(1);
+  });
+}
+
 /* ---------- keyboard ---------- */
 document.addEventListener("keydown", (e) => {
   if (e.ctrlKey || e.metaKey || e.altKey) return;
@@ -368,6 +457,10 @@ document.addEventListener("keydown", (e) => {
     if (e.key === " " && e.target !== $("card")) { e.preventDefault(); $("card").click(); }
     else if (e.key === "ArrowRight") { e.preventDefault(); nextCard(true); }
     else if (e.key === "ArrowLeft") { e.preventDefault(); nextCard(false); }
+  } else if (tab === "Interview") {
+    if (e.key === "ArrowRight") { e.preventDefault(); ivMove(1); }
+    else if (e.key === "ArrowLeft") { e.preventDefault(); ivMove(-1); }
+    else if ((e.key === " " || e.key === "Enter") && !$("ivReveal").hidden && e.target.tagName !== "BUTTON") { e.preventDefault(); ivReveal(); }
   } else if (tab === "Quiz" && !$("quizRun").hidden && run) {
     const n = keyToChoice(e.key);
     if (n !== -1 && n < run.qs[run.i].opts.length) { e.preventDefault(); answer(n); }
@@ -388,6 +481,8 @@ async function init() {
   buildNotes();
   fillTopicSelect($("cardTopic"));
   fillTopicSelect($("quizTopic"));
+  $("quizLevel").addEventListener("change", () => fillTopicSelect($("quizTopic"), $("quizLevel").value));
+  renderIv();
   for (const s of data.sources) {
     const li = document.createElement("li");
     const a = document.createElement("a");
