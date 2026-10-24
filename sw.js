@@ -11,6 +11,7 @@ const CORE = [
   "pco/",
   "pco/index.html",
   "pco/pco.css",
+  "pco/ui-mobile.css",
   "pco/pco.js",
   "pco/quiz.js",
   "pco/data.json",
