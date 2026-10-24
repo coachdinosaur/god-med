@@ -3,171 +3,110 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="theme-color" content="#0a1620">
-  <meta name="description" content="Pollution Control Officer (PCO) reviewer: notes, flashcards and quiz. Works offline.">
-  <title>PCO Reviewer</title>
+  <meta name="theme-color" content="#f6f8f5">
+  <meta name="description" content="Study smarter for the Pollution Control Officer accreditation: notes, flashcards, quizzes and interview prep.">
+  <title>PCO Study Studio · Pollution Control Officer Reviewer</title>
   <link rel="icon" href="../icons/icon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../styles.css">
   <link rel="stylesheet" href="pco.css">
+  <link rel="stylesheet" href="ui-mobile.css">
 </head>
 <body>
-  <header class="top">
-    <div>
-      <a class="back" href="../">← God Med</a>
-      <h1>PCO Reviewer</h1>
-      <p class="sub">Pollution Control Officer · DENR/EMB, Philippines</p>
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="Main navigation">
+      <a class="brand" href="#dashboard" id="brandHome" aria-label="PCO Study Studio home">
+        <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><path d="M16 3 28 9v14L16 29 4 23V9L16 3Z" stroke="currentColor" stroke-width="1.7"/><path d="m10 20 4-5 4 3 5-7" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <span class="brand-copy"><strong>PCO<span>studio</span></strong><small>YOUR STUDY COMPANION</small></span>
+      </a>
+      <div class="sidebar-caption">WORKSPACE</div>
+      <nav class="side-nav" role="tablist" aria-label="Reviewer sections">
+        <button class="tab active" id="tabDashboard" type="button" role="tab" aria-selected="true" aria-controls="viewDashboard"><span class="nav-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg></span><span>Overview</span></button>
+        <button class="tab" id="tabNotes" type="button" role="tab" aria-selected="false" aria-controls="viewNotes"><span class="nav-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 5.5a2 2 0 0 1 2-2h14v16H6a2 2 0 0 0-2 2V5.5Zm0 0V20"/><path d="M8 8h8M8 12h8"/></svg></span><span>Study notes</span></button>
+        <button class="tab" id="tabCards" type="button" role="tab" aria-selected="false" aria-controls="viewCards"><span class="nav-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="5" y="3" width="16" height="17" rx="2"/><path d="M3 7v13a2 2 0 0 0 2 2h12M9 9h8M9 13h5"/></svg></span><span>Flashcards</span></button>
+        <button class="tab" id="tabQuiz" type="button" role="tab" aria-selected="false" aria-controls="viewQuiz"><span class="nav-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="m8 9 2 2 4-4M8 16h8"/></svg></span><span>Practice quiz</span></button>
+        <button class="tab" id="tabInterview" type="button" role="tab" aria-selected="false" aria-controls="viewInterview"><span class="nav-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4V5Z"/><path d="M9 9h6M9 12h4"/></svg></span><span>Interview prep</span></button>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="sidebar-tip"><span class="tip-icon">✦</span><strong>Little by little.</strong><p>Every question brings you one step closer to being exam-ready.</p></div>
+        <a class="back-link" href="../">← Back to God Med</a>
+      </div>
+    </aside>
+
+    <div class="workspace">
+      <header class="app-header">
+        <div class="breadcrumb"><span>PCO STUDY STUDIO</span><span class="breadcrumb-slash">/</span><strong id="breadcrumbCurrent">Overview</strong></div>
+        <div class="header-actions"><span class="header-context"><span class="live-dot"></span> Ready to learn</span><button id="themeToggle" class="theme-toggle" type="button" aria-label="Switch to dark mode" title="Toggle appearance"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 15.4A8 8 0 0 1 8.6 4a8 8 0 1 0 11.4 11.4Z"/></svg></button><span class="profile-avatar" title="Your learning workspace" aria-hidden="true">PC</span></div>
+      </header>
+
+      <div class="content-container">
+        <main id="viewDashboard" class="page" role="tabpanel" aria-labelledby="tabDashboard">
+          <div class="welcome-meta"><span class="eyebrow"><span class="sparkle">✳</span> YOUR LEARNING SPACE</span><span id="todayDate" class="today-date"></span></div>
+          <h1 class="page-heading">Learn today. <em>Lead tomorrow.</em></h1>
+          <p class="page-intro">Everything you need to prepare for your Pollution Control Officer accreditation, all in one place.</p>
+          <section class="hero" aria-label="Continue learning">
+            <div class="hero-content"><span class="hero-eyebrow">✦ YOUR NEXT STEP</span><h2>Ready to make<br>some progress?</h2><p>Build your confidence one topic at a time. Pick up where you left off.</p><button class="hero-cta" id="continueStudy" type="button">Continue studying <span aria-hidden="true">↗</span></button></div>
+            <div class="hero-art" aria-hidden="true"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="orbit-dot one"></div><div class="orbit-dot two"></div><div class="hero-icon"><svg viewBox="0 0 120 120" fill="none"><rect x="30" y="22" width="56" height="78" rx="8" fill="#eaf7e1" stroke="#b4d5b2" stroke-width="3" transform="rotate(12 58 61)"/><rect x="21" y="18" width="56" height="78" rx="8" fill="#fffefa" stroke="#d7e8cf" stroke-width="3" transform="rotate(-10 49 57)"/><path d="m37 54 9 9 17-20" stroke="#4b986c" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><path d="M36 76h29" stroke="#d6e5d5" stroke-width="4" stroke-linecap="round"/></svg></div><span class="star star-one">✳</span><span class="star star-two">✦</span></div>
+          </section>
+          <section class="dashboard-stats" aria-label="Your study progress">
+            <div class="mini-stat"><span class="stat-icon green">◫</span><div><span class="stat-label">CARDS MASTERED</span><strong id="dashKnown">0 <small>/ 63</small></strong><span class="stat-foot">Keep it going!</span></div></div>
+            <div class="mini-stat"><span class="stat-icon lavender">◎</span><div><span class="stat-label">BEST QUIZ SCORE</span><strong id="dashBest">—</strong><span class="stat-foot" id="dashQuizRuns">No quizzes yet</span></div></div>
+            <div class="mini-stat"><span class="stat-icon peach">✳</span><div><span class="stat-label">SCENARIOS NAILED</span><strong id="dashInterview">0 <small>/ 12</small></strong><span class="stat-foot">Practice makes progress</span></div></div>
+          </section>
+          <section class="learning-section" aria-labelledby="modesHeading"><div class="section-head"><div><span class="eyebrow">EXPLORE & LEARN</span><h2 id="modesHeading">Choose your study mode</h2></div><span class="section-subtle">4 ways to get exam-ready</span></div>
+            <div class="mode-grid">
+              <button type="button" class="mode-card" data-go="Notes"><span class="mode-icon mint"><svg viewBox="0 0 24 24"><path d="M4 5.5a2 2 0 0 1 2-2h14v16H6a2 2 0 0 0-2 2V5.5Zm0 0V20M8 8h8M8 12h8"/></svg></span><span class="mode-tag">READ & UNDERSTAND</span><strong>Study notes</strong><span class="mode-desc">Key laws, concepts and regulations, made digestible.</span><span class="mode-go">Explore notes <span>↗</span></span></button>
+              <button type="button" class="mode-card" data-go="Cards"><span class="mode-icon lilac"><svg viewBox="0 0 24 24"><rect x="5" y="3" width="16" height="17" rx="2"/><path d="M3 7v13a2 2 0 0 0 2 2h12M9 9h8M9 13h5"/></svg></span><span class="mode-tag">RECALL & REMEMBER</span><strong>Flashcards</strong><span class="mode-desc">Put your memory to work with quick review cards.</span><span class="mode-go">Review cards <span>↗</span></span></button>
+              <button type="button" class="mode-card" data-go="Quiz"><span class="mode-icon apricot"><svg viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="m8 9 2 2 4-4M8 16h8"/></svg></span><span class="mode-tag">TEST YOUR KNOWLEDGE</span><strong>Practice quiz</strong><span class="mode-desc">Find your strengths and the topics to revisit.</span><span class="mode-go">Start practicing <span>↗</span></span></button>
+              <button type="button" class="mode-card" data-go="Interview"><span class="mode-icon sky"><svg viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4V5ZM9 9h6M9 12h4"/></svg></span><span class="mode-tag">BUILD CONFIDENCE</span><strong>Interview prep</strong><span class="mode-desc">Handle realistic PCO scenarios with confidence.</span><span class="mode-go">Practice answers <span>↗</span></span></button>
+            </div>
+          </section>
+          <section class="insight-strip"><span class="insight-symbol">✦</span><div><strong>A reminder for your journey</strong><p>Consistency beats cramming. A few minutes of focused practice today can make a real difference.</p></div></section>
+        </main>
+
+        <main id="viewNotes" class="page" role="tabpanel" aria-labelledby="tabNotes" hidden>
+          <div class="page-header"><span class="eyebrow">READ & UNDERSTAND</span><h1 class="page-heading">Study <em>notes.</em></h1><p class="page-intro">The core concepts, environmental laws, and responsibilities you need to know.</p></div>
+          <section class="section-panel">
+            <p class="info-note"><span aria-hidden="true">ⓘ</span> Study aid only. Regulations may change—always confirm with the latest DENR/EMB issuances linked below.</p>
+            <div class="search-wrap"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m16 16 5 5"/></svg><input class="search" id="noteSearch" type="search" placeholder="Search laws, topics, or keywords…" aria-label="Search notes" autocomplete="off"></div>
+            <div class="row tools"><span class="count" id="noteCount"></span><span class="spacer"></span><button class="linkbtn" id="expandAll" type="button">Expand all</button><button class="linkbtn" id="collapseAll" type="button">Collapse all</button></div>
+            <div class="faith notes" id="notes"></div>
+          </section>
+        </main>
+
+        <main id="viewCards" class="page" role="tabpanel" aria-labelledby="tabCards" hidden>
+          <div class="page-header"><span class="eyebrow">RECALL & REMEMBER</span><h1 class="page-heading">Flash<em>cards.</em></h1><p class="page-intro">Practice active recall, and keep track of what you've mastered.</p></div>
+          <section class="section-panel">
+            <div class="filter-row"><label class="field">Difficulty<select id="cardLevel"><option value="all" selected>All levels</option><option value="basic">Basic</option><option value="advanced">Advanced</option></select></label><label class="field">Topic<select id="cardTopic"></select></label><label class="check"><input type="checkbox" id="cardOnlyNew"> Hide mastered cards</label></div>
+            <div class="study-meta"><span class="study-label">YOUR DECK</span><span class="count" id="cardCount"></span></div>
+            <button class="card" id="card" type="button" aria-live="polite"><span class="card-inner"><span class="card-side" id="cardSide"></span><span class="card-text" id="cardText"></span><span class="card-hint" id="cardHint">Tap to flip</span></span><span class="card-deco" aria-hidden="true">✳</span></button>
+            <div class="controls card-controls"><button class="btn" id="cardAgain" type="button">↶ &nbsp; Again</button><button class="btn primary" id="cardGot" type="button">Got it &nbsp; ✓</button></div>
+            <p class="reset-line"><button class="linkbtn" id="cardReset" type="button">Reset mastered cards</button></p>
+          </section>
+        </main>
+
+        <main id="viewQuiz" class="page" role="tabpanel" aria-labelledby="tabQuiz" hidden>
+          <div class="page-header"><span class="eyebrow">TEST YOUR KNOWLEDGE</span><h1 class="page-heading">Practice <em>quiz.</em></h1><p class="page-intro">A little challenge today, a lot more confidence tomorrow.</p></div>
+          <section id="quizSetup" class="section-panel"><div class="panel-heading"><div><span class="eyebrow">MAKE IT YOURS</span><h2>Set up your session</h2></div><span class="panel-decoration" aria-hidden="true">✳</span></div>
+            <div class="filter-grid"><label class="field">Difficulty<select id="quizLevel"><option value="all" selected>All levels</option><option value="basic">Basic</option><option value="advanced">Advanced</option></select></label><label class="field">Topic<select id="quizTopic"></select></label><label class="field">Questions<select id="quizCount"><option value="10" selected>10 questions</option><option value="20">20 questions</option><option value="all">All questions</option></select></label><label class="field">Mode<select id="quizMode"><option value="practice" selected>Practice (with feedback)</option><option value="exam">Exam (results at end)</option></select></label></div>
+            <p class="mode-hint" id="modeHint"></p><div class="controls"><button class="btn primary large-btn" id="quizStart" type="button">Start quiz <span aria-hidden="true">↗</span></button><button class="btn" id="quizMissed" type="button">Retry missed</button></div><p class="count" id="quizInfo"></p>
+            <div class="stat-section"><div class="section-head compact"><h2 class="section-title stats-title">Your progress by topic</h2></div><ul class="stats" id="stats"></ul><p class="reset-line"><button class="linkbtn" id="statsReset" type="button">Reset quiz history</button></p></div>
+            <details class="keyboard-help"><summary>Keyboard shortcuts</summary><p>Quiz: 1–4 or A–D to answer; Enter for next. Cards: Space to flip, ← Again, → Got it. Interview: Space to reveal, ← → to move.</p></details>
+          </section>
+          <section id="quizRun" class="section-panel quiz-run" hidden><div class="quiz-run-top"><span class="eyebrow">QUICK KNOWLEDGE CHECK</span><p class="count" id="quizProgress"></p></div><div class="progress" role="progressbar" aria-label="Quiz completion"><div class="bar" id="quizBar"></div></div><h2 class="qtext" id="qText"></h2><p class="choose-hint">Choose the best answer</p><div class="choices" id="choices"></div><p class="why" id="why" hidden></p><div class="controls"><button class="btn primary large-btn" id="quizNext" type="button" hidden>Next</button></div></section>
+          <section id="quizEnd" class="section-panel" hidden><div class="result"><span class="result-confetti">✳</span><span class="result-label">SESSION COMPLETE</span><span class="streak-num" id="score"></span><span class="streak-lbl" id="scorePct"></span><p>Every question is a step forward.</p></div><h2 class="section-title">Your review</h2><ol class="missed" id="missedList"></ol><div class="controls"><button class="btn primary large-btn" id="quizAgain" type="button">New quiz ↗</button></div></section>
+        </main>
+
+        <main id="viewInterview" class="page" role="tabpanel" aria-labelledby="tabInterview" hidden>
+          <div class="page-header"><span class="eyebrow">BUILD CONFIDENCE</span><h1 class="page-heading">Interview <em>prep.</em></h1><p class="page-intro">Think like a PCO. Practice your answers before seeing the model response.</p></div>
+          <section class="section-panel"><p class="info-note"><span aria-hidden="true">✦</span> Say your answer aloud first. Mention the relevant rule and what you'd do, then reveal and rate yourself.</p><div class="row interview-filters"><label class="check left"><input type="checkbox" id="ivHideNailed"> Hide mastered scenarios</label><span class="count" id="ivCount"></span></div>
+            <article class="iv" id="iv"><p class="card-side" id="ivNum"></p><h2 class="iv-title" id="ivTitle"></h2><p class="iv-prompt" id="ivPrompt"></p><button class="btn primary" id="ivReveal" type="button">Reveal model answer ↗</button><div id="ivAnswer" hidden><div class="answer-divider"></div><h3 class="answer-heading">Model answer</h3><ul class="iv-points" id="ivPoints"></ul><p class="iv-refs" id="ivRefs"></p><p class="iv-rate-lbl">How did you do?</p><div class="iv-rate"><button class="btn" type="button" data-rate="missed">Needs work</button><button class="btn" type="button" data-rate="partly">Almost there</button><button class="btn primary" type="button" data-rate="nailed">Nailed it ✓</button></div></div></article><div class="controls iv-nav"><button class="btn" id="ivPrev" type="button">← Previous</button><button class="btn" id="ivNext" type="button">Next →</button></div>
+          </section>
+        </main>
+        <footer class="more src"><div><span class="footer-brand">✳ PCOstudio</span><p>Made for curious minds and future environmental stewards.</p></div><details class="sources-details"><summary>Official references & sources</summary><ul id="sources"></ul></details></footer>
+      </div>
     </div>
-    <div class="streak" aria-live="polite">
-      <span class="streak-num" id="bestNum">–</span>
-      <span class="streak-lbl">best quiz</span>
-    </div>
-  </header>
-
-  <nav class="tabs" role="tablist" aria-label="Reviewer sections">
-    <button class="tab active" id="tabNotes" type="button" role="tab" aria-selected="true" aria-controls="viewNotes">Notes</button>
-    <button class="tab" id="tabCards" type="button" role="tab" aria-selected="false" aria-controls="viewCards">Cards</button>
-    <button class="tab" id="tabQuiz" type="button" role="tab" aria-selected="false" aria-controls="viewQuiz">Quiz</button>
-    <button class="tab" id="tabInterview" type="button" role="tab" aria-selected="false" aria-controls="viewInterview">Interview</button>
-  </nav>
-
-  <main id="viewNotes" role="tabpanel" aria-labelledby="tabNotes">
-    <section>
-      <p class="faith-note">Study notes for PCO accreditation, grouped by law. Study aid only: rules are amended often, so confirm against the current DENR/EMB issuances (sources at the bottom).</p>
-      <div class="row">
-        <input class="search" id="noteSearch" type="search" placeholder="Search notes (e.g. 24 hours, ECC, ₱500)" aria-label="Search notes" autocomplete="off">
-      </div>
-      <div class="row tools">
-        <button class="linkbtn" id="expandAll" type="button">Expand all</button>
-        <button class="linkbtn" id="collapseAll" type="button">Collapse all</button>
-        <span class="count" id="noteCount"></span>
-      </div>
-      <div class="faith notes" id="notes"></div>
-    </section>
-  </main>
-
-  <main id="viewCards" role="tabpanel" aria-labelledby="tabCards" hidden>
-    <section>
-      <div class="row">
-        <label class="speed">Level
-          <select id="cardLevel">
-            <option value="all" selected>All</option>
-            <option value="basic">Basic</option>
-            <option value="advanced">Advanced</option>
-          </select>
-        </label>
-        <label class="speed">Topic <select id="cardTopic"></select></label>
-        <label class="check"><input type="checkbox" id="cardOnlyNew"> Hide known</label>
-      </div>
-      <p class="count" id="cardCount"></p>
-      <button class="card" id="card" type="button" aria-live="polite">
-        <span class="card-side" id="cardSide"></span>
-        <span class="card-text" id="cardText"></span>
-        <span class="card-hint" id="cardHint">Tap to flip</span>
-      </button>
-      <div class="controls">
-        <button class="btn" id="cardAgain" type="button">Again</button>
-        <button class="btn primary" id="cardGot" type="button">Got it</button>
-      </div>
-      <p class="reset-line"><button class="linkbtn" id="cardReset" type="button">Reset known cards</button></p>
-    </section>
-  </main>
-
-  <main id="viewQuiz" role="tabpanel" aria-labelledby="tabQuiz" hidden>
-    <section id="quizSetup">
-      <div class="row">
-        <label class="speed">Level
-          <select id="quizLevel">
-            <option value="all" selected>All</option>
-            <option value="basic">Basic</option>
-            <option value="advanced">Advanced</option>
-          </select>
-        </label>
-        <label class="speed">Topic <select id="quizTopic"></select></label>
-        <label class="speed">Questions
-          <select id="quizCount">
-            <option value="10" selected>10</option>
-            <option value="20">20</option>
-            <option value="all">All</option>
-          </select>
-        </label>
-        <label class="speed">Mode
-          <select id="quizMode">
-            <option value="practice" selected>Practice</option>
-            <option value="exam">Exam</option>
-          </select>
-        </label>
-      </div>
-      <p class="hint" id="modeHint"></p>
-      <div class="controls">
-        <button class="btn primary" id="quizStart" type="button">Start quiz</button>
-        <button class="btn" id="quizMissed" type="button">Retry missed</button>
-      </div>
-      <p class="count" id="quizInfo"></p>
-      <h2 class="section-title stats-title">Your scores by topic</h2>
-      <ul class="stats" id="stats"></ul>
-      <p class="reset-line"><button class="linkbtn" id="statsReset" type="button">Reset quiz history</button></p>
-      <p class="hint keys">Keys: 1–4 or A–D to answer, Enter for next. Cards: Space to flip, → got it, ← again. Interview: Space to reveal, ← → to move.</p>
-    </section>
-
-    <section id="quizRun" hidden>
-      <p class="count" id="quizProgress"></p>
-      <div class="progress"><div class="bar" id="quizBar"></div></div>
-      <h2 class="qtext" id="qText"></h2>
-      <div class="choices" id="choices"></div>
-      <p class="why" id="why" hidden></p>
-      <div class="controls">
-        <button class="btn primary" id="quizNext" type="button" hidden>Next</button>
-      </div>
-    </section>
-
-    <section id="quizEnd" hidden>
-      <div class="result">
-        <span class="streak-num" id="score"></span>
-        <span class="streak-lbl" id="scorePct"></span>
-      </div>
-      <h2 class="section-title">Review</h2>
-      <ol class="missed" id="missedList"></ol>
-      <div class="controls">
-        <button class="btn primary" id="quizAgain" type="button">New quiz</button>
-      </div>
-    </section>
-  </main>
-
-  <main id="viewInterview" role="tabpanel" aria-labelledby="tabInterview" hidden>
-    <section>
-      <p class="faith-note">Real situations a PCO faces, and questions interviewers ask. Answer out loud first (rule, section, what you'd do), then reveal the model answer and rate yourself.</p>
-      <div class="row">
-        <label class="check left"><input type="checkbox" id="ivHideNailed"> Hide nailed</label>
-        <span class="count" id="ivCount"></span>
-      </div>
-      <article class="iv" id="iv">
-        <p class="card-side" id="ivNum"></p>
-        <h2 class="iv-title" id="ivTitle"></h2>
-        <p class="iv-prompt" id="ivPrompt"></p>
-        <button class="btn primary" id="ivReveal" type="button">Show model answer</button>
-        <div id="ivAnswer" hidden>
-          <ul class="iv-points" id="ivPoints"></ul>
-          <p class="iv-refs" id="ivRefs"></p>
-          <p class="iv-rate-lbl">How did you do?</p>
-          <div class="iv-rate">
-            <button class="btn" type="button" data-rate="missed">Missed</button>
-            <button class="btn" type="button" data-rate="partly">Partly</button>
-            <button class="btn primary" type="button" data-rate="nailed">Nailed it</button>
-          </div>
-        </div>
-      </article>
-      <div class="controls iv-nav">
-        <button class="btn" id="ivPrev" type="button">← Prev</button>
-        <button class="btn" id="ivNext" type="button">Next →</button>
-      </div>
-    </section>
-  </main>
-
-  <footer class="more src">
-    <p>Sources</p>
-    <ul id="sources"></ul>
-  </footer>
-
+  </div>
+  <nav class="mobile-nav" role="tablist" aria-label="Mobile reviewer sections"><button class="mobile-tab active" type="button" data-go="Dashboard" aria-label="Overview"><span>▦</span><small>Home</small></button><button class="mobile-tab" type="button" data-go="Notes" aria-label="Study notes"><span>▤</span><small>Notes</small></button><button class="mobile-tab" type="button" data-go="Cards" aria-label="Flashcards"><span>▧</span><small>Cards</small></button><button class="mobile-tab" type="button" data-go="Quiz" aria-label="Practice quiz"><span>◉</span><small>Quiz</small></button><button class="mobile-tab" type="button" data-go="Interview" aria-label="Interview practice"><span>▢</span><small>Interview</small></button></nav>
   <script type="module" src="pco.js"></script>
 </body>
 </html>
