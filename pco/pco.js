@@ -3,7 +3,7 @@ import { shuffle, pickQuestions, scorePct, recordAnswer, matchSegments, keyToCho
 const KEY = "pco.v1";
 const $ = (id) => document.getElementById(id);
 
-const blank = () => ({ known: [], missed: [], best: null, runs: 0, stats: {}, tab: "Notes", mode: "practice", ivRate: {}, ivIndex: 0 });
+const blank = () => ({ known: [], missed: [], best: null, runs: 0, stats: {}, tab: "Dashboard", mode: "practice", ivRate: {}, ivIndex: 0 });
 function load() {
   try {
     const s = JSON.parse(localStorage.getItem(KEY));
@@ -12,25 +12,68 @@ function load() {
   return blank();
 }
 let state = load();
-const save = () => { try { localStorage.setItem(KEY, JSON.stringify(state)); } catch { /* storage blocked */ } };
+const save = () => { try { localStorage.setItem(KEY, JSON.stringify(state)); } catch { /* storage blocked */ } if (data) refreshDashboard(); };
 
 let data = null;
 
-/* ---------- tabs ---------- */
-const TABS = ["Notes", "Cards", "Quiz", "Interview"];
+/* ---------- navigation, dashboard & appearance ---------- */
+const TABS = ["Dashboard", "Notes", "Cards", "Quiz", "Interview"];
+const LABELS = { Dashboard: "Overview", Notes: "Study notes", Cards: "Flashcards", Quiz: "Practice quiz", Interview: "Interview prep" };
+let lastStudyTab = ["Notes", "Cards", "Quiz", "Interview"].includes(state.tab) ? state.tab : "Notes";
+function refreshDashboard() {
+  if (!data) return;
+  const known = data.cards.filter((c) => state.known.includes(c.id)).length;
+  const nailed = data.interview.filter((s) => state.ivRate[s.id] === "nailed").length;
+  $("dashKnown").innerHTML = `${known} <small>/ ${data.cards.length}</small>`;
+  $("dashBest").textContent = state.best == null ? "—" : `${state.best}%`;
+  $("dashQuizRuns").textContent = state.runs ? `${state.runs} quiz${state.runs === 1 ? "" : "zes"} completed` : "No quizzes yet";
+  $("dashInterview").innerHTML = `${nailed} <small>/ ${data.interview.length}</small>`;
+}
 function showTab(name) {
+  if (!TABS.includes(name)) return;
   for (const t of TABS) {
     const on = t === name;
     $("view" + t).hidden = !on;
     $("tab" + t).classList.toggle("active", on);
     $("tab" + t).setAttribute("aria-selected", String(on));
   }
+  for (const el of document.querySelectorAll(".mobile-tab")) {
+    const on = el.dataset.go === name;
+    el.classList.toggle("active", on);
+    el.setAttribute("aria-selected", String(on));
+  }
+  $("breadcrumbCurrent").textContent = LABELS[name];
+  if (name !== "Dashboard") lastStudyTab = name;
+  if (name === "Dashboard") refreshDashboard();
   state.tab = name;
   save();
   window.scrollTo(0, 0);
 }
 const currentTab = () => TABS.find((t) => !$("view" + t).hidden);
 for (const t of TABS) $("tab" + t).addEventListener("click", () => showTab(t));
+for (const el of document.querySelectorAll("[data-go]")) {
+  el.addEventListener("click", () => showTab(el.dataset.go));
+}
+$("brandHome").addEventListener("click", (e) => { e.preventDefault(); showTab("Dashboard"); });
+$("continueStudy").addEventListener("click", () => showTab(lastStudyTab));
+$("todayDate").textContent = new Intl.DateTimeFormat("en-PH", { weekday: "short", month: "short", day: "numeric", year: "numeric" }).format(new Date());
+const themeKey = "pco.theme";
+function applyTheme(theme) {
+  const dark = theme === "dark";
+  document.documentElement.dataset.theme = dark ? "dark" : "light";
+  $("themeToggle").setAttribute("aria-label", dark ? "Switch to light mode" : "Switch to dark mode");
+  $("themeToggle").setAttribute("aria-pressed", String(dark));
+  $("themeToggle").title = dark ? "Switch to light mode" : "Switch to dark mode";
+  document.querySelector('meta[name="theme-color"]').content = dark ? "#121d19" : "#f6f8f5";
+}
+let theme = "light";
+try { theme = localStorage.getItem(themeKey) === "dark" ? "dark" : "light"; } catch { /* unavailable */ }
+applyTheme(theme);
+$("themeToggle").addEventListener("click", () => {
+  theme = theme === "dark" ? "light" : "dark";
+  applyTheme(theme);
+  try { localStorage.setItem(themeKey, theme); } catch { /* storage blocked */ }
+});
 
 /* ---------- notes ---------- */
 function buildNotes() {
@@ -228,7 +271,6 @@ function renderStats() {
 }
 
 function renderBest() {
-  $("bestNum").textContent = state.best == null ? "–" : `${state.best}%`;
   const n = state.missed.length;
   $("quizMissed").disabled = n === 0;
   $("quizMissed").textContent = n ? `Retry missed (${n})` : "Retry missed";
@@ -476,6 +518,7 @@ async function init() {
     data = await res.json();
   } catch {
     $("notes").textContent = "Could not load the reviewer data. Check your connection and reload.";
+    $("continueStudy").disabled = true;
     return;
   }
   buildNotes();
@@ -496,6 +539,7 @@ async function init() {
   if (state.mode === "exam" || state.mode === "practice") $("quizMode").value = state.mode;
   buildDeck();
   renderBest();
-  if (TABS.includes(state.tab) && state.tab !== "Notes") showTab(state.tab);
+  refreshDashboard();
+  showTab(TABS.includes(state.tab) ? state.tab : "Dashboard");
 }
 init();
