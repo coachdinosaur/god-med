@@ -6,12 +6,20 @@ export const PORTAL = "https://pco.emb.gov.ph";
 export const regions = [
   { id: "all", label: "Choose EMB region / General guide", url: "https://www.emb.gov.ph/", note: "Start with DAO 2014-02 and verify the current Citizen’s Charter/checklist of the EMB regional office covering your establishment." },
   { id: "r1", label: "Region I — Ilocos", url: "https://r1.emb.gov.ph/ufaq/pollution-control-officer-pco-accreditation/", note: "Region I publishes its accreditation application checklist, forms, and owner-PCO affidavit. Its 2025 Citizen’s Charter also lists photo, e-signature, training, and qualification documents." },
+  { id: "car", label: "CAR — Cordillera", url: "https://car.emb.gov.ph/citizenscharter/", note: "EMB Cordillera publishes a Citizen's Charter with PCO guidance. Ask CAR for its current supporting forms." },
+  { id: "r2", label: "Region II — Cagayan Valley", url: "https://r2.emb.gov.ph/e-library/", note: "EMB Region II's official e-library lists PCO accreditation forms and joint-undertaking forms." },
   { id: "r3", label: "Region III — Central Luzon", url: "https://r3.emb.gov.ph/", note: "Use the EMB Region III Citizen’s Charter or PCO unit for the current detailed document checklist; the national list is your starting point." },
   { id: "r4a", label: "Region IV-A — CALABARZON", url: "https://calabarzon.emb.gov.ph/secsime-no-r4a-cpd-13/", note: "Published regional checklist includes renewal compliance proof, notarized undertaking/commitment, managing-head training and proof of ownership for owner-PCOs." },
+  { id: "r4b", label: "Region IV-B — MIMAROPA", url: "https://mimaropa.emb.gov.ph/e-library/", note: "MIMAROPA publishes PCO applications, renewal forms and affidavit templates." },
+  { id: "r5", label: "Region V — Bicol", url: "https://r5.emb.gov.ph/frequently-asked-questions/", note: "Region V publishes updated PCO FAQs and a 2026 accreditation webinar. Confirm forms and renewal training instructions there." },
+  { id: "r6", label: "Region VI — Western Visayas", url: "https://r6.emb.gov.ph/", note: "Request the latest accreditation documentary checklist and portal instructions from EMB Region VI." },
   { id: "r7", label: "Region VII — Central Visayas", url: "https://r7.emb.gov.ph/downloadables-v3-0/", note: "Region VII publishes downloadable new, renewal, cluster and renewal-of-cluster forms, including establishment categorization." },
   { id: "r8", label: "Region VIII — Eastern Visayas", url: "https://r8.emb.gov.ph/pco-2/", note: "Region VIII publishes new/renewal checklists, forms and information. Its PCO Online System page offers user manuals." },
+  { id: "r9", label: "Region IX — Zamboanga Peninsula", url: "https://r9.emb.gov.ph/cpd-frontline-services/", note: "Region IX lists PCO accreditation among its Clearance and Permitting Division services." },
+  { id: "r10", label: "Region X — Northern Mindanao", url: "https://r10.emb.gov.ph/", note: "Confirm the current Region X PCO checklist, affidavit forms and payment procedure." },
   { id: "r11", label: "Region XI — Davao", url: "https://r11.emb.gov.ph/pollution-control-officer-faqs/", note: "Region XI FAQ describes the three-year certificate, online application, site clustering and cashier payment arrangements." },
   { id: "r12", label: "Region XII — SOCCSKSARGEN", url: "https://r12.emb.gov.ph/citizens-charter/", note: "Region XII's published PCO requirements distinguish new, renewal and clustered applications, including notarized commitment for renewal." },
+  { id: "r13", label: "Region XIII — Caraga", url: "https://caraga.emb.gov.ph/", note: "Confirm the current EMB Caraga accreditation checklist and Citizen's Charter." },
   { id: "ncr", label: "NCR — Metro Manila", url: "https://ncr.emb.gov.ph/pollution-control-officer-corner/", note: "EMB NCR lists recognized training organizations, forms and instructions. Check whether current renewal memos alter training evidence." }
 ];
 export const tracks = [
