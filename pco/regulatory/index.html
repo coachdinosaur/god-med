@@ -8,19 +8,24 @@
   <title>Regulatory Updates | PCO Study Studio</title>
   <link rel="icon" href="../../icons/icon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../site-shell.css">
   <script type="module" src="../text-size.js"></script>
   <script type="module" src="app.js"></script>
+  <script type="module" src="../site-theme.js"></script>
 </head>
-<body>
+<body class="pco-app pco-regulatory">
   <a href="#updatesMain" class="skip-link">Skip to regulatory updates</a>
-  <header class="topbar">
-    <a href="../" class="brand" aria-label="Return to PCO Study Studio"><span class="brand-icon" aria-hidden="true">✳</span><span><strong>PCO<span>studio</span></strong><small>REGULATORY WATCH</small></span></a>
-    <nav class="top-links" aria-label="Related pages">
-      <a href="../">Reviewer</a>
-      <a href="../accreditation/">Accreditation</a>
-    </nav>
-    <button type="button" class="font-size-toggle" id="fontSizeToggle" aria-label="Increase text size" aria-pressed="false">A+</button>
-  </header>
+  <header class="topbar pco-site-header">
+        <div class="pco-header-identity">
+          <a class="pco-header-brand" href="../" aria-label="PCO Study Studio home"><span class="pco-header-logo" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><path d="M16 3 28 9v14L16 29 4 23V9L16 3Z" stroke="currentColor" stroke-width="1.7"/><path d="m10 20 4-5 4 3 5-7" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="pco-header-wordmark">PCO<span>studio</span></span></a>
+          <span class="pco-header-current">Regulatory Updates</span>
+        </div>
+        <nav class="pco-top-nav" aria-label="PCO Study Studio sections"><a href="../">Study Studio</a><a href="../accreditation/">Accreditation</a><a href="./" aria-current="page">Regulatory Updates</a></nav>
+        <div class="pco-header-actions">
+          <button class="font-size-toggle" id="fontSizeToggle" type="button" aria-label="Increase text size" aria-pressed="false" title="Larger text size">A+</button>
+          <button id="themeToggle" class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false" title="Toggle appearance"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 15.4A8 8 0 0 1 8.6 4a8 8 0 1 0 11.4 11.4Z"/></svg></button>
+        </div>
+      </header>
   <main class="container" id="updatesMain">
     <section class="hero" aria-labelledby="updatesTitle">
       <div class="eyebrow">DENR / EMB · PHILIPPINES</div>
@@ -89,5 +94,6 @@
     </section>
     <footer class="footer"><span>✳ PCOstudio · Regulatory Watch</span><p>Educational summary only. Not an official DENR–EMB service or legal opinion. Last reviewed 25 October 2026.</p><a href="../">Back to Study Studio ↗</a></footer>
   </main>
+  <nav class="pco-bottom-nav" aria-label="Main PCO navigation"><a href="../"><span aria-hidden="true">▦</span><small>Study Studio</small></a><a href="../accreditation/"><span aria-hidden="true">☑</span><small>Accreditation</small></a><a href="./" aria-current="page"><span aria-hidden="true">§</span><small>Updates</small></a></nav>
 </body>
 </html>

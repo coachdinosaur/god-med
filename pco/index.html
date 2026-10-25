@@ -11,8 +11,9 @@
   <link rel="stylesheet" href="pco.css">
   <link rel="stylesheet" href="ui-mobile.css">
   <link rel="stylesheet" href="readability.css">
+  <link rel="stylesheet" href="site-shell.css">
 </head>
-<body>
+<body class="pco-app pco-study">
   <div class="app-shell">
     <aside class="sidebar" aria-label="Main navigation">
       <a class="brand" href="#dashboard" id="brandHome" aria-label="PCO Study Studio home">
@@ -36,11 +37,25 @@
     </aside>
 
     <div class="workspace">
-      <header class="app-header">
-        <div class="breadcrumb"><span>PCO STUDY STUDIO</span><span class="breadcrumb-slash">/</span><strong id="breadcrumbCurrent">Overview</strong></div>
-        <div class="header-actions"><button class="font-size-toggle" id="fontSizeToggle" type="button" aria-label="Increase text size" aria-pressed="false" title="Larger text size">A+</button><span class="header-context"><span class="live-dot"></span> Ready to learn</span><button id="themeToggle" class="theme-toggle" type="button" aria-label="Switch to dark mode" title="Toggle appearance"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 15.4A8 8 0 0 1 8.6 4a8 8 0 1 0 11.4 11.4Z"/></svg></button><span class="profile-avatar" title="Your learning workspace" aria-hidden="true">PC</span></div>
+      <header class="app-header pco-site-header">
+        <div class="pco-header-identity">
+          <a class="pco-header-brand" href="./" aria-label="PCO Study Studio home"><span class="pco-header-logo" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><path d="M16 3 28 9v14L16 29 4 23V9L16 3Z" stroke="currentColor" stroke-width="1.7"/><path d="m10 20 4-5 4 3 5-7" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="pco-header-wordmark">PCO<span>studio</span></span></a>
+          <span class="pco-header-current" id="breadcrumbCurrent">Overview</span>
+        </div>
+        <nav class="pco-top-nav" aria-label="PCO Study Studio sections"><a href="./" aria-current="page">Study Studio</a><a href="accreditation/">Accreditation</a><a href="regulatory/">Regulatory Updates</a></nav>
+        <div class="pco-header-actions">
+          <button class="font-size-toggle" id="fontSizeToggle" type="button" aria-label="Increase text size" aria-pressed="false" title="Larger text size">A+</button>
+          <button id="themeToggle" class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false" title="Toggle appearance"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 15.4A8 8 0 0 1 8.6 4a8 8 0 1 0 11.4 11.4Z"/></svg></button>
+        </div>
       </header>
 
+      <nav class="pco-study-tabs" role="tablist" aria-label="Study modes">
+        <button type="button" role="tab" class="mobile-tab pco-study-tab active" data-go="Dashboard" aria-controls="viewDashboard" aria-selected="true">Overview</button>
+        <button type="button" role="tab" class="mobile-tab pco-study-tab" data-go="Notes" aria-controls="viewNotes" aria-selected="false">Notes</button>
+        <button type="button" role="tab" class="mobile-tab pco-study-tab" data-go="Cards" aria-controls="viewCards" aria-selected="false">Cards</button>
+        <button type="button" role="tab" class="mobile-tab pco-study-tab" data-go="Quiz" aria-controls="viewQuiz" aria-selected="false">Quiz</button>
+        <button type="button" role="tab" class="mobile-tab pco-study-tab" data-go="Interview" aria-controls="viewInterview" aria-selected="false">Interview</button>
+      </nav>
       <div class="content-container">
         <main id="viewDashboard" class="page" role="tabpanel" aria-labelledby="tabDashboard">
           <div class="welcome-meta"><span class="eyebrow"><span class="sparkle">✳</span> YOUR LEARNING SPACE</span><span id="todayDate" class="today-date"></span></div>
@@ -116,7 +131,7 @@
       </div>
     </div>
   </div>
-  <nav class="mobile-nav" role="tablist" aria-label="Mobile reviewer sections"><button class="mobile-tab active" type="button" data-go="Dashboard" aria-label="Overview"><span>▦</span><small>Home</small></button><button class="mobile-tab" type="button" data-go="Notes" aria-label="Study notes"><span>▤</span><small>Notes</small></button><button class="mobile-tab" type="button" data-go="Cards" aria-label="Flashcards"><span>▧</span><small>Cards</small></button><button class="mobile-tab" type="button" data-go="Quiz" aria-label="Practice quiz"><span>◉</span><small>Quiz</small></button><button class="mobile-tab" type="button" data-go="Interview" aria-label="Interview practice"><span>▢</span><small>Interview</small></button><a class="mobile-tab" href="regulatory/" aria-label="Regulatory updates"><span>§</span><small>Updates</small></a></nav>
+  <nav class="pco-bottom-nav" aria-label="Main PCO navigation"><a href="./" aria-current="page"><span aria-hidden="true">▦</span><small>Study Studio</small></a><a href="accreditation/"><span aria-hidden="true">☑</span><small>Accreditation</small></a><a href="regulatory/"><span aria-hidden="true">§</span><small>Updates</small></a></nav>
   <script type="module" src="pco.js"></script>
   <script type="module" src="text-size.js"></script>
 </body>
