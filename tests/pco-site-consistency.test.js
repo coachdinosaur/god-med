@@ -4,9 +4,10 @@ import { readFileSync } from "node:fs";
 
 const read = file => readFileSync(new URL("../"+file,import.meta.url),"utf8");
 const pages = [
-  { key:"study",file:"pco/index.html",main:["./","accreditation/","regulatory/"] },
-  { key:"accreditation",file:"pco/accreditation/index.html",main:["../","./","../regulatory/"] },
-  { key:"regulatory",file:"pco/regulatory/index.html",main:["../","../accreditation/","./"] }
+  { key:"study",file:"pco/index.html",main:["./","accreditation/","regulatory/","tables/"] },
+  { key:"accreditation",file:"pco/accreditation/index.html",main:["../","./","../regulatory/","../tables/"] },
+  { key:"regulatory",file:"pco/regulatory/index.html",main:["../","../accreditation/","./","../tables/"] },
+  { key:"tables",file:"pco/tables/index.html",main:["../","../accreditation/","../regulatory/","./"] }
 ];
 function navLinks(html,className) {
   const match=html.match(new RegExp('<nav class="'+className+'"[^>]*>([\\s\\S]*?)<\\/nav>'));
@@ -92,6 +93,6 @@ test("theme controls still work if browser storage is unavailable",()=>{
 });
 test("offline cache includes every new shared resource and bumps version",()=>{
   const worker=read("sw.js");
-  assert.match(worker,/const VERSION = "godmed-v13"/);
+  assert.match(worker,/const VERSION = "godmed-v14"/);
   for(const path of ["pco/site-shell.css","pco/site-theme.js","pco/text-size.js","pco/regulatory/index.html","pco/accreditation/index.html"]) assert.ok(worker.includes('"'+path+'"'));
 });

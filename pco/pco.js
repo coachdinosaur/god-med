@@ -76,6 +76,14 @@ $("themeToggle").addEventListener("click", () => {
 });
 
 /* ---------- notes ---------- */
+const NOTE_REFERENCE_TABLES = {
+  pco:"pco-table1",
+  air:"air-table1",
+  water:"water-table9",
+  haz:"haz-table21",
+  hwx:"haz-table31",
+  wqx:"water-table9"
+};
 function buildNotes() {
   const box = $("notes");
   box.textContent = "";
@@ -99,6 +107,14 @@ function buildNotes() {
       ul.appendChild(li);
     }
     det.append(sum, ul);
+    const reference = NOTE_REFERENCE_TABLES[t.id];
+    if (reference) {
+      const a = document.createElement("a");
+      a.className = "note-table-link";
+      a.href = "tables/#" + reference;
+      a.textContent = "Open the related DENR reference table →";
+      det.append(a);
+    }
     box.appendChild(det);
   }
   const empty = document.createElement("p");
