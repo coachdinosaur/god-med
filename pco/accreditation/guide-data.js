@@ -50,15 +50,15 @@ const first = [
     d("esign", "PCO e-signature file", "Prepare a legible signature image for profile/certificate processing."),
     d("id", "Valid government-issued ID", "Certain regional checklists request an ID; keep one ready.", "regional"),
     d("diploma", "College diploma and/or transcript of records (TOR)", "Evidence for the applicable Category A/B academic path; include the proof required by the evaluator."),
-    d("license", "Valid PRC professional license, if applicable", "For Category B applicants relying on a licensed-professional qualification.", "conditional"),
+    d("license", "Valid PRC professional license, if applicable", "For Category B applicants relying on a licensed-professional qualification.", "categoryB"),
     d("coe", "Certificate of employment from current company", "State the employment status, role, relevant work and that the applicant is a full-time employee."),
     d("past-coe", "Prior employer certificates / proof of environmental experience", "When the qualifying experience comes from previous employment or a regional checklist requests them.", "conditional")
   ]),
   s("04", "Issue designation and notarize undertakings", "The managing head signs the appointment; prepare the correct affidavit format for employee versus owner-PCO.", [
     d("appoint", "Signed letter of appointment / designation as PCO", "Include establishment/site name, address, appointee, effective date and authorized managing-head signature."),
-    d("joint", "Notarized Joint Affidavit of Undertaking", "Signed by the PCO and the managing head using the receiving EMB office's pro-forma."),
-    d("solo", "Notarized owner-PCO / sole undertaking (instead of joint affidavit)", "Only when the owner/managing head is also eligible to be PCO; use the regional owner-PCO form.", "conditional"),
-    d("ownership", "Proof of ownership (SEC/DTI) when owner acts as PCO", "Some offices ask for separate proof that the PCO is also the owner.", "conditional")
+    d("joint", "Notarized Joint Affidavit of Undertaking", "Signed by the PCO and the managing head using the receiving EMB office's pro-forma.", "employee"),
+    d("solo", "Notarized owner-PCO / sole undertaking (instead of joint affidavit)", "Only when the owner/managing head is also eligible to be PCO; use the regional owner-PCO form.", "owner"),
+    d("ownership", "Proof of ownership (SEC/DTI) when owner acts as PCO", "Some offices ask for separate proof that the PCO is also the owner.", "owner")
   ]),
   s("05", "Create and submit the online application", "At pco.emb.gov.ph, sign up/activate your account, complete the personal profile, select New, enter establishment details and upload documents.", [
     d("form", "Completed PCO accreditation online application / generated form", "Check the PCO's name, managing head, region, site address, classification and uploads."),
@@ -85,7 +85,7 @@ const renew = [
     d("cv-renew", "Updated CV/resume with ID photograph", "Include current position, relevant years and recent environmental training."),
     d("photo-renew", "Updated 2×2 photo on white background and e-signature", "Regional portals commonly require both in the PCO profile."),
     d("id-renew", "Valid government ID and diploma/TOR as requested", "Certain offices ask applicants to retain/re-upload education and identification proofs.", "regional"),
-    d("prc-renew", "Valid PRC license (Category B, if applicable)", "When the category and professional qualification require a license.", "conditional")
+    d("prc-renew", "Valid PRC license (Category B, if applicable)", "When the category and professional qualification require a license.", "categoryB")
   ]),
   s("02", "Document continuing training", "DAO 2014-02 §11 states 40 hours relevant PCO training as attendee or 20 hours as trainer/subject expert within the preceding three years. Later EMB advisories may affect recognition; confirm with your region.", [
     d("hours-renew", "Continuing/advanced PCO training certificates and dates", "Accumulate qualifying hours and retain the certificates and hours for the correct period."),
@@ -173,7 +173,7 @@ export const guides = { new: first, renewal: renew, cluster, replacement };
 export const faq = [
   { q: "Is passing an exam the accreditation process?", a: "No universal separate government PCO accreditation exam is prescribed by DAO 2014-02. The process requires qualifications, recognized training, proper employer designation, documents and EMB approval. Your reviewer helps with learning; it does not itself issue PCO accreditation." },
   { q: "Does training alone make me an accredited PCO?", a: "No. Complete the application and receive an official EMB Certificate of Accreditation. A certificate of training is just one of the requirements." },
-  { q: "Category A versus Category B?", a: "Category A generally means less significant pollution potential; Category B involves higher-risk wastes, emissions, discharge or facilities. The exact criteria are under DAO 2014-02, §5 and should be assessed with EMB. Category B requires stronger qualification/experience." },
+  { q: "Category A versus Category B?", a: "Categorization depends on actual pollution sources, hazardous-waste handling, air sources, wastewater discharge, sludge and solid-waste activities under DAO 2014-02 §5. Category A competency paths include a related technical course, reaching the third year of tertiary education, or 3 years in a supervisory/responsible post (or equivalent experience). For Category B, paths include a licensed engineer/chemist with 2 years relevant environmental management experience; an engineering/physical/natural-sciences professional with 3 years; or another appropriately qualified professional with 5 years. EMB makes the final category assessment." },
   { q: "Can the owner act as PCO?", a: "For Category A, an eligible owner/manager may act as PCO under §7 even without a specific professional degree, provided the basic qualifications and training are met. Use the proper owner-PCO affidavit and ownership evidence when requested." },
   { q: "Do I need an ECC, air PTO and water discharge permit to apply?", a: "Not every establishment needs all three. Each environmental permit is a separate facility-specific obligation; compliance copies may be requested for renewal or to evaluate pollution risk. Do not mark non-applicable permits as mandatory." },
   { q: "What if I have several sites?", a: "Ask EMB first. §7.1 generally requires at least one PCO per region and may require separate PCOs for significant discharges/emission-testing facilities. Cluster coverage needs regional assessment and approval." },
