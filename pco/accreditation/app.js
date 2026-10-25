@@ -4,6 +4,22 @@ const $ = (id) => document.getElementById(id);
 const KEY = "pco.accreditation.v1";
 const choices = ["track", "region", "category", "role"];
 const base = { track: "new", region: "all", category: "unknown", role: "employee", done: {} };
+const THEME_KEY = "pco.theme";
+let theme = "light";
+try { theme = localStorage.getItem(THEME_KEY) === "dark" ? "dark" : "light"; } catch { /* preferences unavailable */ }
+function applyTheme() {
+  document.documentElement.dataset.theme = theme;
+  $("themeToggle").setAttribute("aria-label", theme === "dark" ? "Switch to light mode" : "Switch to dark mode");
+  $("themeToggle").setAttribute("aria-pressed", String(theme === "dark"));
+  document.querySelector('meta[name="theme-color"]').content = theme === "dark" ? "#121d19" : "#eff6ef";
+}
+applyTheme();
+$("themeToggle").addEventListener("click", () => {
+  theme = theme === "dark" ? "light" : "dark";
+  applyTheme();
+  try { localStorage.setItem(THEME_KEY, theme); } catch { /* preferences unavailable */ }
+});
+
 let state = { ...base };
 try {
   const stored = JSON.parse(localStorage.getItem(KEY) || "{}");
