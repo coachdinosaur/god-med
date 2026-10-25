@@ -10,7 +10,7 @@ export const sources = Object.freeze([
   { id:"dao2013", title:"DENR DAO 2013-22 (hazardous-waste procedures)", url:"https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/10/67621", publisher:"Supreme Court E-Library" },
   { id:"hazPlan", title:"EMB 2025 Annual Regulatory Plan", url:"https://r11.emb.gov.ph/wp-content/uploads/2025/08/2025-EMB-ANNUAL-REGULATORY-PLAN.pdf", publisher:"DENR–EMB Region XI" },
   { id:"piccsLaw", title:"Official list of RA 6969 chemical policies", url:"https://chemical.emb.gov.ph/?page_id=121", publisher:"EMB Chemical Management Section" },
-  { id:"piccs2025", title:"DAO 2025-09 — PICCS (signed PDF)", url:"https://chemical.emb.gov.ph/wp-content/uploads/2025/01/DAO_2025-09_PICCS.pdf", publisher:"DENR–EMB" },
+  { id:"piccs2025", title:"DAO 2025-09 — PICCS (official EMB reference)", url:"https://chemical.emb.gov.ph/?page_id=138", publisher:"DENR–EMB Chemical Management Section" },
   { id:"piccs2026", title:"EMB PICCS information and updates", url:"https://chemical.emb.gov.ph/?page_id=138", publisher:"EMB Chemical Management Section" },
   { id:"cco", title:"EMB notice: Vinyl Chloride and Benzene CCOs", url:"https://chemical.emb.gov.ph/?p=950", publisher:"EMB Chemical Management Section" },
   { id:"ccoIndex", title:"Chemical Control Orders and general guidance", url:"https://chemical.emb.gov.ph/?page_id=44", publisher:"EMB Chemical Management Section" },
@@ -52,7 +52,7 @@ export const updates = Object.freeze([
     sourceIds:["cco","ccoIndex"]
   },
   {
-    id:"dao2026-24",status:"issued",topic:"Chemical inventory",date:"2026-07-15",period:"2026 PICCS update",
+    id:"dao2026-24",status:"issued",topic:"Chemical inventory",date:"2026",period:"2026 PICCS update",
     code:"DAO 2026-24",
     title:"Additional chemicals included in PICCS (CY 2024 batch)",
     summary:"DENR issued an additional list of chemicals for the Philippine Inventory of Chemicals and Chemical Substances (PICCS). EMB lists DAO 2026-24 alongside DAO 2025-09 as an applicable PICCS update.",
