@@ -119,17 +119,18 @@ export function stepsFor(route,region) {
  "Check the registered email for the activation link; activate the account, then select the proper new or renewal route and confirm site and category details."
  ]],
  ["06","Upload and submit the online application","Attach documents and retain a submission reference.",[
- "Complete all required fields, upload legible files in the portal-accepted format (official PCO applicant instructions specify PDF attachments), and double-check each upload.",
+ "For documentary attachments, the official PCO applicant manual specifies PDF. Prepare clear PDFs, and follow the on-screen format requirements for portrait and signature fields.",
  "Saving the application may keep it as a draft; click Submit Application to forward it to the regional case handler. Save the application ID/acknowledgment.",
  "Review portal status, evaluator comments and registered email regularly. An application forwarded to the case handler may be temporarily locked for edits until returned."
  ]],
  ["07","Respond to evaluation and pay when instructed","The EMB Regional Office evaluates eligibility, supporting records and compliance.",[
  "If an application is incomplete, fix the listed deficiencies and resubmit. If disapproved, DAO 2014-02 Sec. 8 gives 30 calendar days to address deficiencies or designate another PCO.",
  "Follow the official order-of-payment instructions. DAO 2014-02 sets a ₱500 accreditation processing fee; additional regional charges may be assessed.",
- "After a payment instruction, download the Order of Payment, pay through an authorized channel, then upload the official receipt. Click Update Application and Submit to Evaluator as instructed; upload alone may leave it pending."
+ "After a payment instruction, download the Order of Payment, pay through an authorized channel, then upload the official receipt. Click Update Application and Submit to Evaluator as instructed; upload alone may leave it pending.",
+ "Processing targets vary: DAO 2014-02 includes 15 calendar days from receipt, but a regional Citizen’s Charter may use a different published service time."
  ]],
  ["08","Receive the certificate and start compliance monitoring","Confirm approval and keep records for the next cycle.",[
- "Claim/download the PCO Certificate of Accreditation. Verify the PCO name, establishment, category and validity.",
+ "When the portal status becomes Approved, print/download the PCO Certificate of Accreditation. Verify the officer, establishment, category and validity.",
  "Provide the establishment with a copy; record the expiry date and maintain required SMR, CMR and other environmental reporting.",
  "Plan renewal with the latest EMB regional checklist. Accreditation is not transferable automatically to a different employer."
  ]]
