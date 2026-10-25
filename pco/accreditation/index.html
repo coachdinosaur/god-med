@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#f5f8f4">
+  <meta name="description" content="Philippines PCO accreditation step-by-step guide, documentary requirements and renewal checklist based on DENR and EMB sources.">
+  <title>Accreditation Guide | PCO Study Studio</title>
+  <link rel="icon" href="../../icons/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="guide.css">
+  <script type="module" src="guide.js"></script>
+</head>
+<body>
+  <a class="skip" href="#guideMain">Skip to guide</a>
+  <header class="topbar">
+    <a class="back" href="../" aria-label="Back to PCO Study Studio"><span aria-hidden="true">←</span> PCO<span class="brand-accent">studio</span></a>
+    <span class="top-label">ACCREDITATION ROADMAP</span>
+    <a class="top-resource" href="https://pco.emb.gov.ph/" target="_blank" rel="noopener noreferrer">Official PCO portal <span aria-hidden="true">↗</span></a>
+  </header>
+  <main id="guideMain" class="layout">
+    <section class="intro" aria-labelledby="pageTitle">
+      <span class="eyebrow">DENR / EMB · PHILIPPINES</span>
+      <h1 id="pageTitle">Your path to <em>PCO accreditation.</em></h1>
+      <p>From checking your qualifications and collecting every document to applying, receiving your certificate, and preparing for renewal.</p>
+      <div class="intro-meta"><span>Based on DAO 2014-02 and official EMB checklists</span><span>Source review: 25 Oct 2026</span></div>
+    </section>
+    <div class="notice" role="note"><strong>Before you file:</strong> This is a preparation checklist, <strong>not an official EMB application</strong>. Requirements can differ by regional office, application type and establishment. Your EMB evaluator and its current Citizen’s Charter control. Check the linked regional forms and instructions before submitting.</div>
+
+    <div class="body-grid">
+      <aside class="config" aria-labelledby="configTitle">
+        <div class="config-inner">
+          <div class="side-title"><span class="side-icon">⚙</span><h2 id="configTitle">Build your checklist</h2></div>
+          <p class="side-subtitle">Tell us which situation applies. No personal details or documents are collected.</p>
+          <label for="region">EMB regional office
+            <select id="region">
+              <option value="general">Other region / general guidance</option>
+              <option value="r1">Region I — Ilocos</option>
+              <option value="r4a">Region IV-A — CALABARZON</option>
+              <option value="r7">Region VII — Central Visayas</option>
+              <option value="r12">Region XII — SOCCSKSARGEN</option>
+            </select>
+          </label>
+          <label for="route">Application type
+            <select id="route">
+              <option value="new">First-time accreditation</option>
+              <option value="renew">Renewal</option>
+              <option value="owner">Owner / managing head as PCO</option>
+              <option value="cluster">Clustered installations</option>
+              <option value="replace">Replacement / changed employer</option>
+            </select>
+          </label>
+          <label for="category">Establishment category
+            <select id="category">
+              <option value="A">Category A</option>
+              <option value="B">Category B</option>
+              <option value="unknown">Not yet assessed</option>
+            </select>
+          </label>
+          <p class="selection-help" id="selectionHelp" aria-live="polite"></p>
+          <div class="progress-card"><div class="progress-head"><span>Documents prepared</span><strong id="progressNumber">0 / 0</strong></div><div class="progress-track" role="progressbar" aria-label="Document checklist progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" id="progressBar"><div id="progressFill"></div></div><p id="progressDescription">Tick a document when it is ready for submission.</p></div>
+          <a href="https://client.emb.gov.ph/crs" class="quick-link" target="_blank" rel="noopener noreferrer"><span>Company registration (CRS)</span><span aria-hidden="true">↗</span></a>
+          <a href="https://pco.emb.gov.ph/" class="quick-link" target="_blank" rel="noopener noreferrer"><span>PCO online application</span><span aria-hidden="true">↗</span></a>
+          <button id="resetProgress" type="button" class="quiet-button">Reset my checklist</button>
+        </div>
+      </aside>
+
+      <section class="main-column" aria-label="Accreditation information">
+        <nav class="section-nav" aria-label="Guide sections">
+          <button type="button" data-view="journey" class="viewtab active" aria-current="page">01 <span>Process</span></button>
+          <button type="button" data-view="documents" class="viewtab">02 <span>Documents</span></button>
+          <button type="button" data-view="after" class="viewtab">03 <span>After approval</span></button>
+          <button type="button" data-view="sources" class="viewtab">04 <span>Official sources</span></button>
+        </nav>
+
+        <section id="panelJourney" class="view" aria-labelledby="journeyTitle">
+          <div class="panel-top"><span class="eyebrow">THE COMPLETE ROADMAP</span><h2 id="journeyTitle">Start to finish, step by step.</h2><p id="journeyIntro"></p></div>
+          <div id="journeySteps" class="steps"></div>
+          <div class="next-action"><span>READY TO ORGANIZE YOUR FILES?</span><button type="button" data-view="documents">Open the document checklist <span aria-hidden="true">→</span></button></div>
+        </section>
+
+        <section id="panelDocuments" class="view" aria-labelledby="documentTitle" hidden>
+          <div class="panel-top"><span class="eyebrow">EVERY DOCUMENT, ORGANIZED</span><h2 id="documentTitle">Your personalized requirements.</h2><p>Core documents and office-specific additions are clearly labeled. Mark only items you actually have ready.</p></div>
+          <div class="document-tools"><label for="docSearch" class="sr-only">Search documents</label><input id="docSearch" type="search" placeholder="Search documents and descriptions…" autocomplete="off"><button id="printChecklist" type="button">Print / save checklist</button><button id="copyChecklist" type="button">Copy list</button></div>
+          <p class="doc-note" id="docNote" aria-live="polite"></p>
+          <div id="docGroups" class="doc-groups"></div>
+          <p id="noDocs" class="no-results" hidden>No documents match your search.</p>
+          <div class="sensitive-note"><strong>Privacy:</strong> This page saves only your checklist ticks and selections in this browser. It does <strong>not</strong> store scanned IDs, signatures, permits, affidavits, or uploaded documents. Submit those only through official channels.</div>
+        </section>
+
+        <section id="panelAfter" class="view" aria-labelledby="afterTitle" hidden>
+          <div class="panel-top"><span class="eyebrow">STAY COMPLIANT</span><h2 id="afterTitle">What happens after approval?</h2><p>Accreditation is tied to the designated person and establishment. Keep the records needed for inspections and your next renewal.</p></div>
+          <div class="after-grid" id="afterCards"></div>
+          <div class="after-callout" id="renewalNote"></div>
+        </section>
+
+        <section id="panelSources" class="view" aria-labelledby="sourceTitle" hidden>
+          <div class="panel-top"><span class="eyebrow">CHECK AGAINST THE ORIGINALS</span><h2 id="sourceTitle">Official rules, forms and portals.</h2><p>These links open official DENR/EMB materials. Regional checklists are examples of office-specific requirements, not a universal guarantee.</p></div>
+          <div class="source-list" id="sourceList"></div>
+          <div class="source-tip">Dates, fees, renewal evidence, document names, accepted file formats, and payment steps may change. Confirm the latest instructions with the relevant EMB regional office before filing.</div>
+        </section>
+      </section>
+    </div>
+    <footer class="footer"><a href="../">← Return to PCO Study Studio</a><span>Learning aid · Not affiliated with DENR or EMB</span></footer>
+  </main>
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+</body>
+</html>
