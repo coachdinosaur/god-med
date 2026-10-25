@@ -30,3 +30,18 @@
 }
 @media(max-width:355px){.mode-grid{grid-template-columns:1fr}.dashboard-stats{grid-template-columns:1fr 1fr}.mini-stat:last-child{grid-column:1/-1}}
 @media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+
+/* Accreditation entry points added without altering reviewer study state. */
+.accreditation-banner{display:flex;gap:18px;align-items:center;text-decoration:none;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px 22px;margin-top:18px;color:var(--text);box-shadow:var(--shadow)}
+.accreditation-banner:hover{border-color:var(--green);background:var(--accent-soft)}
+.accreditation-banner-icon{width:48px;height:48px;border-radius:12px;background:var(--accent-soft);color:var(--green);display:grid;place-items:center;font-size:25px;font-weight:800;flex-shrink:0}
+.accreditation-banner>span:nth-child(2){flex:1;min-width:0;display:grid;gap:4px}
+.accreditation-banner small{font-size:9px;letter-spacing:1.2px;font-weight:850;color:var(--green)}
+.accreditation-banner strong{font-size:17px;letter-spacing:-.3px}
+.accreditation-banner>span:nth-child(2)>span{font-size:11px;color:var(--muted);line-height:1.55}
+.accreditation-banner>b{font-size:22px;color:var(--green);flex-shrink:0}
+.sidebar .guide-link{margin-top:18px;border-top:1px solid var(--line);border-radius:0;padding-top:24px;color:var(--green)}
+.sidebar .guide-link .nav-ico{font-weight:800;font-size:20px}
+.mobile-nav:has(a[href="accreditation/"]){grid-template-columns:repeat(6,minmax(0,1fr))}
+.mobile-nav a.mobile-tab{text-decoration:none;align-content:center}
+@media(max-width:550px){.accreditation-banner{padding:13px;gap:10px}.accreditation-banner-icon{width:36px;height:36px;font-size:20px}.accreditation-banner strong{font-size:14px}.accreditation-banner>span:nth-child(2)>span{font-size:10px}.accreditation-banner>b{font-size:17px}.mobile-nav:has(a[href="accreditation/"]) .mobile-tab small{font-size:8px}}
