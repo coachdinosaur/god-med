@@ -70,7 +70,7 @@ const first = [
     d("solo", "Notarized owner-PCO / sole undertaking (instead of joint affidavit)", "Only when the owner/managing head is also eligible to be PCO; use the regional owner-PCO form.", "owner"),
     d("ownership", "Proof of ownership (SEC/DTI) when owner acts as PCO", "Some offices ask for separate proof that the PCO is also the owner.", "owner")
   ]),
-  s("05", "Create and submit the online application", "At pco.emb.gov.ph, sign up/activate your account, complete the personal profile, select New, enter establishment details and upload documents.", [
+  s("05", "Create and submit the online application", "DAO 2014-02 §8 directs the managing head to seek accreditation within 15 calendar days of appointment. At pco.emb.gov.ph, sign up/activate your account, complete the profile, select New, enter establishment details and upload documents.", [
     d("form", "Completed PCO accreditation online application / generated form", "Check the PCO's name, managing head, region, site address, classification and uploads."),
     d("attachments", "All required uploads are attached and readable", "Check IDs and file names; submit the application for procedural screening.", "action"),
     d("reference", "Application tracking/reference number and confirmation", "Save confirmation or screenshot to follow evaluation or corrections.", "action")
@@ -223,6 +223,7 @@ export const faq = [
   { q: "Do I need an ECC, air PTO and water discharge permit to apply?", a: "Not every establishment needs all three. Each environmental permit is a separate facility-specific obligation; compliance copies may be requested for renewal or to evaluate pollution risk. Do not mark non-applicable permits as mandatory." },
   { q: "What if I have several sites?", a: "Ask EMB first. §7.1 generally requires at least one PCO per region and may require separate PCOs for significant discharges/emission-testing facilities. Cluster coverage needs regional assessment and approval." },
   { q: "How long does EMB approval take?", a: "DAO 2014-02 mentions 15 calendar days for action on received applications, while some recent regional Citizen's Charters describe about 14–15 working days for complete online transactions. Deficiencies and payment delays can add time. Follow your EMB region's current charter." },
+  { q: "When should I apply after being designated?", a: "DAO 2014-02 §8 directs the managing head or authorized representative to apply at the EMB Regional Office within 15 calendar days from appointment/designation. The electronic portal is used for online applications where available. A change of company ordinarily requires a new accreditation, not an automatic transfer." },
   { q: "How much and how long is it valid?", a: "The standard accreditation or renewal fee published in DAO 2014-02 is ₱500, excluding any regional processing/documentary-stamp or payment-channel charge. PCO accreditation is generally valid for three years." },
   { q: "What are my obligations after approval?", a: "Monitor applicable ECC/permit compliance, hazardous waste, emissions and wastewater; submit the required Self-Monitoring Reports and other applicable reports; report serious incidents promptly; maintain training and compliance records for renewal." }
 ];
