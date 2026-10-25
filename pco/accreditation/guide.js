@@ -83,7 +83,7 @@ function setSelectors(){
 }
 
 function showView(name){
- const valid=["journey","documents","after","sources"];
+ const valid=["journey","documents","after","sources","category"];
  if(!valid.includes(name))name="journey";
  for(const v of valid){
   $("panel"+v[0].toUpperCase()+v.slice(1)).hidden=v!==name;
