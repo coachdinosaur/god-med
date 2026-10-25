@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#eff6ef">
+  <meta name="description" content="Complete Philippines DENR EMB Pollution Control Officer accreditation roadmap and interactive documentary checklist for new, renewal, clustered and replacement applications.">
+  <title>PCO Accreditation Guide | PCO Study Studio</title>
+  <link rel="icon" href="../../icons/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="layout">
+    <aside class="side">
+      <a class="brand" href="../" aria-label="Return to PCO Study Studio"><span class="brand-logo">✳</span><span><strong>PCO<span>studio</span></strong><small>ACCREDITATION DESK</small></span></a>
+      <div class="side-caption">YOUR JOURNEY</div>
+      <nav class="side-list" aria-label="Guide sections">
+        <a href="#overview" class="current">◫ &nbsp; Overview</a>
+        <a href="#pathway">▦ &nbsp; Step-by-step guide</a>
+        <a href="#documents">▤ &nbsp; Documents checklist</a>
+        <a href="#resources">↗ &nbsp; Official resources</a>
+        <a href="#questions">◉ &nbsp; Common questions</a>
+      </nav>
+      <div class="side-bottom"><p><strong>Official system</strong><br>Only DENR–EMB can issue or renew accreditation.</p><a href="https://pco.emb.gov.ph" target="_blank" rel="noopener noreferrer">Go to PCO Online ↗</a><a href="../">← Back to PCO Reviewer</a></div>
+    </aside>
+
+    <div class="main-wrap">
+      <header class="topbar"><a class="back-mobile" href="../">← Reviewer</a><span class="crumb">PCO STUDY STUDIO <span>/</span> <strong>Accreditation</strong></span><a class="portal-top" href="https://pco.emb.gov.ph" target="_blank" rel="noopener noreferrer">PCO Online <span aria-hidden="true">↗</span></a></header>
+      <main class="content">
+        <section class="hero" id="overview">
+          <div class="eyebrow">✳ &nbsp; YOUR OFFICIAL ACCREDITATION ROADMAP</div>
+          <h1>From training to <em>accreditation.</em></h1>
+          <p>Your step-by-step DENR–EMB guide to preparing every document, submitting your application, following up and keeping your certificate current.</p>
+          <div class="hero-chips"><span>✓ Document checklist</span><span>✓ 4 application paths</span><span>✓ Tracks your progress</span></div>
+        </section>
+
+        <div class="notice" role="note"><strong>Important — region-specific requirements.</strong> This is a planning guide based on DAO 2014-02 and published EMB checklists reviewed <time datetime="2026-10-25">25 October 2026</time>. The receiving EMB Regional Office decides what you must actually submit. A reviewer's learning certificate is <strong>not</strong> official PCO accreditation.</div>
+
+        <section class="choices panel" id="pathway">
+          <div class="section-kicker">01 / MAKE IT PERSONAL</div>
+          <h2>Select your application pathway</h2>
+          <p class="section-desc">Your selection changes the entire sequence and document checklist. Nothing is submitted to EMB from this website.</p>
+          <div class="control-grid">
+            <label>Application type
+              <select id="track" aria-label="Application type"><option value="new">First accreditation (New)</option><option value="renewal">Renew my accreditation</option><option value="cluster">Multiple sites / Cluster</option><option value="replacement">Replace departing PCO</option></select>
+            </label>
+            <label>Receiving EMB office
+              <select id="region" aria-label="EMB regional office"></select>
+            </label>
+            <label>Establishment classification
+              <select id="category" aria-label="Establishment category"><option value="unknown">Not yet assessed</option><option value="A">Category A</option><option value="B">Category B</option></select>
+            </label>
+            <label>PCO designation
+              <select id="role" aria-label="PCO role"><option value="employee">Employee designated as PCO</option><option value="owner">Owner / manager as PCO (Category A)</option></select>
+            </label>
+          </div>
+          <div class="regional"><div class="regional-icon">ⓘ</div><div><strong id="regionTitle">Check with your EMB office</strong><p id="regionNote"></p><a id="regionLink" href="https://www.emb.gov.ph/" target="_blank" rel="noopener noreferrer">Official regional guidance ↗</a></div></div>
+        </section>
+
+        <section class="snapshot" aria-label="Key figures">
+          <div><span class="snapshot-icon">₱</span><span class="snapshot-label">BASE ACCREDITATION FEE</span><strong>₱500</strong><small>Verify extra regional charges</small></div>
+          <div><span class="snapshot-icon">◷</span><span class="snapshot-label">GENERAL VALIDITY</span><strong>3 years</strong><small>Check your issued certificate</small></div>
+          <div><span class="snapshot-icon">▣</span><span class="snapshot-label">PROGRESS TRACKER</span><strong id="completeCount">0 / 0</strong><small id="progressText">Documents and actions done</small></div>
+        </section>
+
+        <section class="progress-panel panel" id="documents">
+          <div class="progress-head"><div><div class="section-kicker">02 / DOCUMENTS & ACTIONS</div><h2>Your accreditation checklist</h2><p class="section-desc" id="selectedPath">New PCO application</p></div><button id="print" class="btn outline" type="button">Print / Save as PDF ↗</button></div>
+          <div class="progress-track" role="progressbar" aria-label="Checklist completion" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" id="completionBar"><span id="progressFill"></span></div>
+          <div class="progress-foot"><span id="percentDone">0% complete</span><button type="button" id="reset" class="link-button">Reset this checklist</button></div>
+          <div class="legend"><span><i class="legend-dot core"></i> Common document or action</span><span><i class="legend-dot regional-dot"></i> Regional requirement — verify</span><span><i class="legend-dot conditional-dot"></i> Conditional — only if applicable</span></div>
+          <div id="steps" class="steps" aria-live="polite"></div>
+        </section>
+
+        <section class="panel advice">
+          <div class="section-kicker">03 / WHAT TO EXPECT</div><h2>Online application sequence</h2>
+          <div class="sequence">
+            <div><b>1</b><strong>Register</strong><p>Confirm your establishment CRS record where required; create/activate your PCO Online login.</p></div>
+            <div><b>2</b><strong>Prepare and upload</strong><p>Choose New, Renewal or Cluster; fill your PCO profile; upload training, designation, affidavits and proofs.</p></div>
+            <div><b>3</b><strong>Evaluation</strong><p>Monitor the dashboard and answer deficiency comments or clarification requests.</p></div>
+            <div><b>4</b><strong>Pay when assessed</strong><p>Download the EMB Order of Payment, pay using authorized options and upload the official receipt.</p></div>
+            <div><b>5</b><strong>Approval and certificate</strong><p>Wait for regional approval; generate/download the official certificate and record its expiry date.</p></div>
+          </div>
+          <div class="action-row"><a href="https://pco.emb.gov.ph" class="btn primary" target="_blank" rel="noopener noreferrer">Open official PCO portal ↗</a><a href="https://client.emb.gov.ph/crs" class="btn outline" target="_blank" rel="noopener noreferrer">Company registration (CRS) ↗</a></div>
+        </section>
+
+        <section class="panel resources" id="resources"><div class="section-kicker">04 / CHECK THE ORIGINAL SOURCES</div><h2>Official rules and downloadable forms</h2><p class="section-desc">Use the current forms of your receiving EMB Regional Office—not a sample affidavit from an unrelated jurisdiction.</p><div id="resourceList" class="resource-list"></div></section>
+        <section class="panel faq" id="questions"><div class="section-kicker">05 / QUICK ANSWERS</div><h2>Frequently asked questions</h2><div id="faqList"></div></section>
+        <footer><span>✳ PCOstudio · Accreditation Desk</span><p>Independent educational checklist. Not affiliated with or endorsed by DENR–EMB. Information last reviewed 25 October 2026.</p><a href="../">Back to study dashboard ↗</a></footer>
+      </main>
+    </div>
+  </div>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
