@@ -11,6 +11,7 @@ export const SOURCES = [
   {id:"r7new",region:"Region VII",title:"EMB Region VII New Application Checklist",description:"CRS, photo, signature, designation, employment and establishment categorization.",url:"https://r7.emb.gov.ph/wp-content/uploads/2024/02/CHECKLIST-OF-REQUIREMENTS-FOR-PCO-NEW-APPLICATIONS.pdf"},
   {id:"r7renew",region:"Region VII",title:"EMB Region VII Renewal Checklist",description:"Renewal supporting documents including previous accreditation and compliance evidence.",url:"https://r7.emb.gov.ph/wp-content/uploads/2024/02/CHECKLIST-OF-REQUIREMENTS-FOR-RENEWAL-OF-PCO-ACCREDITATION.pdf"},
   {id:"r7forms",region:"Region VII",title:"EMB Region VII PCO Forms and Checklists",description:"New, renewal and clustered application forms and affidavit templates.",url:"https://r7.emb.gov.ph/downloadables-v3-0/"},
+  {id:"r12process",region:"Region XII",title:"EMB Region XII PCO Process (2026)",description:"Current Citizen’s Charter flow: CRS, account activation, evaluation, payment, receipt upload and certificate release.",url:"https://r12.emb.gov.ph/wp-content/uploads/2026/06/EMB-12-015.pdf"},
   {id:"r12",region:"Region XII",title:"EMB Region XII PCO Requirements List",description:"Office checklist for new, renewal and clustered cases.",url:"https://r12.emb.gov.ph/wp-content/uploads/2026/03/0076_PCO-List-of-Requirements-revised.pdf"},
   {id:"r11faq",region:"Additional guidance",title:"EMB Region XI PCO FAQs",description:"Application handling, multiple installations, resignation and other questions.",url:"https://r11.emb.gov.ph/pollution-control-officer-faqs/"}
 ];
@@ -36,9 +37,10 @@ export const DOCUMENTS = [
   {id:"ownership",phase:"pre",routes:["owner"],title:"Proof of business ownership (SEC/DTI certificate)",desc:"For Category A owner/managing-head-as-PCO route. CALABARZON explicitly requests a copy.",tag:"Owner case"},
   {id:"cv",phase:"eligibility",routes:ALL,title:"Updated curriculum vitae / résumé with ID photo",desc:"Include education, environmental management experience, dates of employment and relevant responsibilities. Some regional offices accept CV as alternate qualification evidence.",tag:"Core"},
   {id:"employment",phase:"eligibility",routes:["new","cluster","replace","renew"],title:"Certificate of employment confirming full-time status",desc:"Include establishment, position, full-time appointment and relevant experience. Explicitly listed in Region VII, Region XII and CALABARZON guidance.",tag:"Common EMB"},
-  {id:"qualification",phase:"eligibility",routes:ALL,title:"Proof of education / qualifying experience (diploma, TOR or other accepted evidence)",desc:"Category A: related technical course, third-year tertiary study, or equivalent supervisory/responsible experience. Category B has experience-based professional criteria. Submit evidence appropriate to your qualification pathway.",tag:"Qualification"},
+  {id:"qualification",phase:"eligibility",routes:["new","cluster","replace","renew"],title:"Proof of education / qualifying experience (diploma, TOR or other accepted evidence)",desc:"Category A: related technical course, third-year tertiary study, or equivalent supervisory/responsible experience. Category B has experience-based professional criteria. Submit evidence appropriate to your qualification pathway.",tag:"Qualification"},
   {id:"prc",phase:"eligibility",routes:ALL,categories:["B"],title:"Valid PRC professional license, if applicable",desc:"Required where the Category B qualification is based on a PRC-regulated profession. Not every Category B pathway needs a PRC card.",tag:"If applicable",status:"conditional"},
   {id:"previousEmployment",phase:"eligibility",routes:NR,title:"Certificates from previous employers, when relying on earlier experience",desc:"Help substantiate the relevant-experience qualification. Specifically mentioned as applicable by EMB Region VII.",tag:"If applicable",status:"conditional"},
+  {id:"governmentIdR12",phase:"eligibility",routes:ALL,regions:["r12"],title:"Government-issued identification document",desc:"Region XII’s 2026 Citizen’s Charter lists a government-issued ID (for example PRC, LTO, DFA or SSS) in its PCO checklist.",tag:"Region XII"},
   {id:"photo",phase:"eligibility",routes:ALL,title:"Recent 2×2 ID photo, plain white background",desc:"Use the size/background specified by your regional PCO online upload requirements.",tag:"Common EMB"},
   {id:"signature",phase:"eligibility",routes:ALL,title:"Electronic specimen signature of PCO",desc:"Separate clean image file if required by the online system and regional checklist.",tag:"Common EMB"},
   {id:"basicTraining",phase:"training",routes:NR,title:"Certificate of 40-hour Basic PCO Training",desc:"Course must be given by an EMB-recognized organization/institution. Under DAO 2014-02, new applicants must have completed it within the last three years.",tag:"Core"},
@@ -49,6 +51,7 @@ export const DOCUMENTS = [
   {id:"affidavit",phase:"filing",routes:["new","replace","cluster","renew"],title:"Signed, notarized Joint Affidavit of Undertaking — PCO and Managing Head",desc:"Use the correct regional pro-forma and ensure both parties sign before notarization.",tag:"Core"},
   {id:"ownerAffidavit",phase:"filing",routes:["owner"],title:"Signed, notarized Affidavit of Undertaking — owner acting as Category A PCO",desc:"Use the single-party owner/PCO template where allowed rather than the standard joint affidavit.",tag:"Owner case"},
   {id:"crs",phase:"filing",routes:ALL,regions:["r7"],title:"Approved Company Registration System (CRS) registration",desc:"Explicit prerequisite in EMB Region VII online PCO accreditation checklists. Register company and secure approval before uploading.",tag:"Region VII"},
+  {id:"crsR12",phase:"filing",routes:NR,regions:["r12"],title:"Approved CRS establishment record for a newly registered company",desc:"Region XII’s 2026 process begins with registration at client.emb.gov.ph/crs when the establishment is not yet registered.",tag:"If new company",status:"conditional"},
   {id:"crsOther",phase:"filing",routes:ALL,regions:["r1","r4a","r12"],title:"Company Registration System (CRS) record, when required by your portal",desc:"Some offices require or link the establishment's approved CRS record before the PCO application can proceed. Check the regional portal workflow.",tag:"If requested",status:"conditional"},
   {id:"eccCnc",phase:"filing",routes:NR,regions:["r4a"],title:"Copy of Environmental Compliance Certificate (ECC) or Certificate of Non-Coverage (CNC)",desc:"Explicitly included in the CALABARZON 2026 new/owner-as-PCO checklist. Ensure it refers to the same establishment.",tag:"Region IV-A"},
   {id:"eccOther",phase:"filing",routes:NR,regions:["r1","r7","r12"],title:"Applicable ECC/CNC or establishment permit reference, if evaluator requests it",desc:"Keep relevant facility clearances and permits ready. Whether these are direct accreditation uploads varies by region and establishment.",tag:"If requested",status:"conditional"},
@@ -110,7 +113,7 @@ export function stepsFor(route,region) {
  ["05","Register the establishment and create a PCO portal account","Check whether the online system requires an approved CRS record.",[
  "Use the official EMB Company Registration System if required; Region VII expressly lists approved CRS.",
  "Open pco.emb.gov.ph and create/access the required account for the proper establishment.",
- "Select the proper first-time/cluster/establishment route; confirm site information, contact details and category."
+ "Check the registered email for the activation link; activate the account, then select the proper new or renewal route and confirm site and category details."
  ]],
  ["06","Upload and submit the online application","Attach documents and retain a submission reference.",[
  "Complete official application fields, upload files and check that scans are readable and complete.",
@@ -118,9 +121,9 @@ export function stepsFor(route,region) {
  "Monitor the portal and registered email for requests to correct or supplement documents."
  ]],
  ["07","Respond to evaluation and pay when instructed","The EMB Regional Office evaluates eligibility, supporting records and compliance.",[
- "If the office marks the submission incomplete, correct the exact deficiencies and resubmit.",
+ "If an application is incomplete, fix the listed deficiencies and resubmit. If disapproved, DAO 2014-02 Sec. 8 gives 30 calendar days to address deficiencies or designate another PCO.",
  "Follow the official order-of-payment instructions. DAO 2014-02 sets a ₱500 accreditation processing fee; additional regional charges may be assessed.",
- "Keep the official receipt and upload it if the portal instructs. Processing times vary by region and completeness."
+ "Download any Order of Payment, use the payment channels officially instructed by EMB, and upload the Official Receipt when directed. Processing times vary by region and completeness."
  ]],
  ["08","Receive the certificate and start compliance monitoring","Confirm approval and keep records for the next cycle.",[
  "Claim/download the PCO Certificate of Accreditation. Verify the PCO name, establishment, category and validity.",
