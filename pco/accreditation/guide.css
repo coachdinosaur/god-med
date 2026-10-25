@@ -51,3 +51,13 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,su
 @media(max-width:460px){.intro h1{font-size:34px;letter-spacing:-1.4px}.config-inner{display:block}.config label{margin-bottom:13px}.side-subtitle{margin:10px 0 17px}.selection-help{margin:12px 0}.progress-card{margin:15px 0}.quick-link{margin-top:3px}.section-nav .viewtab{display:grid;gap:1px;font-size:9px;padding:10px 2px}.viewtab span{font-size:10px}.view{padding:18px 13px}.step summary{padding:13px;gap:10px}.step-body{padding:0 15px 17px 19px}.next-action{display:block}.next-action button{display:block;width:100%;margin-top:10px}.panel-top h2{font-size:23px}.source-item{display:block}.source-item a{display:inline-block;margin-top:11px}.footer{display:block}.footer span{display:block;margin-top:8px}}
 @media print{body{background:white}.topbar,.notice,.config,.section-nav,.document-tools,.next-action,.footer,.toast,.source-item a,.step-body button{display:none!important}.layout{max-width:none;padding:0}.body-grid{display:block}.view{display:block!important;border:0;box-shadow:none;padding:0}.view:not(#panelDocuments){display:none!important}.panel-top{margin-bottom:10px}.doc{break-inside:avoid}.doc-section{break-inside:avoid}.doc-desc{font-size:10px}.doc-tags{display:none}.sensitive-note{display:none}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important;scroll-behavior:auto!important}}
+
+/* Regulation cross-link shared with the new source-based tracker. */
+.regulatory-crosslink{display:flex;gap:13px;align-items:center;text-decoration:none;background:#eaf5eb;border:1px solid #bddac3;border-radius:12px;margin:0 0 23px;padding:14px 17px;color:#2d6c47}
+.regulatory-crosslink:hover{border-color:#65a77a}
+.regulatory-crosslink>span:first-child{display:grid;place-items:center;background:#d7edda;width:39px;height:39px;flex:0 0 39px;border-radius:10px;font-size:23px;font-weight:800}
+.regulatory-crosslink>span:nth-child(2){flex:1;min-width:0;display:grid;gap:3px}
+.regulatory-crosslink strong{font-size:14px;line-height:1.4}
+.regulatory-crosslink small{font-size:12px;line-height:1.6;color:#557862}
+.regulatory-crosslink>b{font-size:20px}
+@media(max-width:550px){.regulatory-crosslink{gap:9px;padding:12px}.regulatory-crosslink strong{font-size:16px}.regulatory-crosslink small{font-size:14px}.regulatory-crosslink>span:first-child{width:34px;height:34px;flex-basis:34px}}
