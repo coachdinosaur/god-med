@@ -183,3 +183,19 @@ select { width: 100%; background: var(--panel-2); border: 1px solid var(--line);
 .category-quick-link{display:block;margin:11px 0 4px;text-decoration:none;color:var(--muted);font-size:12px;line-height:1.6;text-align:center;padding:9px}
 .category-quick-link strong{color:var(--green)}
 .category-quick-link:hover strong{text-decoration:underline}
+
+/* Dated DENR–EMB regulatory update entry points */
+.regulatory-sidebar-link{display:flex;align-items:center;gap:11px;text-decoration:none;padding:12px;margin:7px 3px 0;border:1px solid var(--line);border-radius:10px;background:var(--panel);color:var(--green);font-size:13px;font-weight:750}
+.regulatory-sidebar-link:hover{border-color:var(--green);background:var(--accent-soft)}
+.regulatory-sidebar-link span:first-child{font-size:23px;line-height:1}
+.regulatory-sidebar-link span:last-child{margin-left:auto}
+.regulatory-feature{display:flex;align-items:center;gap:14px;min-width:0;padding:18px 20px;margin-top:13px;background:var(--panel);border:1px solid var(--line);border-radius:14px;text-decoration:none;color:var(--text);box-shadow:var(--shadow)}
+.regulatory-feature:hover{border-color:var(--green);background:var(--accent-soft)}
+.regulatory-feature-icon{display:grid;place-items:center;flex:0 0 44px;height:44px;border-radius:11px;background:var(--accent-soft);color:var(--green);font-weight:800;font-size:24px}
+.regulatory-feature>span:nth-child(2){min-width:0;flex:1;display:grid;gap:3px}
+.regulatory-feature small{font-size:10px;font-weight:850;color:var(--green);letter-spacing:1px;line-height:1.3}
+.regulatory-feature strong{font-size:16px;line-height:1.4}
+.regulatory-feature>span:nth-child(2)>span{font-size:12px;color:var(--muted);line-height:1.6}
+.regulatory-feature>b{font-size:21px;color:var(--green)}
+@media(max-width:800px){.mobile-nav{grid-template-columns:repeat(6,minmax(0,1fr))}.mobile-nav a.mobile-tab{text-decoration:none;align-content:center}}
+@media(max-width:550px){.regulatory-feature{padding:14px;gap:9px}.regulatory-feature-icon{flex-basis:35px;height:35px;font-size:19px}.regulatory-feature strong{font-size:15px}.regulatory-feature small{font-size:11px}.regulatory-feature>span:nth-child(2)>span{font-size:14px}.regulatory-feature>b{font-size:17px}}
