@@ -181,7 +181,7 @@ function renderDocs(){
  const query=$("docSearch").value.trim().toLowerCase();
  let matched=0;
  for(const phase of PHASES){
-  const items=selectedDocs().filter(d=>d.phase===phase);
+  const items=selectedDocs().filter(d=>d.phase===phase.id);
   const filtered=items.filter(d=>(d.title+" "+d.desc+" "+d.tag).toLowerCase().includes(query));
   if(!filtered.length)continue;
   matched+=filtered.length;
