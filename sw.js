@@ -1,5 +1,5 @@
 // Offline-first service worker: precaches the app shell and all verse audio.
-const VERSION = "godmed-v6";
+const VERSION = "godmed-v7";
 const CORE = [
   "./",
   "index.html",
@@ -15,6 +15,11 @@ const CORE = [
   "pco/pco.js",
   "pco/quiz.js",
   "pco/data.json",
+  "pco/accreditation/",
+  "pco/accreditation/index.html",
+  "pco/accreditation/guide.css",
+  "pco/accreditation/guide.js",
+  "pco/accreditation/guide-data.js",
   "manifest.webmanifest",
   "icons/icon.svg",
   "icons/icon-192.png",
