@@ -25,6 +25,7 @@
         <button class="tab" id="tabCards" type="button" role="tab" aria-selected="false" aria-controls="viewCards"><span class="nav-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="5" y="3" width="16" height="17" rx="2"/><path d="M3 7v13a2 2 0 0 0 2 2h12M9 9h8M9 13h5"/></svg></span><span>Flashcards</span></button>
         <button class="tab" id="tabQuiz" type="button" role="tab" aria-selected="false" aria-controls="viewQuiz"><span class="nav-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="m8 9 2 2 4-4M8 16h8"/></svg></span><span>Practice quiz</span></button>
         <button class="tab" id="tabInterview" type="button" role="tab" aria-selected="false" aria-controls="viewInterview"><span class="nav-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4V5Z"/><path d="M9 9h6M9 12h4"/></svg></span><span>Interview prep</span></button>
+        <a class="tab guide-link" href="accreditation/"><span class="nav-ico" aria-hidden="true">✓</span><span>Accreditation guide</span></a>
       </nav>
       <div class="sidebar-bottom">
         <div class="sidebar-tip"><span class="tip-icon">✦</span><strong>Little by little.</strong><p>Every question brings you one step closer to being exam-ready.</p></div>
@@ -52,7 +53,7 @@
             <div class="mini-stat"><span class="stat-icon lavender">◎</span><div><span class="stat-label">BEST QUIZ SCORE</span><strong id="dashBest">—</strong><span class="stat-foot" id="dashQuizRuns">No quizzes yet</span></div></div>
             <div class="mini-stat"><span class="stat-icon peach">✳</span><div><span class="stat-label">SCENARIOS NAILED</span><strong id="dashInterview">0 <small>/ 12</small></strong><span class="stat-foot">Practice makes progress</span></div></div>
           </section>
-          <section class="learning-section" aria-labelledby="modesHeading"><div class="section-head"><div><span class="eyebrow">EXPLORE & LEARN</span><h2 id="modesHeading">Choose your study mode</h2></div><span class="section-subtle">4 ways to get exam-ready</span></div>
+          <section class="learning-section" aria-labelledby="modesHeading"><div class="section-head"><div><span class="eyebrow">EXPLORE & LEARN</span><h2 id="modesHeading">Choose your study mode</h2></div><span class="section-subtle">4 ways to learn · 1 accreditation roadmap</span></div>
             <div class="mode-grid">
               <button type="button" class="mode-card" data-go="Notes"><span class="mode-icon mint"><svg viewBox="0 0 24 24"><path d="M4 5.5a2 2 0 0 1 2-2h14v16H6a2 2 0 0 0-2 2V5.5Zm0 0V20M8 8h8M8 12h8"/></svg></span><span class="mode-tag">READ & UNDERSTAND</span><strong>Study notes</strong><span class="mode-desc">Key laws, concepts and regulations, made digestible.</span><span class="mode-go">Explore notes <span>↗</span></span></button>
               <button type="button" class="mode-card" data-go="Cards"><span class="mode-icon lilac"><svg viewBox="0 0 24 24"><rect x="5" y="3" width="16" height="17" rx="2"/><path d="M3 7v13a2 2 0 0 0 2 2h12M9 9h8M9 13h5"/></svg></span><span class="mode-tag">RECALL & REMEMBER</span><strong>Flashcards</strong><span class="mode-desc">Put your memory to work with quick review cards.</span><span class="mode-go">Review cards <span>↗</span></span></button>
@@ -60,6 +61,11 @@
               <button type="button" class="mode-card" data-go="Interview"><span class="mode-icon sky"><svg viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4V5ZM9 9h6M9 12h4"/></svg></span><span class="mode-tag">BUILD CONFIDENCE</span><strong>Interview prep</strong><span class="mode-desc">Handle realistic PCO scenarios with confidence.</span><span class="mode-go">Practice answers <span>↗</span></span></button>
             </div>
           </section>
+          <a href="accreditation/" class="accreditation-banner">
+            <span class="accreditation-banner-icon" aria-hidden="true">✓</span>
+            <span><small>YOUR NEXT STEP BEYOND STUDYING</small><strong>Get PCO accredited — start to finish</strong><span>Eligibility, 40-hour training, every required document, EMB application, payment, approval and renewal.</span></span>
+            <b aria-hidden="true">↗</b>
+          </a>
           <section class="insight-strip"><span class="insight-symbol">✦</span><div><strong>A reminder for your journey</strong><p>Consistency beats cramming. A few minutes of focused practice today can make a real difference.</p></div></section>
         </main>
 
@@ -106,7 +112,7 @@
       </div>
     </div>
   </div>
-  <nav class="mobile-nav" role="tablist" aria-label="Mobile reviewer sections"><button class="mobile-tab active" type="button" data-go="Dashboard" aria-label="Overview"><span>▦</span><small>Home</small></button><button class="mobile-tab" type="button" data-go="Notes" aria-label="Study notes"><span>▤</span><small>Notes</small></button><button class="mobile-tab" type="button" data-go="Cards" aria-label="Flashcards"><span>▧</span><small>Cards</small></button><button class="mobile-tab" type="button" data-go="Quiz" aria-label="Practice quiz"><span>◉</span><small>Quiz</small></button><button class="mobile-tab" type="button" data-go="Interview" aria-label="Interview practice"><span>▢</span><small>Interview</small></button></nav>
+  <nav class="mobile-nav" role="tablist" aria-label="Mobile reviewer sections"><button class="mobile-tab active" type="button" data-go="Dashboard" aria-label="Overview"><span>▦</span><small>Home</small></button><button class="mobile-tab" type="button" data-go="Notes" aria-label="Study notes"><span>▤</span><small>Notes</small></button><button class="mobile-tab" type="button" data-go="Cards" aria-label="Flashcards"><span>▧</span><small>Cards</small></button><button class="mobile-tab" type="button" data-go="Quiz" aria-label="Practice quiz"><span>◉</span><small>Quiz</small></button><button class="mobile-tab" type="button" data-go="Interview" aria-label="Interview practice"><span>▢</span><small>Interview</small></button><a class="mobile-tab" href="accreditation/" aria-label="PCO accreditation guide"><span>✓</span><small>Accredit</small></a></nav>
   <script type="module" src="pco.js"></script>
 </body>
 </html>
