@@ -10,18 +10,25 @@
   <link rel="stylesheet" href="guide.css">
   <link rel="stylesheet" href="category.css">
   <link rel="stylesheet" href="../readability.css">
+  <link rel="stylesheet" href="../site-shell.css">
   <script type="module" src="../text-size.js"></script>
   <script type="module" src="category-ui.js"></script>
   <script type="module" src="guide.js"></script>
+  <script type="module" src="../site-theme.js"></script>
 </head>
-<body>
+<body class="pco-app pco-accreditation">
   <a class="skip" href="#guideMain">Skip to guide</a>
-  <header class="topbar">
-    <a class="back" href="../" aria-label="Back to PCO Study Studio"><span aria-hidden="true">←</span> PCO<span class="brand-accent">studio</span></a>
-    <span class="top-label">ACCREDITATION ROADMAP</span>
-    <button class="font-size-toggle" id="fontSizeToggle" type="button" aria-label="Increase text size" aria-pressed="false" title="Larger text size">A+</button>
-    <a class="top-resource" href="https://pco.emb.gov.ph/" target="_blank" rel="noopener noreferrer">Official PCO portal <span aria-hidden="true">↗</span></a>
-  </header>
+  <header class="topbar pco-site-header">
+        <div class="pco-header-identity">
+          <a class="pco-header-brand" href="../" aria-label="PCO Study Studio home"><span class="pco-header-logo" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><path d="M16 3 28 9v14L16 29 4 23V9L16 3Z" stroke="currentColor" stroke-width="1.7"/><path d="m10 20 4-5 4 3 5-7" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="pco-header-wordmark">PCO<span>studio</span></span></a>
+          <span class="pco-header-current">Accreditation Guide</span>
+        </div>
+        <nav class="pco-top-nav" aria-label="PCO Study Studio sections"><a href="../">Study Studio</a><a href="./" aria-current="page">Accreditation</a><a href="../regulatory/">Regulatory Updates</a></nav>
+        <div class="pco-header-actions">
+          <button class="font-size-toggle" id="fontSizeToggle" type="button" aria-label="Increase text size" aria-pressed="false" title="Larger text size">A+</button>
+          <button id="themeToggle" class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false" title="Toggle appearance"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 15.4A8 8 0 0 1 8.6 4a8 8 0 1 0 11.4 11.4Z"/></svg></button>
+        </div>
+      </header>
   <main id="guideMain" class="layout">
     <section class="intro" aria-labelledby="pageTitle">
       <span class="eyebrow">DENR / EMB · PHILIPPINES</span>
@@ -200,5 +207,6 @@
     <footer class="footer"><a href="../">← Return to PCO Study Studio</a><span>Learning aid · Not affiliated with DENR or EMB</span></footer>
   </main>
   <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+  <nav class="pco-bottom-nav" aria-label="Main PCO navigation"><a href="../"><span aria-hidden="true">▦</span><small>Study Studio</small></a><a href="./" aria-current="page"><span aria-hidden="true">☑</span><small>Accreditation</small></a><a href="../regulatory/"><span aria-hidden="true">§</span><small>Updates</small></a></nav>
 </body>
 </html>
