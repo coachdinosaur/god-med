@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="../styles.css">
   <link rel="stylesheet" href="pco.css">
   <link rel="stylesheet" href="ui-mobile.css">
+  <link rel="stylesheet" href="readability.css">
 </head>
 <body>
   <div class="app-shell">
@@ -36,7 +37,7 @@
     <div class="workspace">
       <header class="app-header">
         <div class="breadcrumb"><span>PCO STUDY STUDIO</span><span class="breadcrumb-slash">/</span><strong id="breadcrumbCurrent">Overview</strong></div>
-        <div class="header-actions"><span class="header-context"><span class="live-dot"></span> Ready to learn</span><button id="themeToggle" class="theme-toggle" type="button" aria-label="Switch to dark mode" title="Toggle appearance"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 15.4A8 8 0 0 1 8.6 4a8 8 0 1 0 11.4 11.4Z"/></svg></button><span class="profile-avatar" title="Your learning workspace" aria-hidden="true">PC</span></div>
+        <div class="header-actions"><button class="font-size-toggle" id="fontSizeToggle" type="button" aria-label="Increase text size" aria-pressed="false" title="Larger text size">A+</button><span class="header-context"><span class="live-dot"></span> Ready to learn</span><button id="themeToggle" class="theme-toggle" type="button" aria-label="Switch to dark mode" title="Toggle appearance"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 15.4A8 8 0 0 1 8.6 4a8 8 0 1 0 11.4 11.4Z"/></svg></button><span class="profile-avatar" title="Your learning workspace" aria-hidden="true">PC</span></div>
       </header>
 
       <div class="content-container">
@@ -115,5 +116,6 @@
   </div>
   <nav class="mobile-nav" role="tablist" aria-label="Mobile reviewer sections"><button class="mobile-tab active" type="button" data-go="Dashboard" aria-label="Overview"><span>▦</span><small>Home</small></button><button class="mobile-tab" type="button" data-go="Notes" aria-label="Study notes"><span>▤</span><small>Notes</small></button><button class="mobile-tab" type="button" data-go="Cards" aria-label="Flashcards"><span>▧</span><small>Cards</small></button><button class="mobile-tab" type="button" data-go="Quiz" aria-label="Practice quiz"><span>◉</span><small>Quiz</small></button><button class="mobile-tab" type="button" data-go="Interview" aria-label="Interview practice"><span>▢</span><small>Interview</small></button></nav>
   <script type="module" src="pco.js"></script>
+  <script type="module" src="text-size.js"></script>
 </body>
 </html>
