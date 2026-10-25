@@ -68,7 +68,7 @@ test("Search works for CAS number, waste code, table number, and grouped law",()
 test("Reference table page retains semantic tables, responsive scrolling and trusted links",()=>{
   const html=read("pco/tables/index.html"),app=read("pco/tables/app.js"),css=read("pco/tables/style.css");
   for(const id of ["tableSearch","groupSelect","tablesList","resultsCount","tableFilters","emptyTables"])assert.ok(html.includes('id="'+id+'"'));
-  for(const keyword of ['create("table"','create("thead"','document.createElement("tbody")','scope="row"','tabIndex=0'])assert.ok(app.includes(keyword),keyword);
+  for(const keyword of ['create("table"','document.createElement("thead")','document.createElement("tbody")','scope="row"','tabIndex=0'])assert.ok(app.includes(keyword),keyword);
   assert.match(css,/overflow-x:auto/);
   assert.match(css,/position:sticky/);
   assert.equal((css.match(/{/g)||[]).length,(css.match(/}/g)||[]).length);
