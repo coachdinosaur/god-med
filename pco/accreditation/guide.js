@@ -212,8 +212,9 @@ function renderAfter(){
 function renderSources(){
  const list=$("sourceList");
  list.replaceChildren();
+ const regional={r1:"Region I",r4a:"Region IV-A",r7:"Region VII",r12:"Region XII"};
  const picked=SOURCES.slice().sort((a,b)=>{
-  const weights=x=>x.region===REGIONS[state.region].label?0:x.region==="National"?1:2;
+  const weights=x=>x.region===regional[state.region]?0:x.region==="National"?1:2;
   return weights(a)-weights(b);
  });
  for(const s of picked){
