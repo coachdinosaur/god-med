@@ -174,7 +174,7 @@ body.pco-app{background:var(--bg);color:var(--text);font:15px/1.65 system-ui,-ap
   .pco-app .layout,.pco-app .container{padding-top:22px;padding-bottom:calc(112px + env(safe-area-inset-bottom))}
   .pco-app .intro h1,.pco-regulatory .hero h1{font-size:clamp(31px,7vw,37px)}
   .pco-bottom-nav{
-    display:grid;grid-template-columns:repeat(3,minmax(0,1fr));position:fixed;bottom:0;left:0;right:0;z-index:45;
+    display:grid;grid-template-columns:repeat(4,minmax(0,1fr));position:fixed;bottom:0;left:0;right:0;z-index:45;
     background:var(--panel);border-top:1px solid var(--line);box-shadow:0 -8px 30px rgba(0,0,0,.07);
     padding:7px 12px calc(7px + env(safe-area-inset-bottom));gap:8px;
   }
@@ -217,3 +217,30 @@ body.pco-app{background:var(--bg);color:var(--text);font:15px/1.65 system-ui,-ap
   .pco-app .layout,.pco-app .container,.pco-app .content-container{padding:0!important}
 }
 @media(prefers-reduced-motion:reduce){.pco-app *, .pco-app *::before,.pco-app *::after{scroll-behavior:auto;transition-duration:0s!important}}
+
+/* Fourth section: regulatory tables. Consistent links on all existing pages. */
+.pco-app .note-table-link{display:inline-flex;align-items:center;min-height:42px;margin:0 18px 15px;padding:9px 12px;border:1px solid var(--line);border-radius:9px;color:var(--green);background:var(--accent-soft);font-size:12px;font-weight:800;text-decoration:none;line-height:1.5}
+.pco-app .note-table-link:hover{border-color:var(--green)}
+.pco-app .tables-feature,.pco-app .tables-crosslink{display:flex;align-items:center;gap:13px;min-width:0;border:1px solid var(--line);border-radius:13px;background:var(--panel);color:var(--text);padding:15px 18px;text-decoration:none;box-shadow:var(--shadow)}
+.pco-app .tables-feature{margin-top:13px}
+.pco-app .tables-crosslink{margin-top:15px;margin-bottom:18px}
+.pco-app .tables-feature:hover,.pco-app .tables-crosslink:hover{border-color:var(--green);background:var(--panel-2)}
+.pco-app .tables-feature>span:first-of-type,.pco-app .tables-crosslink>span:nth-child(2){display:grid;gap:3px;flex:1;min-width:0}
+.pco-app .tables-feature strong,.pco-app .tables-crosslink strong{font-size:15px;line-height:1.4;font-weight:800}
+.pco-app .tables-feature small,.pco-app .tables-crosslink small{font-size:12px;line-height:1.6;color:var(--muted)}
+.pco-app .tables-feature>b,.pco-app .tables-crosslink b{font-size:20px;color:var(--green)}
+.pco-app .tables-crosslink>span:first-child{font-size:23px;color:var(--green)}
+.pco-app .tables-feature>span:last-child{font-size:19px;color:var(--green)}
+@media(min-width:801px) and (max-width:1150px){
+ .pco-header-current{display:none}
+ .pco-app .pco-top-nav a{font-size:12px;padding:9px 8px}
+}
+@media(max-width:800px){
+ .pco-app .note-table-link{font-size:calc(.92rem + var(--read-extra,0rem))}
+ .pco-app .tables-feature strong,.pco-app .tables-crosslink strong{font-size:calc(1rem + var(--read-extra,0rem))}
+ .pco-app .tables-feature small,.pco-app .tables-crosslink small{font-size:calc(.89rem + var(--read-extra,0rem))}
+ .pco-app .pco-bottom-nav{gap:4px;padding-left:6px;padding-right:6px}
+ .pco-app .pco-bottom-nav a{min-height:54px;padding:7px 1px}
+ .pco-app .pco-bottom-nav a small{font-size:calc(.70rem + var(--read-extra,0rem))}
+}
+@media(max-width:355px){.pco-app .pco-bottom-nav a small{font-size:calc(.66rem + var(--read-extra,0rem))}}
