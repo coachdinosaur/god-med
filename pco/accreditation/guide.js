@@ -170,7 +170,7 @@ function refreshGroupCounts(){
  const sections=document.querySelectorAll(".doc-section");
  for(const section of sections){
   const phase=section.dataset.phase;
-  const items=selectedDocs().filter(d=>d.phase===phase);
+  const items=selectedDocs().filter(d=>d.phase===phase.id);
   const counter=section.querySelector("h3 span");
   if(counter)counter.textContent=items.filter(checked).length+" of "+items.length+" prepared";
  }
