@@ -139,9 +139,9 @@
   .app-shell .mode-icon{margin-bottom:7px}
   .app-shell .mode-desc{margin:3px 0;min-height:0}
   .app-shell .mobile-nav{padding-left:4px;padding-right:4px}
-  .layout .top-resource{display:none}
-  .layout .topbar{gap:8px}
-  .layout .topbar .back{font-size:1.06rem}
+  .topbar .top-resource{display:none}
+  .topbar{gap:8px}
+  .topbar .back{font-size:1.06rem}
   .layout .section-nav{grid-template-columns:repeat(5,minmax(0,1fr))}
   .layout .section-nav .viewtab{gap:2px;min-height:57px;padding:8px 2px}
   .layout .section-nav .viewtab span{font-size:calc(.68rem + var(--read-extra))}
