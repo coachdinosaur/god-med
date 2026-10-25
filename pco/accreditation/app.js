@@ -122,6 +122,10 @@ for (const id of choices) {
       state.category = "A";
       $("category").value = "A";
     }
+    if (id === "category" && state.category === "B" && state.role === "owner") {
+      state.role = "employee";
+      $("role").value = "employee";
+    }
     save();
     updateRegion();
     renderSteps();
