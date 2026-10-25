@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f4f8f4">
+  <meta name="description" content="PCO regulatory updates: DENR DAO 2013-22 draft revision, RA 6969, 2025–2026 PICCS and Chemical Control Orders. Official-source guide.">
+  <title>Regulatory Updates | PCO Study Studio</title>
+  <link rel="icon" href="../../icons/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="../text-size.js"></script>
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+  <a href="#updatesMain" class="skip-link">Skip to regulatory updates</a>
+  <header class="topbar">
+    <a href="../" class="brand" aria-label="Return to PCO Study Studio"><span class="brand-icon" aria-hidden="true">✳</span><span><strong>PCO<span>studio</span></strong><small>REGULATORY WATCH</small></span></a>
+    <nav class="top-links" aria-label="Related pages">
+      <a href="../">Reviewer</a>
+      <a href="../accreditation/">Accreditation</a>
+    </nav>
+    <button type="button" class="font-size-toggle" id="fontSizeToggle" aria-label="Increase text size" aria-pressed="false">A+</button>
+  </header>
+  <main class="container" id="updatesMain">
+    <section class="hero" aria-labelledby="updatesTitle">
+      <div class="eyebrow">DENR / EMB · PHILIPPINES</div>
+      <h1 id="updatesTitle">Regulatory <em>updates.</em></h1>
+      <p>Track changes that matter to Pollution Control Officers—and tell enacted rules apart from drafts and bills.</p>
+      <div class="hero-meta"><span>Source review: <strong id="reviewDate">25 October 2026</strong></span><span>Verified source links on each entry</span></div>
+    </section>
+
+    <div class="notice" role="note">
+      <strong>This is a dated reference, not a live regulatory feed.</strong> Statuses below reflect the official sources reviewed on <time datetime="2026-10-25">25 October 2026</time>. Always check the full order, its effectivity and subsequent amendments, as well as your EMB Regional Office, before acting.
+    </div>
+
+    <section class="spotlight" aria-label="Key finding">
+      <div class="spotlight-icon" aria-hidden="true">i</div>
+      <div>
+        <span class="eyebrow">IMPORTANT DISTINCTION</span>
+        <h2>DAO 2013-22 was proposed for revision. A draft is not a replacement.</h2>
+        <p>The revised hazardous-waste manual appears in EMB's 2025 regulatory plan. I did not verify a later signed order superseding DAO 2013-22 in the sources checked. Until such an issuance is confirmed, keep using DAO 2013-22 and other applicable binding requirements.</p>
+        <a href="https://r11.emb.gov.ph/wp-content/uploads/2025/08/2025-EMB-ANNUAL-REGULATORY-PLAN.pdf" target="_blank" rel="noopener noreferrer">Read EMB's regulatory plan ↗</a>
+      </div>
+    </section>
+
+    <section class="status-explainer" aria-label="How to read update statuses">
+      <div><span class="status-marker issued">●</span><strong>Issued orders</strong><small>Published or signed; check effectivity</small></div>
+      <div><span class="status-marker draft">◇</span><strong>Draft / planned</strong><small>Not binding by itself</small></div>
+      <div><span class="status-marker legislative">▤</span><strong>Proposed bills</strong><small>Not an enacted law</small></div>
+      <div><span class="status-marker baseline">◎</span><strong>Existing framework</strong><small>Current baseline for compliance</small></div>
+    </section>
+
+    <section class="updates-section" aria-labelledby="listTitle">
+      <div class="section-heading">
+        <div><div class="eyebrow">2025–2026 &amp; EXISTING RULES</div><h2 id="listTitle">Regulatory tracker</h2><p>Search an issuance or select a status to see what changed and what to check next.</p></div>
+      </div>
+      <div class="filters" aria-label="Filter regulatory updates">
+        <div class="status-filters" role="group" aria-label="Filter by legal status" id="statusFilters">
+          <button type="button" data-status="all" aria-pressed="true" class="is-selected">All updates</button>
+          <button type="button" data-status="issued" aria-pressed="false">Issued</button>
+          <button type="button" data-status="draft" aria-pressed="false">Draft</button>
+          <button type="button" data-status="legislation" aria-pressed="false">Bills</button>
+          <button type="button" data-status="baseline" aria-pressed="false">Existing</button>
+        </div>
+        <div class="search-filters">
+          <label class="search-label" for="updateSearch"><span class="sr-only">Search updates</span><input id="updateSearch" type="search" placeholder="Search DAO, topic or keyword…" autocomplete="off"></label>
+          <label class="topic-label" for="topicSelect"><span class="sr-only">Filter by environmental topic</span><select id="topicSelect"><option value="all">All topics</option><option value="Hazardous waste">Hazardous waste</option><option value="Chemical inventory">Chemical inventory</option><option value="Chemical controls">Chemical controls</option><option value="Legislation">Legislation</option></select></label>
+        </div>
+      </div>
+      <p class="results-count" id="resultsCount" role="status" aria-live="polite"></p>
+      <div class="updates-grid" id="updatesList"></div>
+      <p id="emptyMessage" class="empty-message" hidden>No entries match those filters. Try a different keyword or status.</p>
+    </section>
+
+    <section class="practical" aria-labelledby="practicalTitle">
+      <div class="eyebrow">PCO WORKFLOW</div><h2 id="practicalTitle">What should an establishment check?</h2>
+      <div class="practical-grid">
+        <article><span>01</span><h3>Hazardous-waste records</h3><p>Use the currently applicable rules for generator registration, waste classification, storage, manifests, licensed transporters and TSD documentation.</p></article>
+        <article><span>02</span><h3>Chemical inventory</h3><p>Validate chemical names/CAS numbers against updated PICCS. Check PCL, CCO and PMPIN requirements separately.</p></article>
+        <article><span>03</span><h3>New chemical controls</h3><p>If benzene or vinyl chloride is handled, inspect the relevant CCO, registration obligations, exemptions and transition provisions.</p></article>
+        <article><span>04</span><h3>Drafts and bills</h3><p>Monitor public consultations and legislation, but never substitute draft provisions for legally effective requirements.</p></article>
+      </div>
+    </section>
+
+    <section class="sources" aria-labelledby="sourcesTitle">
+      <div class="eyebrow">VERIFY THE ORIGINALS</div><h2 id="sourcesTitle">Official sources and references</h2>
+      <p>These are reference links, not live integrations. The tracker does not update itself when DENR or Congress publishes something new.</p>
+      <div class="source-grid" id="sourcesList"></div>
+    </section>
+    <footer class="footer"><span>✳ PCOstudio · Regulatory Watch</span><p>Educational summary only. Not an official DENR–EMB service or legal opinion. Last reviewed 25 October 2026.</p><a href="../">Back to Study Studio ↗</a></footer>
+  </main>
+</body>
+</html>
