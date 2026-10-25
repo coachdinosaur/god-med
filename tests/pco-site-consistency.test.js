@@ -56,12 +56,12 @@ test("cross-page colors, mobile touch navigation and reading sizes are shared",(
   const css=read("pco/site-shell.css");
   for(const token of ["--bg","--panel","--surface","--text","--ink","--muted","--green","--line","--accent-soft"]) assert.ok(css.includes(token));
   assert.equal((css.match(/{/g)||[]).length,(css.match(/}/g)||[]).length);
-  assert.match(css,/:root\\[data-theme="dark"\\]/);
-  assert.match(css,/:root\\[data-reading-size="large"\\]/);
+  assert.match(css,/:root\[data-theme="dark"\]/);
+  assert.match(css,/:root\[data-reading-size="large"\]/);
   assert.match(css,/max-width:800px/);
-  assert.match(css,/\\.pco-bottom-nav/);
-  assert.match(css,/\\.pco-study-tabs/);
-  assert.match(css,/\\.pco-regulatory \\.entry-summary/);
+  assert.match(css,/\.pco-bottom-nav/);
+  assert.match(css,/\.pco-study-tabs/);
+  assert.match(css,/\.pco-regulatory \.entry-summary/);
 });
 function fakeTheme(start="light",storageBlocked=false){
   const records=new Map([["pco.theme",start]]);
