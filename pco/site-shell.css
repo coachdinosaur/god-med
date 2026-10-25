@@ -75,6 +75,7 @@ body.pco-app{background:var(--bg);color:var(--text);font:15px/1.65 system-ui,-ap
   margin:0;padding:0;background:var(--panel);color:var(--green);border:1px solid var(--line);border-radius:10px;
   cursor:pointer;font-size:16px;font-weight:800;
 }
+.pco-app .pco-site-header .font-size-toggle{display:none}
 .pco-app .pco-site-header .theme-toggle:hover,.pco-app .pco-site-header .font-size-toggle:hover,.pco-app .pco-site-header .font-size-toggle[aria-pressed="true"]{background:var(--accent-soft)}
 .pco-app .pco-site-header .theme-toggle svg{width:20px;height:20px;stroke:currentColor;fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
 .pco-bottom-nav{display:none}
@@ -155,6 +156,7 @@ body.pco-app{background:var(--bg);color:var(--text);font:15px/1.65 system-ui,-ap
   .pco-header-logo{height:36px;width:36px;flex-basis:36px}
   .pco-top-nav{display:none}
   .pco-header-actions{gap:8px;margin-left:auto}
+  .pco-app .pco-site-header .font-size-toggle{display:inline-grid}
   .pco-app .pco-site-header .theme-toggle,.pco-app .pco-site-header .font-size-toggle{flex-basis:42px;width:42px;height:44px;min-width:42px;min-height:44px}
   .pco-app .content-container,.pco-app .layout,.pco-app .container{padding-left:16px;padding-right:16px}
   .pco-app .content-container{padding-top:22px;padding-bottom:calc(108px + env(safe-area-inset-bottom))}
