@@ -151,6 +151,17 @@ body.pco-app{background:var(--bg);color:var(--text);font:15px/1.65 system-ui,-ap
   .pco-app .pco-top-nav a{padding:9px 10px;font-size:12px}
 }
 @media(max-width:800px){
+  /* One shared A+ multiplier, including the 651–800px regulatory viewport.
+     The reviewer and accreditation pages already consume --read-extra. */
+  :root{--read-extra:0rem}
+  :root[data-reading-size="large"]{--read-extra:.125rem;--extra:.125rem}
+  .pco-regulatory .hero p,.pco-regulatory .entry-summary{font-size:calc(.98rem + var(--read-extra));line-height:1.7}
+  .pco-regulatory .entry-title{font-size:calc(1.28rem + var(--read-extra));line-height:1.35}
+  .pco-regulatory .entry-details summary,.pco-regulatory .entry-body p,.pco-regulatory .entry-sources{font-size:calc(.94rem + var(--read-extra));line-height:1.7}
+  .pco-regulatory .status-filters button,.pco-regulatory .search-filters select{font-size:calc(.9rem + var(--read-extra))}
+  .pco-regulatory .spotlight p,.pco-regulatory .notice{font-size:calc(.94rem + var(--read-extra));line-height:1.7}
+  .pco-regulatory .source-card strong,.pco-regulatory .practical p{font-size:calc(.95rem + var(--read-extra))}
+  .pco-regulatory .source-card span{font-size:calc(.87rem + var(--read-extra))}
   .pco-app .pco-site-header{height:66px;min-height:66px;top:0;gap:8px;padding:0 15px}
   .pco-header-wordmark{font-size:18px}
   .pco-header-logo{height:36px;width:36px;flex-basis:36px}
