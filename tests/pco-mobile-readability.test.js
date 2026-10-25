@@ -75,7 +75,7 @@ test("mobile typography covers key learning and accreditation components", () =>
   assert.equal((style.match(/{/g) || []).length, (style.match(/}/g) || []).length);
 });
 test("updated app shell assets are precached with bumped version", () => {
-  assert.match(worker, /const VERSION = "godmed-v10"/);
+  assert.match(worker, /const VERSION = "godmed-v14"/);
   assert.ok(worker.includes('"pco/readability.css"'));
   assert.ok(worker.includes('"pco/text-size.js"'));
 });
