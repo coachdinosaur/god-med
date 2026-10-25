@@ -8,6 +8,8 @@
   <title>Accreditation Guide | PCO Study Studio</title>
   <link rel="icon" href="../../icons/icon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="guide.css">
+  <link rel="stylesheet" href="category.css">
+  <script type="module" src="category-ui.js"></script>
   <script type="module" src="guide.js"></script>
 </head>
 <body>
@@ -56,6 +58,7 @@
               <option value="unknown">Not yet assessed</option>
             </select>
           </label>
+          <button type="button" data-view="category" class="category-jump">Not sure which category? Check the criteria →</button>
           <p class="selection-help" id="selectionHelp" aria-live="polite"></p>
           <div class="progress-card"><div class="progress-head"><span>Documents prepared</span><strong id="progressNumber">0 / 0</strong></div><div class="progress-track" role="progressbar" aria-label="Document checklist progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" id="progressBar"><div id="progressFill"></div></div><p id="progressDescription">Tick a document when it is ready for submission.</p></div>
           <a href="https://client.emb.gov.ph/crs" class="quick-link" target="_blank" rel="noopener noreferrer"><span>Company registration (CRS)</span><span aria-hidden="true">↗</span></a>
@@ -70,6 +73,7 @@
           <button type="button" data-view="documents" class="viewtab">02 <span>Documents</span></button>
           <button type="button" data-view="after" class="viewtab">03 <span>After approval</span></button>
           <button type="button" data-view="sources" class="viewtab">04 <span>Official sources</span></button>
+          <button type="button" data-view="category" class="viewtab">05 <span>Category A/B</span></button>
         </nav>
 
         <section id="panelJourney" class="view" aria-labelledby="journeyTitle">
@@ -97,6 +101,94 @@
           <div class="panel-top"><span class="eyebrow">CHECK AGAINST THE ORIGINALS</span><h2 id="sourceTitle">Official rules, forms and portals.</h2><p>These links open official DENR/EMB materials. Regional checklists are examples of office-specific requirements, not a universal guarantee.</p></div>
           <div class="source-list" id="sourceList"></div>
           <div class="source-tip">Dates, fees, renewal evidence, document names, accepted file formats, and payment steps may change. Confirm the latest instructions with the relevant EMB regional office before filing.</div>
+        </section>
+
+        <section id="panelCategory" class="view" aria-labelledby="categoryTitle" hidden>
+          <div class="panel-top">
+            <span class="eyebrow">ESTABLISHMENT CLASSIFICATION · DAO 2014-02 §5</span>
+            <h2 id="categoryTitle">Could your establishment be Category B?</h2>
+            <p>Answer the operational questions below. One applicable Category B criterion can be enough. This is a preliminary screening, <strong>not an EMB determination</strong>.</p>
+          </div>
+          <div class="cat-summary-strip"><span><strong>Category A</strong> — no confirmed Category B criterion, subject to EMB verification</span><span><strong>Category B</strong> — meets one or more Table 1 criteria</span></div>
+
+          <form id="categoryForm" class="category-form">
+            <fieldset class="cat-fieldset">
+              <legend><span class="cat-num">01</span> Facility and hazardous chemicals</legend>
+              <label>Type of establishment or activity <input name="business" type="text" placeholder="e.g. hospital, factory, resort, warehouse" maxlength="120" autocomplete="organization"></label>
+              <label>Does the site use, handle, or store a chemical listed in <strong>DAO 2014-02 Annex 1</strong>? <small>Annex 1 chemicals trigger Category B regardless of quantity. Confirm exact chemical identity against the official list.</small>
+                <select name="priorityChemicals"><option value="unknown">Not sure / not checked</option><option value="yes">Yes — Annex 1 listed</option><option value="no">No — Annex 1 checked</option></select></label>
+              <label>Hazardous-waste generation category <small>Compare annual amount for each waste type with Annex 2; small vs. large is not a single universal kilogram threshold.</small>
+                <select name="hazardousWaste"><option value="unknown">Not sure</option><option value="large">Large-quantity generator (Annex 2)</option><option value="small">Small-quantity generator</option><option value="none">No hazardous waste generated</option></select></label>
+              <label>Is the facility an accredited hazardous-waste transporter or TSD facility?
+                <select name="hazardousFacility"><option value="unknown">Not sure</option><option value="yes">Yes</option><option value="no">No</option></select></label>
+            </fieldset>
+
+            <fieldset class="cat-fieldset">
+              <legend><span class="cat-num">02</span> Air emission sources</legend>
+              <label>Does your source meet a small / medium / large / environmentally significant classification under EMB MC 2007-003?
+                <select name="airClass"><option value="unknown">Not assessed</option><option value="yes">Yes</option><option value="no">No</option></select></label>
+              <label>Is your establishment required to undergo stack sampling?
+                <select name="stackSampling"><option value="unknown">Not sure</option><option value="yes">Yes</option><option value="no">No</option></select></label>
+              <div class="cat-input-grid">
+                <label>Largest boiler rating (HP) <input name="boilerHp" type="number" min="0" step="any" inputmode="decimal" placeholder="e.g. 60"></label>
+                <label>Generator capacity (kW) <input name="generatorKw" type="number" min="0" step="any" inputmode="decimal" placeholder="e.g. 350"></label>
+                <label>Other regulated pollutant potential (tonnes/year) <input name="otherAirTons" type="number" min="0" step="any" inputmode="decimal" placeholder="e.g. 12"></label>
+              </div>
+              <p class="cat-hint">Boiler ≥ 50 HP, generator ≥ 300 kW, or other sources emitting ≥ 10 tonnes/year are <strong>air-classification flags</strong>. Confirm their actual classification and stack-testing obligations with EMB.</p>
+            </fieldset>
+
+            <fieldset class="cat-fieldset">
+              <legend><span class="cat-num">03</span> Wastewater and BOD</legend>
+              <div class="cat-input-grid">
+                <label>Daily wastewater discharged (m³/day) <input name="wastewaterM3" type="number" min="0" step="any" inputmode="decimal" placeholder="e.g. 35"></label>
+                <label>Wastewater <strong>influent</strong> BOD (mg/L) <input name="bodMgL" type="number" min="0" step="any" inputmode="decimal" placeholder="e.g. 3200"></label>
+              </div>
+              <label>Do effluent tests show a parameter listed in <strong>DAO 2014-02 Annex 3</strong>?
+                <select name="annex3Effluent"><option value="unknown">Not sure / no lab report</option><option value="yes">Yes — Annex 3 pollutant</option><option value="no">No — verified against Annex 3</option></select></label>
+              <label>Does the business transport or treat wastewater, sewage, or septage?
+                <select name="wastewaterOperator"><option value="unknown">Not sure</option><option value="yes">Yes</option><option value="no">No</option></select></label>
+              <p class="cat-hint">A discharge of <strong>30 m³/day or more</strong>, influent BOD of <strong>3,000 mg/L or more</strong>, Annex 3 pollutants, or wastewater/septage treatment services can indicate Category B.</p>
+            </fieldset>
+
+            <fieldset class="cat-fieldset">
+              <legend><span class="cat-num">04</span> Solid waste and sludge</legend>
+              <label>Does the establishment operate a centralized MRF, solid-waste treatment/processing facility, or sanitary landfill?
+                <select name="solidFacility"><option value="unknown">Not sure</option><option value="yes">Yes</option><option value="no">No</option></select></label>
+              <label>Does the business transport or treat sludge?
+                <select name="sludgeOperator"><option value="unknown">Not sure</option><option value="yes">Yes</option><option value="no">No</option></select></label>
+            </fieldset>
+            <div class="cat-form-actions">
+              <button type="submit" class="cat-primary">Assess likely category →</button>
+              <button type="reset" class="cat-secondary">Clear answers</button>
+            </div>
+          </form>
+
+          <section id="categoryResult" class="cat-result" aria-live="polite" aria-atomic="true" hidden>
+            <span class="eyebrow">SCREENING RESULT · NOT OFFICIAL</span>
+            <h3 id="categoryResultTitle"></h3>
+            <p id="categoryResultText"></p>
+            <div id="categoryTriggersWrap" class="cat-finding-section" hidden><h4>Category B criteria identified</h4><ul id="categoryTriggers"></ul></div>
+            <div id="categoryReviewWrap" class="cat-finding-section" hidden><h4>Items requiring air-source confirmation</h4><ul id="categoryReview"></ul></div>
+            <div id="categoryUnknownWrap" class="cat-finding-section" hidden><h4>Information still to verify</h4><p id="categoryUnknown"></p></div>
+            <div class="cat-result-actions">
+              <button type="button" id="categoryUse" class="cat-primary" hidden>Use Category B for my document checklist →</button>
+              <button type="button" id="categoryPrint" class="cat-secondary">Print assessment</button>
+            </div>
+          </section>
+
+          <details class="cat-reference">
+            <summary>Show the official Category B criteria and qualification implications</summary>
+            <div class="cat-table-scroll"><table class="cat-table"><thead><tr><th>Environmental factor</th><th>Category B condition</th></tr></thead><tbody>
+              <tr><td>Chemicals</td><td>Uses, stores, or handles any Annex 1 chemical.</td></tr>
+              <tr><td>Hazardous waste</td><td>Annex 2 large-quantity generator; accredited transporter or TSD.</td></tr>
+              <tr><td>Air emissions</td><td>MC 2007-003 small/medium/large/significant source, or required stack sampling.</td></tr>
+              <tr><td>Solid waste</td><td>Centralized MRF, processing/treatment facility, or sanitary landfill.</td></tr>
+              <tr><td>Wastewater</td><td>≥ 30 m³/day, Annex 3 effluent parameter, strong influent BOD ≥ 3,000 mg/L, or sewage/septage transport/treatment.</td></tr>
+              <tr><td>Sludge</td><td>Sludge transporter or treater.</td></tr>
+            </tbody></table></div>
+            <p><strong>PCO qualifications:</strong> Category B requires the appropriate technical/professional background and environmental-management experience under DAO 2014-02 §6. The establishment category does not automatically accredit its PCO.</p>
+          </details>
+          <p class="cat-source">Legal basis: <a href="https://apidb.denr.gov.ph/infores/uploads/rmdd/dao-2014-02.pdf" target="_blank" rel="noopener noreferrer">DENR DAO 2014-02, §5, Table 1 and Annexes 1–3 ↗</a> · <a href="https://r3.emb.gov.ph/wp-content/uploads/2022/10/Establishment-Categorization.pdf" target="_blank" rel="noopener noreferrer">EMB Region III categorization reference ↗</a></p>
         </section>
       </section>
     </div>
