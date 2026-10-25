@@ -3,6 +3,7 @@ export const SOURCES = [
   {id:"dao",region:"National",title:"DENR Administrative Order 2014-02",description:"National baseline: categorization, qualifications, designation, accreditation and renewal.",url:"https://apidb.denr.gov.ph/infores/uploads/rmdd/dao-2014-02.pdf"},
   {id:"mc",region:"National",title:"EMB Memorandum Circular 2020-28",description:"Renewal clarification: three-year compliance evidence and conditional affidavit of commitment.",url:"https://www.emb.gov.ph/wp-content/uploads/2020/09/EMB-MC-2020-28-CLARIFICATION-ON-THE-RENEWAL-AND-REVOCATION-OF-ACCREDITATION-OF-POLLUTION-CONTROL-OFFICERS.pdf"},
   {id:"portal",region:"National",title:"PCO Online Accreditation System",description:"Official application submission and tracking.",url:"https://pco.emb.gov.ph/"},
+  {id:"pcomanual",region:"National",title:"PCO Online Applicant Manual (new application)",description:"Official screenshots for first-time online filing, evaluation, payment, receipt re-submission and certificate printing.",url:"https://pco.emb.gov.ph/uploads/attachment/system/how_to_apply_for_new_application.pdf"},
   {id:"crs",region:"National",title:"EMB Company Registration System (CRS)",description:"Establishment registration, required explicitly by some EMB regions.",url:"https://client.emb.gov.ph/crs"},
   {id:"r1",region:"Region I",title:"EMB Region I Citizen's Charter (2025)",description:"PCO new and renewal service checklists and online procedure.",url:"https://r1.emb.gov.ph/wp-content/uploads/2025/03/2025-FINAL-EMB-R1-Citizens-Charter-ARTA.pdf"},
   {id:"r1forms",region:"Region I",title:"EMB Region I Downloadable Forms",description:"PCO application, checklist, affidavit and owner-as-PCO forms.",url:"https://r1.emb.gov.ph/ufaq/pollution-control-officer-pco-accreditation/"},
@@ -65,6 +66,8 @@ export const DOCUMENTS = [
   {id:"hazard",phase:"compliance",routes:["renew"],title:"Hazardous-waste manifests, permits to transport and certificates of treatment",desc:"If hazardous waste is generated/transported, keep complete tracking and disposal records to support applicable legal compliance.",tag:"If applicable",status:"conditional"},
   {id:"tests",phase:"compliance",routes:["renew"],title:"Relevant emissions/effluent test reports and corrective-action evidence",desc:"Support air and water discharge compliance, monitoring and corrective actions, when your installation requires them.",tag:"If applicable",status:"conditional"},
   {id:"commitment",phase:"compliance",routes:["renew"],title:"Notarized Affidavit of Commitment (when required for deficiencies)",desc:"Under EMB MC 2020-28, a company non-compliant with one or two requirements may receive a one-year renewal subject to a joint affidavit of commitment; not mandatory for every renewal.",tag:"If instructed",status:"conditional"},
+  {id:"acknowledgment",phase:"decision",routes:ALL,title:"Online submission acknowledgment / application reference number",desc:"Retain the email or on-screen acknowledgment and application ID used for evaluator follow-ups. Save or print it for your records.",tag:"Application record"},
+  {id:"orderPayment",phase:"decision",routes:ALL,title:"Official Order of Payment (when generated)",desc:"Download the EMB-generated order after procedural screening/evaluation if the portal asks for it. Avoid paying before the correct instruction.",tag:"Payment stage",status:"conditional"},
   {id:"payment",phase:"decision",routes:ALL,title:"Official fee payment and Official Receipt / proof of payment",desc:"DAO 2014-02 establishes ₱500 processing (new) and renewal fees. Pay only via the office's instructed method/step; local documentary stamp or other charges may apply.",tag:"After assessment"},
   {id:"certificate",phase:"decision",routes:ALL,title:"Approved PCO Certificate of Accreditation",desc:"Download/claim the signed or issued accreditation certificate, verify establishment and PCO details and effective dates, and save a copy.",tag:"Final output"}
 ];
@@ -116,14 +119,14 @@ export function stepsFor(route,region) {
  "Check the registered email for the activation link; activate the account, then select the proper new or renewal route and confirm site and category details."
  ]],
  ["06","Upload and submit the online application","Attach documents and retain a submission reference.",[
- "Complete official application fields, upload files and check that scans are readable and complete.",
- "Submit through the PCO Online Accreditation System and save the application/reference number or acknowledgement.",
- "Monitor the portal and registered email for requests to correct or supplement documents."
+ "Complete all required fields, upload legible files in the portal-accepted format (official PCO applicant instructions specify PDF attachments), and double-check each upload.",
+ "Saving the application may keep it as a draft; click Submit Application to forward it to the regional case handler. Save the application ID/acknowledgment.",
+ "Review portal status, evaluator comments and registered email regularly. An application forwarded to the case handler may be temporarily locked for edits until returned."
  ]],
  ["07","Respond to evaluation and pay when instructed","The EMB Regional Office evaluates eligibility, supporting records and compliance.",[
  "If an application is incomplete, fix the listed deficiencies and resubmit. If disapproved, DAO 2014-02 Sec. 8 gives 30 calendar days to address deficiencies or designate another PCO.",
  "Follow the official order-of-payment instructions. DAO 2014-02 sets a ₱500 accreditation processing fee; additional regional charges may be assessed.",
- "Download any Order of Payment, use the payment channels officially instructed by EMB, and upload the Official Receipt when directed. Processing times vary by region and completeness."
+ "After a payment instruction, download the Order of Payment, pay through an authorized channel, then upload the official receipt. Click Update Application and Submit to Evaluator as instructed; upload alone may leave it pending."
  ]],
  ["08","Receive the certificate and start compliance monitoring","Confirm approval and keep records for the next cycle.",[
  "Claim/download the PCO Certificate of Accreditation. Verify the PCO name, establishment, category and validity.",
@@ -154,12 +157,12 @@ export function stepsFor(route,region) {
  ]],
  ["05","Apply through the official PCO portal","Submit the renewal and monitor the evaluation.",[
  "Log in to the PCO Online Accreditation System, choose renewal, and verify establishment information.",
- "Submit all current records and retain the acknowledgement.",
+ "Upload legible PDF attachments as instructed; use Submit Application (not just Save as Draft), and retain the acknowledgement/application ID.",
  "Respond to evaluator requests for evidence, clarifications or corrections."
  ]],
  ["06","Pay the instructed renewal fee","Complete payment and receipt-upload steps.",[
  "DAO 2014-02 lists a ₱500 renewal fee; the exact payment workflow may differ by EMB regional office.",
- "Pay only when notified through legitimate EMB channels. Save/upload the official receipt if requested.",
+ "Pay only when notified. Where the portal uses the documented workflow, upload the receipt, select Update Application, then Submit to Evaluator so the file is not left pending on your side.",
  "Check the office's decision and accredited period; deficiencies may affect the outcome under EMB MC 2020-28."
  ]],
  ["07","Keep your renewed certificate and monitor compliance","Store the new accreditation and keep operating records current.",[
