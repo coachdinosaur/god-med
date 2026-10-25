@@ -1,6 +1,7 @@
 // Source-backed PCO accreditation data. Review official sources before filing.
 export const SOURCES = [
   {id:"dao",region:"National",title:"DENR Administrative Order 2014-02",description:"National baseline: categorization, qualifications, designation, accreditation and renewal.",url:"https://apidb.denr.gov.ph/infores/uploads/rmdd/dao-2014-02.pdf"},
+  {id:"dao2018",region:"National",title:"DENR Administrative Order 2018-07 — clustering amendment",description:"Amends DAO 2014-02 section 7: clustering for banks, rice millers, dental clinics and other small stand-alone establishments requires EMB Central Office approval on the regional office recommendation.",url:"https://r7.emb.gov.ph/wp-content/uploads/2025/04/dao-2018-07.pdf"},
   {id:"mc",region:"National",title:"EMB Memorandum Circular 2020-28",description:"Renewal clarification: three-year compliance evidence and conditional affidavit of commitment.",url:"https://www.emb.gov.ph/wp-content/uploads/2020/09/EMB-MC-2020-28-CLARIFICATION-ON-THE-RENEWAL-AND-REVOCATION-OF-ACCREDITATION-OF-POLLUTION-CONTROL-OFFICERS.pdf"},
   {id:"portal",region:"National",title:"PCO Online Accreditation System",description:"Official application submission and tracking.",url:"https://pco.emb.gov.ph/"},
   {id:"pcomanual",region:"National",title:"PCO Online Applicant Manual (new application)",description:"Official screenshots for first-time online filing, evaluation, payment, receipt re-submission and certificate printing.",url:"https://pco.emb.gov.ph/uploads/attachment/system/how_to_apply_for_new_application.pdf"},
@@ -11,6 +12,7 @@ export const SOURCES = [
   {id:"r4aforms",region:"Region IV-A",title:"EMB CALABARZON Downloadable Forms",description:"Approved PCO application and affidavit templates.",url:"https://calabarzon.emb.gov.ph/downloadable-forms/"},
   {id:"r7new",region:"Region VII",title:"EMB Region VII New Application Checklist",description:"CRS, photo, signature, designation, employment and establishment categorization.",url:"https://r7.emb.gov.ph/wp-content/uploads/2024/02/CHECKLIST-OF-REQUIREMENTS-FOR-PCO-NEW-APPLICATIONS.pdf"},
   {id:"r7renew",region:"Region VII",title:"EMB Region VII Renewal Checklist",description:"Renewal supporting documents including previous accreditation and compliance evidence.",url:"https://r7.emb.gov.ph/wp-content/uploads/2024/02/CHECKLIST-OF-REQUIREMENTS-FOR-RENEWAL-OF-PCO-ACCREDITATION.pdf"},
+  {id:"r7corner",region:"Region VII",title:"EMB Region VII PCO Corner — support and change requests",description:"Current procedural instructions for replacing PCOs or Managing Heads and updating establishment records.",url:"https://r7.emb.gov.ph/pco-corner/"},
   {id:"r7forms",region:"Region VII",title:"EMB Region VII PCO Forms and Checklists",description:"New, renewal and clustered application forms and affidavit templates.",url:"https://r7.emb.gov.ph/downloadables-v3-0/"},
   {id:"r12process",region:"Region XII",title:"EMB Region XII PCO Process (2026)",description:"Current Citizen’s Charter flow: CRS, account activation, evaluation, payment, receipt upload and certificate release.",url:"https://r12.emb.gov.ph/wp-content/uploads/2026/06/EMB-12-015.pdf"},
   {id:"r12",region:"Region XII",title:"EMB Region XII PCO Requirements List",description:"Office checklist for new, renewal and clustered cases.",url:"https://r12.emb.gov.ph/wp-content/uploads/2026/03/0076_PCO-List-of-Requirements-revised.pdf"},
@@ -33,6 +35,7 @@ export const DOCUMENTS = [
   {id:"replacementNotice",phase:"pre",routes:["replace"],title:"Written notice of previous PCO resignation / termination to EMB",desc:"Managing Head must inform EMB within 15 calendar days and seek new PCO accreditation within 30 days of the former PCO's departure.",tag:"Core"},
   {id:"categorySheet",phase:"pre",routes:NR,title:"Completed establishment categorization checklist",desc:"Attach the office's categorization form and facts supporting the category when required by the regional evaluator.",tag:"Office-dependent",status:"conditional"},
   {id:"categorySheetR7",phase:"pre",routes:NR,regions:["r7"],title:"Region VII establishment categorization checklist form",desc:"A specific new-application requirement from the EMB VII PCO checklist. Include forms for each installation when clustered.",tag:"Region VII"},
+  {id:"r7ReplacementUpdate",phase:"pre",routes:["replace"],regions:["r7"],title:"Region VII change-of-PCO client support request and attachments",desc:"If requesting a PCO/account change, submit a Managing Head-signed request through EMB VII Client Support, including company name/address, CRS reference, new and previous PCO names, contact details, a scanned company ID and government-issued ID. For company-name changes, attach latest DTI/SEC registration or business permit.",tag:"Region VII",status:"conditional"},
   {id:"clusterLetter",phase:"pre",routes:["cluster"],title:"EMB-approved clustering authorization letter",desc:"Obtain EMB assessment/approval of the proposed group of installations. A single PCO does not automatically cover multiple establishments.",tag:"Cluster"},
   {id:"clusterSites",phase:"pre",routes:["cluster"],title:"List of all clustered sites and site-specific categorization documents",desc:"Identify each installation, location, environmental activities and coverage; Region VII expressly requires categorization per site.",tag:"Cluster"},
   {id:"ownership",phase:"pre",routes:["owner"],title:"Proof of business ownership (SEC/DTI certificate)",desc:"For Category A owner/managing-head-as-PCO route. CALABARZON explicitly requests a copy.",tag:"Owner case"},
@@ -180,6 +183,7 @@ export function stepsFor(route,region) {
  }
  if (route==="cluster") {
   items[0][3].push("Secure approval of clustering from EMB and attach the approved clustering letter and site-by-site categorization documents.");
+  items[0][3].push("DAO 2018-07 section 7.3 permits clustering applications for commercial banks, rice millers, dental clinics and similar small stand-alone establishments only with EMB Central Office approval on regional recommendation.");
   items[5][3].push("Use the office's clustered-installation application path and its specific supporting documents.");
  }
  if (route==="replace") {
