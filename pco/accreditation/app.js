@@ -38,6 +38,7 @@ function isCore(doc) { return doc.applicability === "standard" || doc.applicabil
 function visible(doc) {
   if (doc.applicability === "employee") return state.role === "employee";
   if (doc.applicability === "owner") return state.role === "owner";
+  if (doc.applicability === "categoryB") return state.category === "B";
   return true;
 }
 function relevantSteps() {
@@ -47,6 +48,7 @@ function docLabel(doc) {
   switch (doc.applicability) {
     case "regional": return ["Check region", "regional"];
     case "conditional": return ["If applicable", "conditional"];
+    case "categoryB": return ["Category B · if applicable", "conditional"];
     case "action": return ["Action", "action"];
     default: return [null, null];
   }
@@ -59,7 +61,7 @@ function refreshCounters() {
   const optionalDone = optional.filter((doc) => isDone(doc.id)).length;
   const pct = core.length ? Math.round(completed / core.length * 100) : 0;
   $("completeCount").textContent = completed + " / " + core.length;
-  $("progressText").textContent = "Core requirements done";
+  $("progressText").textContent = "Core items done · optional files tracked below";
   $("percentDone").textContent = pct + "% core complete · " + optionalDone + " optional items checked";
   $("progressFill").style.width = pct + "%";
   $("completionBar").setAttribute("aria-valuenow", String(pct));
@@ -76,7 +78,7 @@ function renderSteps() {
   const container = $("steps");
   container.replaceChildren();
   const selected = byId(tracks, state.track);
-  $("selectedPath").textContent = selected?.label + " · Standard steps plus applicable regional/conditional items";
+  $("selectedPath").textContent = selected.label + " · Common steps plus regional/conditional documents if applicable";
   for (const [index, step] of relevantSteps().entries()) {
     const card = el("details", { className: "step", "data-step": step.id });
     if (index === 0 || index === 1) card.open = true;
