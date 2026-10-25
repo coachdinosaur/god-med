@@ -26,6 +26,7 @@ export const tracks = [
   { id: "new", label: "First accreditation", short: "New" },
   { id: "renewal", label: "Renew accreditation", short: "Renewal" },
   { id: "cluster", label: "Multiple sites / cluster", short: "Cluster" },
+  { id: "cluster-renewal", label: "Renew clustered accreditation", short: "Cluster renewal" },
   { id: "replacement", label: "Replace a departing PCO", short: "Replacement" }
 ];
 export const sources = [
@@ -33,6 +34,7 @@ export const sources = [
   { title: "EMB Region VII — New application checklist", url: "https://r7.emb.gov.ph/wp-content/uploads/2024/02/CHECKLIST-OF-REQUIREMENTS-FOR-PCO-NEW-APPLICATIONS.pdf", note: "CRS registration, 2×2 photo, e-signature, full-time employment certificate and category checklist." },
   { title: "EMB Region XII — PCO document matrix", url: "https://r12.emb.gov.ph/wp-content/uploads/2026/03/0076_PCO-List-of-Requirements-revised.pdf", note: "New, renewal and clustered supporting-document matrix." },
   { title: "EMB CALABARZON — Official PCO transaction", url: "https://calabarzon.emb.gov.ph/secsime-no-r4a-cpd-13/", note: "Step-by-step order of payment, receipt upload, renewal compliance proof and 500-peso fee." },
+  { title: "EMB Region VII — Renewal of cluster checklist", url: "https://r7.emb.gov.ph/wp-content/uploads/2024/02/CHECKLIST-OF-REQUIREMENTS-FOR-RENEWAL-OF-CLUSTER-PCO-ACCREDITATION.pdf", note: "Separate documentary requirements for clustered accreditation renewal." },
   { title: "EMB Region VII — Forms and checklists", url: "https://r7.emb.gov.ph/downloadables-v3-0/", note: "Download regional affidavits, categorization, new/renewal/cluster checklists." },
   { title: "EMB Region I — Official application forms", url: "https://r1.emb.gov.ph/ufaq/pollution-control-officer-pco-accreditation/", note: "Current forms and owner-PCO affidavit links." },
   { title: "EMB Region XI — PCO FAQs", url: "https://r11.emb.gov.ph/pollution-control-officer-faqs/", note: "Accreditation validity, online account, replacements and site rules." },
@@ -177,7 +179,42 @@ const replacement = [
   ])
 ];
 
-export const guides = { new: first, renewal: renew, cluster, replacement };
+const clusterRenewal = [
+  s("01", "Confirm cluster approval and employment", "Make sure the approved cluster covers your actual sites and ask EMB if any amendments are necessary.", [
+    d("cr-old", "Copy of previously issued PCO Certificate of Accreditation", "Retain original clustered accreditation."),
+    d("cr-approval", "Approved letter of PCO clustering", "Authorization from EMB Central or Regional Office."),
+    d("cr-crs", "Approved establishment registration / CRS", "Required under the published Region VII renewal-of-cluster checklist.", "regional"),
+    d("cr-coe", "Employment verification letter showing full-time employment", "Issued by the current company."),
+    d("cr-sites", "Updated list of clustered installations", "Include locations, activities and category data if the office requests it.", "regional")
+  ]),
+  s("02", "Prepare identity, education and training", "Keep credentials up to date for the renewed cluster.", [
+    d("cr-photo", "2×2 PCO photo with white background", "Current digital ID photograph."),
+    d("cr-esign", "PCO e-signature", "Digital signature file."),
+    d("cr-8", "Managing Head's 8-hour training certificate", "Basic environmental management training."),
+    d("cr-40", "Previously issued 40-hour Basic PCO training certificate", "Also prepare any recent continuing training evidence required by your region."),
+    d("cr-tor", "Diploma / TOR, or allowed qualification evidence", "Region VII permits CV/resume in some cases where TOR/diploma is unavailable."),
+    d("cr-prc", "Valid PRC license", "If applicable for Category B.", "categoryB")
+  ]),
+  s("03", "Gather three-year environmental compliance evidence", "Region VII lists these supporting permits/reports where applicable to the cluster.", [
+    d("cr-ecc", "ECC / CNC", "Evidence of the establishment's EIA status.", "conditional"),
+    d("cr-hwg", "Hazardous Waste Generator registration", "If the site generates regulated hazardous wastes.", "conditional"),
+    d("cr-dp", "Valid water Discharge Permit", "For applicable wastewater discharges.", "conditional"),
+    d("cr-pto", "Valid air Permit to Operate", "For air pollution installations.", "conditional"),
+    d("cr-mrf", "Photo of materials recovery facility", "If relevant.", "conditional"),
+    d("cr-smr", "Acknowledged SMR submissions (past three years)", "Evidence of required quarterly submissions.", "conditional"),
+    d("cr-cmr", "Acknowledged CMR submissions (past three years)", "If required under the site ECC.", "conditional")
+  ]),
+  s("04", "Submit, pay and collect approval", "File the renewal-of-cluster pathway, respond to comments, and pay upon assessment.", [
+    d("cr-aff", "Notarized Joint Affidavit of Undertaking", "Use the regional pro-forma."),
+    d("cr-commit", "Notarized Joint Affidavit of Commitment", "Conditional in Region VII when environmental compliances/report submissions are lacking.", "conditional"),
+    d("cr-form", "Completed cluster-renewal online application", "Submit all applicable records and keep a tracking number."),
+    d("cr-oop", "EMB Order of Payment", "Wait for the evaluator's assessment."),
+    d("cr-or", "Official Receipt of ₱500 payment", "Upload payment proof using PCO Online."),
+    d("cr-coa", "Approved renewed cluster PCO Certificate of Accreditation", "Confirm authorized sites and expiry.")
+  ])
+];
+
+export const guides = { new: first, renewal: renew, cluster, "cluster-renewal": clusterRenewal, replacement };
 export const faq = [
   { q: "Is passing an exam the accreditation process?", a: "No universal separate government PCO accreditation exam is prescribed by DAO 2014-02. The process requires qualifications, recognized training, proper employer designation, documents and EMB approval. Your reviewer helps with learning; it does not itself issue PCO accreditation." },
   { q: "Does training alone make me an accredited PCO?", a: "No. Complete the application and receive an official EMB Certificate of Accreditation. A certificate of training is just one of the requirements." },
