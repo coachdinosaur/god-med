@@ -70,5 +70,5 @@ test("app links tracker and offline cache precaches all dependencies", () => {
   assert.ok(main.includes('href="regulatory/"'));
   assert.ok(accreditation.includes('href="../regulatory/"'));
   for(const asset of ["pco/regulatory/","pco/regulatory/index.html","pco/regulatory/style.css","pco/regulatory/updates-data.js","pco/regulatory/filter.js","pco/regulatory/app.js"]) assert.ok(worker.includes('"'+asset+'"'),asset);
-  assert.match(worker,/const VERSION = "godmed-v11"/);
+  assert.match(worker,/const VERSION = "godmed-v12"/);
 });
