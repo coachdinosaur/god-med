@@ -59,3 +59,12 @@ test("sources reference HTTPS resources and regional configuration is complete",
   for(const key of ["general","r1","r4a","r7","r12"])assert.ok(REGIONS[key].note);
   assert.equal(AFTER.length,6);
 });
+
+test("DAO 2018-07 clustering and Region VII change documentation are included",()=>{
+  const dao=SOURCES.find(s=>s.id==="dao2018");
+  assert.ok(dao && dao.url.includes("dao-2018-07"));
+  assert.ok(SOURCES.some(s=>s.id==="r7corner"));
+  assert.ok(applicable("replace","r7").some(d=>d.id==="r7ReplacementUpdate"));
+  assert.ok(!applicable("replace","r1").some(d=>d.id==="r7ReplacementUpdate"));
+  assert.ok(stepsFor("cluster","r7").some(step=>step[3].some(x=>x.includes("DAO 2018-07"))));
+});
