@@ -31,7 +31,7 @@
           <div class="eyebrow">✳ &nbsp; YOUR OFFICIAL ACCREDITATION ROADMAP</div>
           <h1>From training to <em>accreditation.</em></h1>
           <p>Your step-by-step DENR–EMB guide to preparing every document, submitting your application, following up and keeping your certificate current.</p>
-          <div class="hero-chips"><span>✓ Document checklist</span><span>✓ 4 application paths</span><span>✓ Tracks your progress</span></div>
+          <div class="hero-chips"><span>✓ Document checklist</span><span>✓ 5 application paths</span><span>✓ Tracks your progress</span></div>
         </section>
 
         <div class="notice" role="note"><strong>Important — region-specific requirements.</strong> This is a planning guide based on DAO 2014-02 and published EMB checklists reviewed <time datetime="2026-10-25">25 October 2026</time>. The receiving EMB Regional Office decides what you must actually submit. A reviewer's learning certificate is <strong>not</strong> official PCO accreditation.</div>
@@ -42,7 +42,7 @@
           <p class="section-desc">Your selection changes the entire sequence and document checklist. Nothing is submitted to EMB from this website.</p>
           <div class="control-grid">
             <label>Application type
-              <select id="track" aria-label="Application type"><option value="new">First accreditation (New)</option><option value="renewal">Renew my accreditation</option><option value="cluster">Multiple sites / Cluster</option><option value="replacement">Replace departing PCO</option></select>
+              <select id="track" aria-label="Application type"><option value="new">First accreditation (New)</option><option value="renewal">Renew my accreditation</option><option value="cluster">Multiple sites / Cluster</option><option value="cluster-renewal">Renew clustered accreditation</option><option value="replacement">Replace departing PCO</option></select>
             </label>
             <label>Receiving EMB office
               <select id="region" aria-label="EMB regional office"></select>
@@ -67,7 +67,7 @@
           <div class="progress-head"><div><div class="section-kicker">02 / DOCUMENTS & ACTIONS</div><h2>Your accreditation checklist</h2><p class="section-desc" id="selectedPath">New PCO application</p></div><button id="print" class="btn outline" type="button">Print / Save as PDF ↗</button></div>
           <div class="progress-track" role="progressbar" aria-label="Checklist completion" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" id="completionBar"><span id="progressFill"></span></div>
           <div class="progress-foot"><span id="percentDone">0% complete</span><button type="button" id="reset" class="link-button">Reset this checklist</button></div>
-          <div class="legend"><span><i class="legend-dot core"></i> Common document or action</span><span><i class="legend-dot regional-dot"></i> Regional requirement — verify</span><span><i class="legend-dot conditional-dot"></i> Conditional — only if applicable</span></div>
+          <div class="legend"><span><i class="legend-dot core"></i> Core document or action (counted)</span><span><i class="legend-dot regional-dot"></i> Regional requirement — verify</span><span><i class="legend-dot conditional-dot"></i> Conditional — only if applicable</span></div>
           <div id="steps" class="steps" aria-live="polite"></div>
         </section>
 
