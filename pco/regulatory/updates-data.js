@@ -7,16 +7,17 @@
  */
 export const reviewedOn = "2026-10-25";
 export const sources = Object.freeze([
-  { id:"dao2013", title:"DENR DAO 2013-22 (hazardous-waste procedures)", url:"https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/10/67621", publisher:"Supreme Court E-Library" },
+  { id:"dao2013", title:"DENR DAO 2013-22 — complete hazardous-waste procedural manual", url:"https://emb.gov.ph/wp-content/uploads/2025/02/DAO-2013-22-Procedures-and-Standards-for-Hazwaste-1.pdf", publisher:"DENR–EMB" },
   { id:"hazPlan", title:"EMB 2025 Annual Regulatory Plan", url:"https://r11.emb.gov.ph/wp-content/uploads/2025/08/2025-EMB-ANNUAL-REGULATORY-PLAN.pdf", publisher:"DENR–EMB Region XI" },
+  { id:"draft2020", title:"EMB publicly circulated proposed revisions to DAO 2013-22 (2020 draft, NOT final)", url:"https://www.emb.gov.ph/wp-content/uploads/2020/11/proposed-revisions-to-DAO-2013-22_-October-22-2020.pdf", publisher:"DENR–EMB" },
   { id:"piccsLaw", title:"Official list of RA 6969 chemical policies", url:"https://chemical.emb.gov.ph/?page_id=121", publisher:"EMB Chemical Management Section" },
-  { id:"piccs2025", title:"DAO 2025-09 — PICCS (official EMB reference)", url:"https://chemical.emb.gov.ph/?page_id=138", publisher:"DENR–EMB Chemical Management Section" },
+  { id:"piccs2025", title:"DAO 2025-09 — PICCS (ONAR registered copy)", url:"https://naro.law.upd.edu.ph/issuances/7858", publisher:"ONAR / UP Law Center" },
   { id:"piccs2026", title:"EMB PICCS information and updates", url:"https://chemical.emb.gov.ph/?page_id=138", publisher:"EMB Chemical Management Section" },
   { id:"cco", title:"EMB notice: Vinyl Chloride and Benzene CCOs", url:"https://chemical.emb.gov.ph/?p=950", publisher:"EMB Chemical Management Section" },
   { id:"ccoIndex", title:"Chemical Control Orders and general guidance", url:"https://chemical.emb.gov.ph/?page_id=44", publisher:"EMB Chemical Management Section" },
   { id:"hb6683", title:"HB 6683 — Waste Treatment Technology Act (20th Congress)", url:"https://www.congress.gov.ph/legis/results?congress=20&oth_nos=HB06683&qrytype=N&signif=NL", publisher:"House of Representatives" },
   { id:"chemicalRegistry", title:"Official PICCS validation tool", url:"https://opms.emb.gov.ph/piccs_search/", publisher:"DENR–EMB" },
-  { id:"denrRegister", title:"DENR official administrative-order directory", url:"https://databank.denr.gov.ph/views/data/index.php?type=35", publisher:"DENR" },
+  { id:"denrRegister", title:"EMB hazardous-waste management legal framework", url:"https://r12.emb.gov.ph/hazardous-waste-management/", publisher:"DENR–EMB Region XII" },
   { id:"houseBills", title:"20th Congress legislative records", url:"https://www.congress.gov.ph/legislative-documents", publisher:"House of Representatives" }
 ]);
 
@@ -29,7 +30,7 @@ export const updates = Object.freeze([
     why:"A revision could affect generator, transporter, TSD, classification, manifest and documentation rules. The exact changes must be confirmed against an issued final text, not inferred from a draft.",
     action:"For current compliance, keep using DAO 2013-22 together with applicable later EMB issuances. Check the DENR order register and your EMB Regional Office before changing processes.",
     note:"No final superseding DAO was verified in the official sources reviewed as of 25 October 2026; this is a verification limit, not a guarantee that none exists.",
-    sourceIds:["hazPlan","dao2013","denrRegister"]
+    sourceIds:["hazPlan","draft2020","dao2013","denrRegister"]
   },
   {
     id:"dao2026-28",status:"issued",topic:"Chemical controls",date:"2026-09-24",period:"Published 24 Sep 2026",
