@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f7f9f6">
+  <meta name="description" content="Searchable DENR and EMB regulatory reference tables for Philippine Pollution Control Officers: categorization, hazardous waste, effluent standards and air quality.">
+  <title>Reference Tables | PCO Study Studio</title>
+  <link rel="icon" href="../../icons/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../site-shell.css">
+  <script type="module" src="../text-size.js"></script>
+  <script type="module" src="../site-theme.js"></script>
+  <script type="module" src="app.js"></script>
+</head>
+<body class="pco-app pco-tables">
+  <a class="skip" href="#tablesMain">Skip to reference tables</a>
+  <header class="topbar pco-site-header">
+    <div class="pco-header-identity">
+      <a class="pco-header-brand" href="../" aria-label="PCO Study Studio home"><span class="pco-header-logo" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><path d="M16 3 28 9v14L16 29 4 23V9L16 3Z" stroke="currentColor" stroke-width="1.7"/><path d="m10 20 4-5 4 3 5-7" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="pco-header-wordmark">PCO<span>studio</span></span></a>
+      <span class="pco-header-current">Reference Tables</span>
+    </div>
+    <nav class="pco-top-nav" aria-label="PCO Study Studio sections">
+      <a href="../">Study Studio</a>
+      <a href="../accreditation/">Accreditation</a>
+      <a href="../regulatory/">Regulatory Updates</a>
+      <a href="./" aria-current="page">Tables</a>
+    </nav>
+    <div class="pco-header-actions">
+      <button class="font-size-toggle" id="fontSizeToggle" type="button" aria-label="Increase text size" aria-pressed="false" title="Larger text size">A+</button>
+      <button id="themeToggle" class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false" title="Toggle appearance"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 15.4A8 8 0 0 1 8.6 4a8 8 0 1 0 11.4 11.4Z"/></svg></button>
+    </div>
+  </header>
+
+  <main class="container tables-layout" id="tablesMain">
+    <section class="intro">
+      <div class="eyebrow">DENR / EMB · PHILIPPINES</div>
+      <h1>Regulatory <em>reference tables.</em></h1>
+      <p>The thresholds, classifications and standards mentioned in your reviewer—organized by source, searchable, and readable on a phone.</p>
+      <div class="intro-meta"><span>Source review: <strong>25 October 2026</strong></span><span id="tableTotal">Regulatory tables</span></div>
+    </section>
+    <div class="table-notice" role="note">
+      <strong>Reference, not a compliance decision.</strong> Every table states whether it is complete, grouped, summarized or a selected excerpt. For filings and laboratory compliance, consult the linked full DENR/EMB issuance, later amendments, EMB clarifications, and any site-specific permits.
+    </div>
+    <section class="quick-links" aria-label="Browse reference tables by topic">
+      <h2>Quick access</h2>
+      <div class="quick-grid">
+        <a href="#pco-table1"><span>01</span><strong>Category A / B</strong><small>DAO 2014-02 · Table 1</small></a>
+        <a href="#pco-annex1"><span>02</span><strong>Priority chemicals</strong><small>48-entry Annex 1</small></a>
+        <a href="#pco-annex2"><span>03</span><strong>Generator thresholds</strong><small>PCO Annex 2</small></a>
+        <a href="#haz-table31"><span>04</span><strong>Hazardous waste</strong><small>DAO 2013-22 · Table 3.1</small></a>
+        <a href="#water-table9"><span>05</span><strong>Effluent limits</strong><small>DAO 2016-08 · Table 9</small></a>
+        <a href="#air-table1"><span>06</span><strong>Ambient air</strong><small>DAO 2000-81 · Table 1</small></a>
+      </div>
+    </section>
+    <section class="table-section" aria-labelledby="tableSectionTitle">
+      <div class="section-heading"><div><div class="eyebrow">SOURCE-BASED LOOKUP</div><h2 id="tableSectionTitle">Browse all tables</h2><p>Search waste codes, chemicals, CAS numbers, standards or a DAO. Use the official PDF to verify every figure.</p></div></div>
+      <form id="tableFilters" class="table-filters" role="search">
+        <label for="tableSearch">Search across tables
+          <input id="tableSearch" type="search" placeholder="e.g., benzene, BOD, A101, Table 9…" autocomplete="off">
+        </label>
+        <label for="groupSelect">Regulation
+          <select id="groupSelect"><option value="all">All regulations</option></select>
+        </label>
+        <button id="clearFilters" type="reset" class="reset-filter">Clear filters</button>
+      </form>
+      <p id="resultsCount" class="results-count" role="status" aria-live="polite"></p>
+      <div class="tables-list" id="tablesList"></div>
+      <div class="empty-state" id="emptyTables" hidden>No reference tables match. Check the spelling or select a different regulation.</div>
+    </section>
+    <footer class="tables-footer">
+      <span>✳ PCOstudio · Regulatory reference</span>
+      <p>Educational reference · Not affiliated with DENR or EMB · Last source review: 25 October 2026</p>
+      <a href="../">Return to Study Studio ↗</a>
+    </footer>
+  </main>
+  <nav class="pco-bottom-nav" aria-label="Main PCO navigation">
+    <a href="../"><span aria-hidden="true">▦</span><small>Study Studio</small></a>
+    <a href="../accreditation/"><span aria-hidden="true">☑</span><small>Accreditation</small></a>
+    <a href="../regulatory/"><span aria-hidden="true">§</span><small>Updates</small></a>
+    <a href="./" aria-current="page"><span aria-hidden="true">▤</span><small>Tables</small></a>
+  </nav>
+</body>
+</html>
